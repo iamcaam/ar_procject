@@ -1,0 +1,52 @@
+
+var DivSourceX = 0;
+var DivSourceY = 0;
+var DivEnvDwX = 0;
+var DivEnvDwY = 0;
+var DivEnvMvX = 0;
+var DivEnvMvY = 0;
+var DivMouseFlag = false;    // 用來判斷是否處於滑鼠按著的狀態
+
+
+function DivMouseDown(EvtDw)
+{
+	// Mouse Down 的時候，紀錄當時視窗的原始位置，滑鼠當時的位置
+	DivSourceX = $("#myModal").position().left;
+	DivSourceY = $("#myModal").position().top;
+	DivEnvDwX = EvtDw.x;
+	DivEnvDwY = EvtDw.y;
+	DivMouseFlag = true;
+		window.status = "DivMouseDown";
+}
+
+function DivMouseUp(EvtUp)
+{
+	DivMouseFlag = false;
+		window.status = "DivMouseUp";
+}
+
+function DivMouseMove(EvtMv)
+{	
+	if ( DivMouseFlag )
+	{
+	    // Mouse Down 的時候，紀錄當時視窗的原始位置，滑鼠當
+		DivEnvMvX = EvtMv.x;
+		DivEnvMvY = EvtMv.y;
+		
+		NewDivX = DivSourceX + ( DivEnvMvX - DivEnvDwX );
+		NewDivY = DivSourceY + ( DivEnvMvY - DivEnvDwY );
+		/*
+		$("#Div02").text( "DivSourceX = " + DivSourceX + ",  DivSourceY = " + DivSourceY );
+		$("#Div02").append( "<P> DivEnvMvX = " + DivEnvMvX + ",  DivEnvDwX = " + DivEnvDwX );
+		$("#Div02").append( "<P> DivEnvMvY = " + DivEnvMvY + ",  DivEnvDwY = " + DivEnvDwY );
+		$("#Div02").append( "<P>NewDivX = " + NewDivX + ",  NewDivY = " + NewDivY );
+		*/
+		window.status = "NewDivX = " + NewDivX + ",  NewDivY = " + NewDivY;
+		$("#myModal").css(
+		{
+			position: "absolute",
+			top: NewDivY + "px",
+			left: NewDivX + "px"
+		});
+	}
+}

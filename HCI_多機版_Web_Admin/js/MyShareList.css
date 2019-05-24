@@ -1,0 +1,485 @@
+@charset "utf-8";
+
+
+body
+{
+	margin: 0px;
+}
+
+
+ol
+{
+	margin: 0px;
+	padding: 0px;
+	left:0px;
+}
+
+li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+
+h4
+{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+
+
+
+
+/* 整個主畫面 */
+#Div_MainFull
+{
+	margin: auto;
+	height: 590px;
+	width: 990px;
+	background-color: #6CF;
+	padding: 0px;
+	position: relative;
+	border-radius: 15px;
+	border: 2px solid #000;
+	font-family: "微軟正黑體";
+}
+
+
+
+
+
+#Div_Header
+{
+	position: absolute;
+	left:0px;
+	top:0px;
+	
+	padding: 0px;
+	margin: 0px;
+	height: 40px;
+	width: 100%;
+	
+
+	border-left-top: 1px solid #6CF;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-family: "微軟正黑體";
+	
+	background: rgb(30,87,153); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ5JSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDdjY2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 49%, rgba(32,124,202,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(49%,rgba(41,137,216,1)), color-stop(100%,rgba(32,124,202,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 49%,rgba(32,124,202,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 49%,rgba(32,124,202,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 49%,rgba(32,124,202,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 49%,rgba(32,124,202,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 ); /* IE6-8 */
+
+}
+
+
+
+
+
+#h3_HeaderDivTitle
+{
+	position: absolute;
+	top:3px;
+	text-align:center;
+	color:#FFF;
+	
+	padding : 0px;
+	padding-top: 5px;
+	margin: 0px;
+	height: 30px;
+	width: 100%;
+}
+
+
+
+
+
+/* Tab 按鈕外觀 */
+.h3_BtnTitle {
+	position: absolute;
+	padding: 5px;
+	margin: 0px;
+	height: 20px;
+	width: 40%;
+	text-align:center;
+	
+	color: #FFF;
+	text-decoration: none;
+	background-color: #3d72b7;
+	display: block;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+/* Tab 按鈕-當滑鼠在上 */
+.h3_BtnTitle:hover {
+	
+	border: 3px solid #FFF;
+}
+
+/* Tab 按鈕-當滑鼠 mouse down */
+.h3_BtnTitle:active 
+{
+	color: #ecde03;
+	background-color: #3d72b7;
+	border: 2px solid #FFF;
+}
+
+
+
+
+
+.h3_Btn_FromMe
+{
+	left:7%;
+	top:50px;
+}
+
+
+
+
+
+.h3_Btn_FromOther
+{
+	left:53%;
+	top:50px;
+}
+
+
+
+#h4_ShareListTitle
+{
+	position: absolute;
+	left:370px;
+	top:125px;
+	
+	padding:0px;
+	margin:0px;
+	width: 250px;
+	height: 20px;
+	text-align:center;
+}
+
+#h5_BtnDel_SelectedShareList
+{
+	position: absolute;
+	left:25px;
+	top:115px;
+	
+	padding:0px;
+	margin:0px;
+	width: 100px;
+	height: 20px;
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	padding-top:5px;
+	
+	background-color: #693;
+	color: #FFF;
+	border: 1px solid #FFF;
+	border-radius:15px;
+}
+
+
+#h5_BtnDel_SelectedShareList:hover
+{
+	background-color: #0C0;
+	color: #FFF;
+	border: 1px solid #FFF;
+}
+
+
+#h5_BtnDel_SelectedShareList:avtive
+{
+	background-color: #693;
+	color: #F90;
+	border: 1px solid #FFF;
+}
+
+
+
+#Input_SearchKeyword
+{
+	position: absolute;
+	left:730px;
+	top: 115px;
+	margin: 0px;
+	padding: 3px;
+	height: 20px;
+	width: 150px;
+}
+
+
+
+#h5_BtnSearch
+{
+	position: absolute;
+	left:900px;
+	top: 115px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 80px;
+	
+	text-align:center;
+	cursor: pointer;
+	display: block;
+	padding-top:5px;
+	
+	background-color: #693;
+	color: #FFF;
+	border: 1px solid #FFF;
+	border-radius:15px;
+}
+
+
+
+
+
+#Div_ShareList_HeaderRow
+{
+	position: absolute;
+	left:25px;
+	top: 152px;
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	width: 950px;
+	background-color: #063;
+	border: 3px solid #000;
+	color: #fff;
+}
+
+
+
+#Div_ShareList
+{
+	position: absolute;
+	left:25px;
+	top: 185px;
+	width: 950px;
+	height: 390px;
+	
+	border: 3px solid #000;
+	margin: 0px;
+	padding: 0px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	
+	background: rgb(126,191,204); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdlYmZjYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEzJSIgc3RvcC1jb2xvcj0iI2Q5ZjRmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM2JSIgc3RvcC1jb2xvcj0iI2Q5ZjRmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzkxZWRmMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iI2Q5ZjRmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg5JSIgc3RvcC1jb2xvcj0iI2Q5ZjRmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZWJmY2MiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(126,191,204,1) 0%, rgba(217,244,243,1) 13%, rgba(217,244,243,1) 36%, rgba(145,237,242,1) 52%, rgba(217,244,243,1) 75%, rgba(217,244,243,1) 89%, rgba(126,191,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(126,191,204,1)), color-stop(13%,rgba(217,244,243,1)), color-stop(36%,rgba(217,244,243,1)), color-stop(52%,rgba(145,237,242,1)), color-stop(75%,rgba(217,244,243,1)), color-stop(89%,rgba(217,244,243,1)), color-stop(100%,rgba(126,191,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(126,191,204,1) 0%,rgba(217,244,243,1) 13%,rgba(217,244,243,1) 36%,rgba(145,237,242,1) 52%,rgba(217,244,243,1) 75%,rgba(217,244,243,1) 89%,rgba(126,191,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(126,191,204,1) 0%,rgba(217,244,243,1) 13%,rgba(217,244,243,1) 36%,rgba(145,237,242,1) 52%,rgba(217,244,243,1) 75%,rgba(217,244,243,1) 89%,rgba(126,191,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(126,191,204,1) 0%,rgba(217,244,243,1) 13%,rgba(217,244,243,1) 36%,rgba(145,237,242,1) 52%,rgba(217,244,243,1) 75%,rgba(217,244,243,1) 89%,rgba(126,191,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(126,191,204,1) 0%,rgba(217,244,243,1) 13%,rgba(217,244,243,1) 36%,rgba(145,237,242,1) 52%,rgba(217,244,243,1) 75%,rgba(217,244,243,1) 89%,rgba(126,191,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7ebfcc', endColorstr='#7ebfcc',GradientType=0 ); /* IE6-8 */
+
+}
+
+
+
+
+.Div_ShareList_Row 
+{
+	position: relative;
+	padding: 0px;
+	height: 30px;
+	width: 945px;
+	margin: 0px;
+	background-color: #D9FFFB;
+	color: #000;
+	border: 2px solid #FFF;
+}
+
+#Div_ShareList .ui-selecting { background: #0FF; }
+#Div_ShareList .ui-selected { background: #F5FCA9 }
+
+
+.Input_ShareListRow_Target
+{
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+
+	-ms-transform: scale(1.3); /* IE */
+	-moz-transform: scale(1.3); /* FF */
+	-webkit-transform: scale(1.3); /* Safari and Chrome */
+	-o-transform: scale(1.3); /* Opera */
+}
+
+.h4_ShareListRow_Target
+{
+	position: absolute;
+	left: 35px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 50px;
+}
+
+.Img_ShareListRow_Target
+{
+	position: absolute;
+	left: 40px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 20px;
+}
+
+.h4_ShareListRow_TargetName 
+{
+	position: absolute;
+	left: 80px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 200px;
+}
+
+.h4_ShareListRow_FileName 
+{
+	position: absolute;
+	left: 280px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 200px;
+}
+
+.h4_ShareListRow_FileName_FromOther
+{
+	cursor:pointer;
+}
+
+
+.h4_ShareListRow_FileName_FromOther:hover
+{
+	color:#06C;
+}
+
+.h4_ShareListRow_Mode 
+{
+	position: absolute;
+	left: 480px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 120px;
+}
+
+.h4_ShareListRow_DateTime
+{
+	position: absolute;
+	left: 600px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 170px;
+}
+
+/* 欄位字體要小一點，有點放不下 */
+.h5_ShareListRow_DateTime 
+{
+	position: absolute;
+	left: 600px;
+	top: 8px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 170px;
+}
+
+.h4_ShareListRow_Remove 
+{
+	position: absolute;
+	left: 770px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 60px;
+}
+
+.Img_ShareListRow_Remove 
+{
+	padding: 0px;
+	position: absolute;
+	left: 775px;
+	top: 4px;
+	margin: 0px;
+	height: 20px;
+	width: 20px;
+	cursor: pointer;
+}
+
+
+.Img_ShareListRow_Remove:hover
+{
+	height: 23px;
+	width: 23px;
+}
+
+
+
+.Img_ShareListRow_Remove:active
+{
+	top: 6px;
+	height: 23px;
+	width: 23px;
+}
+
+
+.h4_ShareListRow_RemoveResult
+{
+	position: absolute;
+	left: 830px;
+	top: 5px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 100px;
+}
+
+.DisableSelect
+{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.h4_ShareList_NoShare
+{
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+
+
+

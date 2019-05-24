@@ -1,0 +1,18 @@
+[virt-viewer]
+type = spice
+host= 192.168.88.111
+port = 5905
+username = raymond
+password = 000000
+fullscreen = 1
+delete-this-file = 1
+title =  raymond-192.168.88.111
+[virt-viewer]
+type = spice
+host= 192.168.88.111
+port = 5905
+username = raymond
+password = 000000
+fullscreen = 1
+delete-this-file = 1
+title =  raymond-192.168.88.111

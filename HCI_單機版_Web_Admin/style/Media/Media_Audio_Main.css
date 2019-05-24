@@ -1,0 +1,1624 @@
+body
+{
+	margin:0px;
+	padding:0px;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:100%;
+	
+	font-family:"微軟正黑體";
+}
+
+/* 主頁面 */
+.Div_MainArea
+{
+	position:absolute;
+	margin:0px;
+	padding:0px;
+	left:0px;
+	top:0px;
+	height:100%;
+	width:100%;
+}
+
+	/* 區域分割:標題與播放器 */
+	.Div_Grid_TitleAndPlayer
+	{
+		position:absolute;
+		left:0px;
+		top:0px;
+		height:15%;
+		width:100%;
+		background-image:url(../../img/Media//BG_TitleAndPlayer.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	
+		/* 大標題-音樂廳 
+		.Img_MusicTitle
+		{
+			position:absolute;
+			left:15px;
+			top:15px;
+			height:50px;
+			width:195px;
+		}*/
+		
+		/* 大標題-音樂廳 */
+		.Lbl_Title
+		{
+			position:absolute;
+			left:15px;
+			top:5px;
+			height:50px;
+			width:195px;
+			color:#FFF;
+			
+			font-size:48px;
+			text-shadow:2px 2px #333333;
+		}
+		
+		
+		/* 播放器 */
+		.Div_PlayerArea
+		{
+			position:absolute;
+			left:800px;
+			top:5px;
+			width:640px;
+			height:110px;
+		}
+		
+			.Img_PlayerProgressBar
+			{
+				position:absolute;
+				left:-3px;
+				top:82px;
+				width:543px;
+				height:10px;
+				cursor:pointer;
+			}
+		
+			.Img_PlayerProgressBar_Dark
+			{
+				position:absolute;
+				left:0px;
+				top:84px;
+				width:0px;
+				height:7px;
+				cursor:pointer;
+			}
+		
+			.Lbl_PlayerProgress_Tick
+			{
+				position:absolute;
+				left:0px;
+				top:80px;
+				width:9px;
+				height:11px;
+				background-color:#0FF;
+				
+				
+				border-color:#00F;
+				border:solid;
+				border-width:2px;
+				cursor:pointer;
+			}
+			
+			.Lbl_Playing_Media
+			{
+				position:absolute;
+				left:0px;
+				top:58px;
+				width:200px;
+				height:25px;
+				
+				font-size:14px;
+				color:#ff7200;
+				text-align:left;
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+			
+			.Lbl_Playing_Album
+			{
+				position: absolute;
+				left: 200px;
+				top: 58px;
+				width: 120px;
+				height: 20px;
+				font-size: 14px;
+				color: #fff;
+				text-align: left;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		
+			.Lbl_Playing_Artist
+			{
+				position:absolute;
+				left:320px;
+				top:58px;
+				width:120px;
+				height:20px;
+				
+				font-size:14px;
+				color:#fff;
+				text-align:left;
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+		
+			.Lbl_Playing_TimeNow
+			{
+				position:absolute;
+				left:440px;
+				top:58px;
+				width:40px;
+				height:20px;
+				
+				font-size:14px;
+				color:#ff7200;
+				text-align:left;
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+		
+			.Lbl_Playing_TimeTotal
+			{
+				position:absolute;
+				left:480px;
+				top:58px;
+				width:60px;
+				height:20px;
+				
+				font-size:14px;
+				color:#fff;
+				text-align:left;
+				white-space: nowrap;
+				overflow:hidden;
+				text-overflow:ellipsis;
+			}
+			
+			.Img_Player_Segment
+			{
+				cursor:pointer;
+				height:54px;
+				top:0px;
+			}
+					
+			.Img_Player00
+			{
+				position:absolute;
+				left:0px;
+				width:50px;
+			}
+		
+			.Img_Player01
+			{
+				position:absolute;
+				left:50px;
+				top:0px;
+				width:65px;
+			}
+		
+			.Img_Player02
+			{
+				position:absolute;
+				left:115px;
+				width:70px;
+			}
+		
+			.Img_Player03
+			{
+				position:absolute;
+				left:185px;
+				width:55px;
+			}
+		
+			.Img_Player04
+			{
+				position:absolute;
+				left:240px;
+				width:75px;
+			}
+		
+			.Img_Player05
+			{
+				position:absolute;
+				left:315px;
+				width:55px;
+			}
+		
+			.Img_Player06
+			{
+				position:absolute;
+				left:370px;
+				width:45px;
+			}
+		
+			.Img_Player07
+			{
+				position:absolute;
+				left:415px;
+				width:45px;
+			}
+		
+			.Img_Player08
+			{
+				position:absolute;
+				left:460px;
+				width:45px;
+			}
+		
+			.Img_Player09
+			{
+				position:absolute;
+				left:505px;
+				width:35px;
+			}
+			
+
+
+	/* 區域分割:工具列 */
+	.Div_Grid_MediaToolBar
+	{
+		position:absolute;
+		left:0px;
+		top:15%;
+		height:14%;
+		width:100%;
+		
+		background-image:url(../../img/Media//BG_MediaToolBar.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	
+		/* 分類與搜尋 */
+		.Div_SortAndSearch
+		{
+			position:absolute;
+			left:4.5%;
+			top:25%;
+			width:65%;
+			height:50%;
+			
+			border-radius:5px;
+			border:solid;
+			border-width:2px;
+			
+			background: #cedbe9; /* Old browsers */
+			background: -moz-linear-gradient(top,  #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedbe9), color-stop(17%,#aac5de), color-stop(50%,#6199c7), color-stop(51%,#3a84c3), color-stop(59%,#419ad6), color-stop(71%,#4bb8f0), color-stop(84%,#3a8bc2), color-stop(100%,#26558b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+		}
+		
+			.Lbl_SortOut
+			{
+				position:absolute;
+				left:0%;
+				top:15%;
+				height:40%;
+				width:11%;
+				
+				text-align:right;				
+				font-size:18px;
+				font-weight:bold;
+				color:#ffc600;;
+			}
+			
+			.SortOut_Btn
+			{
+				position:absolute;
+				top:23%;
+				height:50%;
+				width:9%;
+				
+				background-color:#E4F9DE;
+				
+				color:#000;
+				text-align:center;
+				cursor:pointer;
+				font-size:16px;
+				padding-top:5px;
+			
+				border-radius:5px;
+				border:solid;
+				border-width:2px;
+				border-color:#444;
+			}
+			
+			.Lbl_SortOut_Album
+			{
+				left:13%;
+			}
+			
+			.Lbl_SortOut_Artist
+			{
+				left:23%;
+			}
+			
+			.Lbl_SortOut_Folder
+			{
+				left:33%;
+			}
+			
+			.Lbl_SortOut_FavoriteList
+			{
+				left:43%;
+			}
+			
+			.Lbl_SortOut_PlayQueue
+			{
+				left:53%;
+			}
+			
+			
+			
+			/* Search */
+			.Lbl_Search
+			{
+				position:absolute;
+				left:67%;
+				top:15%;
+				height:40%;
+				width:7%;
+				
+				font-weight:bold;
+				font-size:18px;
+				color:#ffc600;
+			}
+			
+			.TxtBx_Search
+			{
+				position:absolute;
+				left:73%;
+				top:25%;
+				width:20%;
+				height:45%;
+				
+				border:solid;
+				border-width:1px;
+			}
+			
+			.Img_Search
+			{
+				position:absolute;
+				left:94%;
+				top:28%;
+				height:24px;
+				width:24px;
+				cursor:pointer;
+			}
+
+
+
+		/* 「加入」按鈕工具列 */
+		.Div_AddToList
+		{
+			position:absolute;
+			top:25%;
+			left:73%;
+			height:50%;
+			width:220px;
+			cursor:pointer;
+			
+			border-radius:5px;
+			border:solid;
+			border-width:2px;
+			text-align:center;
+			
+			background: #cedbe9; /* Old browsers */
+			background: -moz-linear-gradient(top,  #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedbe9), color-stop(17%,#aac5de), color-stop(50%,#6199c7), color-stop(51%,#3a84c3), color-stop(59%,#419ad6), color-stop(71%,#4bb8f0), color-stop(84%,#3a8bc2), color-stop(100%,#26558b)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #cedbe9 0%,#aac5de 17%,#6199c7 50%,#3a84c3 51%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+		}
+			.Img_Media_AppendExistList
+			{
+				left:10px;
+			}
+			.Img_Media_ReplaceExistList
+			{
+				left:60px;
+			}
+			.Img_Media_AppendPlayQueue
+			{
+				left:110px;
+			}
+			.Img_Media_ReplacePlayQueue
+			{
+				left:160px;
+			}
+		
+			.AddListBtn
+			{
+				position:absolute;
+				top:2px;
+				cursor:pointer;
+				height:46px;
+				width:46px;
+			}
+		
+
+
+
+	/* 區域分割:媒體列表標頭 */
+	.Div_Grid_MediaGridTitle
+	{
+		position:absolute;
+		left:0px;
+		top:29%;
+		height:7%;
+		width:100%;
+		background-image:url(../../img/Media//BG_MediaGridTitle.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+	
+		/* 媒體列表標頭白底陰影造型 */
+		.Div_AudioListTitle		
+		{
+			position:absolute;
+			left:2.5%;
+			top:5px;
+			height:22px;
+			width:80%;
+		
+			color:#000;
+			background-color:#FFF;
+			box-shadow:0px 0px 2px 1px #555555;
+			border-radius:5px;
+			border:solid;
+			border-width:1px;
+			
+			padding:7px;
+			text-align:left;
+			font-size:18px;
+			font-weight:bold;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+		
+
+	/* 區域分割:媒體列表內容 */
+	.Div_Grid_MediaGridContent
+	{
+		position:absolute;
+		left:0px;
+		top:36%;
+		height:64%;
+		width:100%;
+		background-image:url(../../img/Media//BG_MediaGridContent.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+	}
+				
+		/* 多媒體內容 */
+		.Div_AudioListArea
+		{
+			position:absolute;
+			left:100px;
+			top:0px;
+			height:100%;
+			width:95%;
+			overflow:auto;
+		}
+
+
+
+
+
+
+
+	/* 專輯資訊 */
+	.Div_Album
+	{
+		height:165px;
+		width:130px;
+		position:relative;
+		float:left;
+		margin:30px;
+		cursor:pointer;
+	}
+
+		.Img_Album_CheckBox
+		{
+			position:absolute;
+			width:32px;
+			height:32px;
+			top:0px;
+			left:0px;
+		}
+	
+		.Img_Album_AlbumImg
+		{
+			position:absolute;
+			width:128px;
+			height:128px;
+			top:0px;
+			left:35px;
+		}
+		
+		.Lbl_Album_AlbumName
+		{
+			position:absolute;
+			width:130px;
+			top:130px;
+			left:25px;
+
+			font-size:14px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+		.Lbl_Album_ArtistName
+		{
+			position:absolute;
+			width:130px;
+			top:150px;
+			left:25px;
+
+			font-size:10px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+			color:#963;
+		}
+	
+		.Img_BigItem_ReplacePlayingQueue 
+		{
+			position:absolute;
+			width:32px;
+			height:32px;
+			top:40px;
+			left:0px;
+		}
+
+
+
+
+	.Div_BackLevel
+	{
+		position:relative;
+		left:2%;
+		height:40px;
+		width:93%;
+	}
+	
+		.Img_BackLevel
+		{
+			position:absolute;
+			left:0%;
+			top:5%;
+			width:121px;
+			height:37px;
+			cursor:pointer;
+		}
+		
+		.Img_MediaList_ReplacePlayingQueue
+		{
+			position:absolute;
+			left:18%;
+			top:10%;
+			height:30px;
+			width:30px;
+		}
+		
+		.Img_MediaList_AppendPlayingQueue
+		{
+			position:absolute;
+			left:22%;
+			top:10%;
+			height:30px;
+			width:30px;
+		}
+		
+		.Img_MediaList_AppendFavoriteList
+		{
+			position:absolute;
+			left:26%;
+			top:10%;
+			height:30px;
+			width:30px;
+		}
+		
+		.Img_MediaList_RemoveFavoriteMedia
+		{
+			position:absolute;
+			left:30%;
+			top:10%;
+			height:30px;
+			width:30px;
+		}
+		
+		.Img_MediaList_KillFavoriteList
+		{
+			position:absolute;
+			left:34%;
+			top:10%;
+			height:30px;
+			width:30px;
+		}
+			
+			
+			
+			/*
+		.Div_BackLevel_ToolBar
+		{
+			position:relative;
+			float:right;
+			height:40px;
+			width:180px;
+		}
+			.Img_BtnSave
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}
+			
+			.Img_BtnMoveDown
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}
+			
+			.Img_BtnMoveUp
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}
+					
+			.Img_BtnRecycle
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}
+					
+			.Img_BtnCreate
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}
+					
+			.Img_BtnRename
+			{
+				position:relative;
+				width:36px;
+				height:36px;
+			}*/
+			
+			
+
+
+
+
+
+	/* 歌曲清單標頭 */
+	.Div_MediaDetail_Header
+	{
+		position:relative;
+		left:2%;
+		height:40px;
+		width:97%;
+		color:#eee9ad;
+		background-color:#0095aa;
+		
+		font-weight:bold;
+		
+		border:solid;
+		border-width:1px;
+		border-color:#000;
+	}
+
+
+
+
+
+
+
+	/* 歌曲清單 */
+	.Div_MediaDetail
+	{
+		position:relative;
+		left:2%;
+		height:40px;
+		width:97%;
+		cursor:pointer;
+		
+		
+		border:solid;
+		border-width:1px;
+	}
+
+		.Div_MediaDetail_CheckBox
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			left:0px;
+			width:32px;
+		}
+	
+			.Img_MediaDetail_CheckBox
+			{
+				position:relative;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+	
+
+		.Div_MediaDetail_MediaTitle
+		{
+			position:relative;
+			margin-left:10px;
+			float:left;
+			height:40px;
+			width:25%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+			.Lbl_MediaDetail_MediaTitle
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_MediaDetail_AlbumName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:20%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	
+			.Lbl_MediaDetail_AlbumName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_MediaDetail_ArtistName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:20%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+
+			.Lbl_MediaDetail_ArtistName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_MediaDetail_Length
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:12.5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+			
+			.Lbl_MediaDetail_Length
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_MediaDetail_FileName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:12.5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	
+			.Lbl_MediaDetail_FileName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+				
+		.Div_MediaDetail_Listen
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+			.Lbl_MediaDetail_Listen
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+			
+			.Img_MediaDetail_Listen
+			{
+				position:relative;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+			
+
+
+
+
+
+
+	/* 歌手資訊 */
+	.Div_Singer
+	{
+		position:relative;
+		height:150px;
+		width:130px;
+		float:left;
+		margin:30px;
+		cursor:pointer;
+	}
+
+		.Img_Singer_CheckBox
+		{
+			position:absolute;
+			width:32px;
+			height:32px;
+			top:0px;
+			left:0px;
+		}
+	
+		.Img_Singer_ArtistImg
+		{
+			position:absolute;
+			width:128px;
+			height:128px;
+			top:0px;
+			left:35px;
+		}
+		
+		.Lbl_Singer_ArtistName
+		{
+			position:absolute;
+			width:130px;
+			top:130px;
+			left:35px;
+
+			font-size:14px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}		
+		
+		
+		
+		
+		
+		
+	/* 目錄 */	
+	.Div_Folder
+	{
+		position:relative;
+		height:150px;
+		width:165px;
+		float:left;
+		margin:30px;
+		cursor:pointer;
+	}
+			
+		.Img_Folder_CheckBox
+		{
+			position:absolute;
+			float:left;
+			width:32px;
+			height:32px;
+			top:0px;
+			left:0px;
+		}
+	
+		.Img_Folder_FolderImg
+		{
+			position:absolute;
+			float:left;
+			width:128px;
+			height:128px;
+			top:0px;
+			left:35px;
+		}
+		
+		.Lbl_Folder_FolderName
+		{
+			position:absolute;
+			float:left;
+			width:165px;
+			top:130px;
+			left:0px;
+
+			font-size:16px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+		
+		
+		
+		
+	
+		
+	/* 檔案 */	
+	.Div_File
+	{
+		position:relative;
+		height:150px;
+		width:165px;
+		float:left;
+		margin:30px;
+		cursor:pointer;
+	}
+	
+		.Img_File_CheckBox
+		{
+			position:absolute;
+			width:32px;
+			height:32px;
+			top:0px;
+			left:0px;
+		}
+	
+		.Img_File_FileImg
+		{
+			position:absolute;
+			width:128px;
+			height:128px;
+			top:0px;
+			left:35px;
+		}
+			
+		.Img_File_Listen
+		{
+			position:absolute;
+			width:30px;
+			height:30px;
+			top:100px;
+			left:0px;
+		}
+		
+		.Lbl_File_FileName
+		{
+			position:absolute;
+			width:130px;
+			top:130px;
+			left:35px;
+
+			font-size:16px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+		
+		
+		
+		
+		
+		
+	/* 歌單 */
+	.Div_FavoriteList
+	{
+		position:relative;
+		height:150px;
+		width:165px;
+		float:left;
+		margin:30px;
+		cursor:pointer;
+	}
+	
+		.Img_FavoriteList_CheckBox
+		{
+			position:absolute;
+			width:32px;
+			height:32px;
+			top:0px;
+			left:0px;
+		}
+	
+		.Img_FavoriteList_FavoriteListImg
+		{
+			position:absolute;
+			width:128px;
+			height:128px;
+			top:0px;
+			left:35px;
+		}
+		
+		.Lbl_FavoriteList_Name
+		{
+			position:absolute;
+			width:130px;
+			top:130px;
+			left:35px;
+
+			font-size:16px;
+			text-align:center;
+			white-space: nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	
+		.Txt_FavoriteList_Name
+		{
+			position:absolute;
+			width:130px;
+			top:130px;
+			left:35px;
+
+			font-size:16px;
+			text-align:center;
+			visibility:collapse;
+		}
+		
+		
+		
+		
+
+	/* 歌曲清單標頭 */
+	.Div_FavoriteListDetail_Header
+	{
+		position:relative;
+		left:2%;
+		height:40px;
+		width:97%;
+		background-color:#0095aa;
+		color:#eee9ad;
+		
+		font-weight:bold;
+		border:solid;
+		border-color:#000;
+		border-width:1px;
+	}
+	
+	
+	
+	/* 歌單歌曲清單 */
+	.Div_FavoriteListDetail
+	{
+		position:relative;
+		left:2%;
+		height:40px;
+		width:97%;
+		cursor:pointer;
+		
+		border:solid;
+		border-width:1px;
+	}
+	
+		.Select
+		{	
+			cursor:pointer;
+		}
+	
+		.Div_FavoriteListDetail_Playing
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			left:0px;
+			width:32px;
+		}
+
+			.Img_FavoriteListDetail_Playing
+			{
+				position:relative;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+			
+		.Div_FavoriteListDetail_CheckBox
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			left:0px;
+			width:32px;
+		}
+	
+			.Img_FavoriteListDetail_CheckBox
+			{
+				position:relative;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+
+		.Div_FavoriteListDetail_MediaTitle
+		{
+			position:relative;
+			margin-left:10px;
+			float:left;
+			height:40px;
+			width:25%;
+
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+			.Lbl_FavoriteListDetail_MediaTitle
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_FavoriteListDetail_AlbumName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:20%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	
+			.Lbl_FavoriteListDetail_AlbumName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_FavoriteListDetail_ArtistName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:20%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+
+			.Lbl_FavoriteListDetail_ArtistName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_FavoriteListDetail_Length
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:12.5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+			
+			.Lbl_FavoriteListDetail_Length
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+
+		.Div_FavoriteListDetail_FileName
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:12.5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+	
+			.Lbl_FavoriteListDetail_FileName
+			{
+				position:relative;
+				top:10px;
+				width:100%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+	
+		.Div_FavoriteListDetail_Del
+		{
+			position:relative;
+			float:left;
+			height:40px;
+			width:5%;
+			
+			white-space:nowrap;
+			overflow:hidden;
+			text-overflow:ellipsis;
+		}
+		
+			.Img_FavoriteListDetail_Del
+			{
+				position:relative;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+
+
+
+/* 對話框 */
+.Div_DialogBase
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	z-index:-10;
+}
+
+	.Div_Message
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+		
+		.Lbl_Message
+		{
+			position:absolute;
+			left:30px;
+			top:20px;
+			width:450px;
+
+			text-align:left;
+			font-size:20px;
+		}
+		
+		
+	.Div_WaitAjax
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+	
+		.Img_Dialog_WaitAjax
+		{
+			position:absolute;
+			left:120px;
+			top:55px;
+			width:32px;
+			height:32px;
+		}
+	
+	
+	
+	.Div_AddToNewCreateFavoriteList
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+
+	
+	.Div_AddToFavoriteList
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+
+		/* 加入現有歌單 對話框*/
+		.Div_FavoriteListRow
+		{
+			position:relative;
+			left:2%;
+			height:40px;
+			width:97%;
+			cursor:pointer;
+		}
+			
+			.Img_FavoriteListRow_RadioBtn
+			{
+				position:absolute;
+				left:10px;
+				top:5px;
+				width:32px;
+				height:32px;
+			}
+		
+			.Lbl_FavoriteListRow_Name
+			{
+				position:absolute;
+				left:50px;
+				top:10px;
+				width:90%;
+	
+				text-align:left;
+				font-size:20px;
+			}
+			
+		.Lbl_ChangeToCreate_FavoriteList
+		{
+			position:absolute;
+			left:10px;
+			top:430px;
+			width:150px;
+			height:25px;
+			
+			border-radius:5px;
+			border:solid;
+			border-width:1px;
+			background-color:#ffdd57;
+			
+			text-align:center;
+		}
+	
+			
+.Div_NowPlayingQueue
+{
+	position:absolute;
+	left:300px;	/*JS有控制*/
+	top:300px;	/*JS有控制*/
+	width:430px;
+	height:240px;
+	
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	border:solid;
+	border-width:3px;
+	border-color:#FFF;
+	
+	background-color:#00a9df;
+	
+	text-align:left;
+	font-size:12px;
+	
+	margin:0px;
+	padding:0px;
+}
+
+	.Div_Title_Area
+	{
+		position:absolute;
+		left:0%;
+		top:0%;	
+		height:50px;
+		width:100%;
+		background-color:#ff7200;
+		
+		border-top-left-radius:5px;
+		border-top-right-radius:5px;
+	}
+
+		.Lbl_PlayingQueue_TableTitle
+		{
+			position:absolute;
+			left:5%;
+			top:25%;
+			height:30px;
+			color:#fff;
+			font-size:18px;
+		}
+		
+		.Img_PlayingQueue_MinmunBtn
+		{
+			position:absolute;
+			left:91%;
+			top:20%;
+			width:24px;
+			height:24px;
+			cursor:pointer;
+			z-index:10;
+		}
+
+	.Div_PlayingQueue_Area
+	{
+		position:absolute;
+		left:20px;
+		top:50px;
+		width:400px;
+		height:190px;
+		overflow:auto;
+	}
+			
+        .Div_PlayingQueue_Row
+        {
+            position:relative;
+            left:2%;
+            height:10%;
+            width:97%;
+            cursor:pointer;
+        }
+        
+            .Div_PlayingQueue_PlayIcon
+            {
+                position:absolute;
+                left:0%;
+                height:100%;
+                width:5%;
+                cursor:pointer;
+            }
+            
+                .Img_PlayingQueue_PlayIcon
+                {
+                    position:absolute;
+                    left:2%;
+                    top:2%;
+                    height:20px;
+                    width:20px;
+            		cursor:pointer;
+					opacity:0;
+                }
+    
+            .Div_PlayingQueue_MediaTitle
+            {
+                position:absolute;
+                left:7%;
+                height:100%;
+                width:85%;
+                cursor:pointer;
+            }
+            
+                .Lbl_PlayingQueue_MediaTitle
+                {
+                    position:absolute;
+                    left:0%;
+                    top:25%;
+                    height:75%;
+                    width:90%;
+					color:#fff;
+            		cursor:pointer;
+
+					white-space: nowrap;
+					overflow:hidden;
+					text-overflow:ellipsis;
+                }
+        
+            .Div_PlayingQueue_Remove
+            {
+                position:absolute;
+                left:90%;
+                height:100%;
+                width:4%;
+                cursor:pointer;
+            }
+            
+                .Img_PlayingQueue_Remove
+                {
+                    position:absolute;
+                    left:2%;
+                    top:2%;
+                    height:20px;
+                    width:20px;
+            		cursor:pointer;
+                }
+			
+		
+		/*
+		.Img_PlayingQueueBook
+		{
+			position:fixed;
+			left:95%;
+			top:90%;
+			height:40px;
+			width:40px;
+			cursor:pointer;
+			z-index:100;
+		}*/	
+			
+.DisableSelect
+{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+			
+			
+			
+.ui-widget-overlay
+{
+	 opacity: 0.5;
+	 filter:Alpha( Opacity=100 );
+}

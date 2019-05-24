@@ -1,0 +1,82 @@
+.div_cpu_ram_title{
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 350px
+}
+
+.div_cpu_ram_title_line{
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 300px;
+/*    border-top: dashed 1px rgba(0, 0, 0, .2);*/
+    left:480px;
+    position: absolute;
+    top : 0px;
+}
+
+.div_cpu_ram_performance_title{
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 300px;
+/*    border-top: dashed 1px rgba(0, 0, 0, .2);*/
+    left:230px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    position: absolute;
+    top : 0px;
+}
+
+.div_nic_title{
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 300px;
+/*    border-top: dashed 1px rgba(0, 0, 0, .2);*/
+    left:810px;
+    position: absolute;
+    top : 0px;
+}
+
+.div_nic_performance_title{
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 550px;
+/*    border-top: dashed 1px rgba(0, 0, 0, .2);*/
+    left:230px; 
+    position: absolute;
+    top : 250px;
+}
+
+.label_cpu_ram_title{
+    padding: 10px;
+    color: #044de1;  /* SnapShot&Schedule&Backup  2017.01.11 william */
+    font-size: 18px
+}
+
+.LabelCPURAMHead{
+    display: inline-block;
+    width: 130px;
+}
+
+.LabelCPURAMHead1{
+    display: inline-block;
+    width: 125px; /* 新式樣修改(藍黃) 2016.12.13 william */
+}
+
+.LabelRAMHead1{
+    display: inline-block;
+    width: 85px; /* 新式樣修改(藍黃) 2017.02.03 william 92px -> 82px*/
+}
+
+.LabelCPURAMHead2{
+    display: inline-block;
+    width: 80px;
+}
+
+.div_raid_capacity_usage_title{ 
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    webkit-background-clip: padding-box; 
+    background-clip: padding-box;
+    width: 300px;
+    left:760px;
+    position: absolute;
+    top : 0px;
+}

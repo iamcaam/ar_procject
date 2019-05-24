@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016/12/6, 上午 11:44:05
+    Author     : duck_chang
+*/
+
+.root {
+    -fx-background-color: rgb(0,180,240);
+}
+
+.button {
+  
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment:center;
+}
+
+.button:hover {
+    -fx-background-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:focused {
+     -fx-background-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:pressed{
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+
+.button:active{
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+
+#item {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;   
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); 
+}
+#Title {
+   
+    -fx-background-color:yellow;
+    -fx-text-fill: black;
+    -fx-font-size: 22px;
+    -fx-font-weight: 900;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+   
+}
+
+.table-row-cell:selected {
+    -fx-background-color:linear-gradient(derive(#0049a6, 120%), derive(#0049a6, 90%));
+    -fx-background-radius: 4, 3;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: derive(#0049a6, -60%);
+}
+
+.table-row-cell:empty {
+    -fx-background-color: lightyellow;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-cell{  
+     -fx-alignment: CENTER;
+     -fx-font-size: 16px;
+ 
+}
+
+#color-true{
+    -fx-font-size: 16px;
+    -fx-text-fill: green;
+}
+
+#color-false{
+    -fx-font-size: 16px;
+    -fx-text-fill: blue;
+}

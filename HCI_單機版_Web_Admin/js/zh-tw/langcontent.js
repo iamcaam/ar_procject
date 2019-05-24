@@ -1,0 +1,33 @@
+lang={
+    asklogout : "您是否要登出?",
+    askdelete : "您是否要刪除這些目錄或檔案?",
+    askshare : "此檔案/目錄尚未分享，你是否要分享此檔案/目錄?",
+    askmove : "請選擇一個以上的檔案或目錄來移動。",
+    selectall : "選擇全部",
+    ancelall : "取消全部",
+    delwar : "請選擇一個以上的檔案或目錄來刪除。",
+    root : "根目錄",
+    charwarning: "名稱第一個字元不許輸入:/,._以及名稱內不許輸入\\*<>|\"/\'",
+    SearchResult: "搜尋結果",
+    SortOutDOC : "文件檔",
+    SortOutAUDIO : "音樂檔",
+    SortOutVIDEO : "影片檔",
+    SortOutPHOTO : "圖片檔",
+    RecycleBin : "資源回收桶",
+    FreeSpace : "剩餘空間 :",
+    Account : "帳號 :",
+    TotalSpace : "總空間 :",
+    FreeSpace : "剩餘空間 :", 
+    SpaceStatus : "剩餘容量 / 總容量:",
+    File : "檔案",
+    Folder : "目錄",
+    ShareUser: "分享者",
+    ShareType: "分享模式",
+    Type: "類型",
+    Name: "名稱",
+    UploadDownloadMode: "上下傳全開放",
+    DownloadMode: "下載",
+    HomewordMode: "交作業"
+}
+
+

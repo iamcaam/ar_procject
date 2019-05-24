@@ -1,0 +1,246 @@
+/* CSS Document */
+
+
+#Div_EmailImg
+{
+	position:absolute;
+	padding:0px;
+	margin:0px;
+	top:100px;
+	left:100px;
+	height: 260px;
+	width: 260px;
+}
+
+	.Img_Smtp
+	{
+		position:absolute;
+		padding:0px;
+		margin:0px;
+		top:0px;
+		left:0px;
+		height: 300px;
+		width: 300px;
+	}
+
+	
+	.SMTP_TitleField
+	{
+		height:25px;
+		width:180px;
+	}
+
+
+#Div_Smtp
+{
+	position:absolute;
+	padding:0px;
+	margin:0px;
+	top:60px;
+	left:420px;
+	height: 350px;
+	width: 600px;
+}
+
+
+
+
+.H4_SMTP_ServerIP
+{
+	left:10px;
+	top:25px;
+	text-align:right;
+}
+
+.H4_SMTP_ServerPort
+{
+	left:10px;
+	top:55px;
+	text-align:right;
+}
+
+.H4_SMTP_Account
+{
+	left:10px;
+	top:85px;
+	text-align:right;
+}
+
+.H4_SMTP_Password
+{
+	left:10px;
+	top:115px;
+	text-align:right;
+}
+
+.H4_SMTP_Email1
+{
+	left:10px;
+	top:145px;
+	text-align:right;
+}
+
+.H4_SMTP_Email2
+{
+	left:10px;
+	top:175px;
+	text-align:right;
+}
+
+.H4_SMTP_DailyAlert
+{
+	left:10px;
+	top:205px;
+	text-align:right;
+}
+
+
+
+.H4_SMTP_EnableAuth
+{
+	left:10px;
+	top:255px;
+	text-align:right;
+}
+
+.H4_SMTP_EnableSecurityConn
+{
+	left:10px;
+	top:285px;
+	text-align:right;
+}
+
+.H4_SMTP_BtnOkAndSendTestMail 
+{
+	left:10px;
+	top:315px;
+	text-align:right;
+}
+
+.H4_SMTP_DailyAlertHour
+{
+	left:250px;
+	top:205px;
+}
+
+.H4_SMTP_DailyAlertMin
+{
+	left:340px;
+	top:205px;
+}
+
+
+
+
+.Input_SMTP_ServerIP
+{
+	left:200px;
+	top:20px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_ServerPort
+{
+	left:200px;
+	top:50px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_Account
+{
+	left:200px;
+	top:80px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_Password
+{
+	left:200px;
+	top:110px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_Email1
+{
+	left:200px;
+	top:140px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_Email2
+{
+	left:200px;
+	top:170px;
+	width:300px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_EnableAuth
+{
+	left:200px;
+	top:255px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_EnableSecurityConn
+{
+	left:200px;
+	top:285px;
+	height:24px;
+	padding-left:10px;
+}
+
+.Input_SMTP_SendTestMail
+{
+	left:200px;
+	top:315px;
+	height:24px;
+	padding-left:10px;
+}
+
+.ComboBox_SMTP_DailyAlertHour
+{
+	left:200px;
+	top:205px;
+	height:24px;
+}
+
+.ComboBox_SMTP_DailyAlertMin
+{
+	left:290px;
+	top:205px;
+	height:24px;
+}
+
+
+
+
+
+
+.H4_SMTP_BtnClear
+{
+	top:420px;
+	left:550px;
+}
+
+.H4_SMTP_BtnOk
+{
+	top:420px;
+	left:650px;
+}
+
+
+
+                        

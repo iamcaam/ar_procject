@@ -1,0 +1,459 @@
+/* CSS Document */
+
+#Div_RaidImg
+{
+	position:absolute;
+	padding:0px;
+	margin:0px;
+	top:60px;
+	left:200px;
+	height: 300px;
+	width: 300px;
+}
+
+	.Img_Raid
+	{
+		position:absolute;
+		padding:0px;
+		margin:0px;
+		top:0px;
+		left:0px;
+		height: 300px;
+		width: 300px;
+	}
+
+
+
+#Div_RaidBtn
+{
+	position:absolute;
+	padding:0px;
+	margin:0px;
+	top:400px;
+	left:200px;
+	height: 40px;
+	width: 800px;
+}
+/*
+	.H4_BtnRaidCreate
+	{
+		top:10px;
+		left:170px;
+	}
+
+	.H4_BtnRaidDelete
+	{
+		top:10px;
+		left:130px;
+	}
+
+	.H4_BtnRaidExpand
+	{
+		top:10px;
+		left:220px;
+	}
+
+	.H4_BtnRaidHotspare
+	{
+		top:10px;
+		left:310px;
+	}*/
+
+
+
+#Div_RaidInfo
+{
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:50px;
+    left:600px;
+    height: 300px;
+    width: 600px;
+    overflow:auto;
+}
+
+.H4_RaidStatus
+{
+    top:50px;
+    left:30px;
+}
+	
+.H4_LvmStatus
+{
+    top:100px;
+    left:30px;
+}
+
+.H4_FreeSpace
+{
+    top:150px;
+    left:30px;
+}
+
+.H4_HotspareNum
+{
+    top:200px;
+    left:30px;
+}
+
+#Div_CreateRaid
+{
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    top:50px;
+    left:50%;
+    height: 300px;
+    width: 600px;
+}
+
+.H4_Description
+{
+    top:50px;
+    left:30px;
+}
+
+	.H4_AllDisk
+	{
+		top:100px;
+		left:30px;
+	}
+
+	.H4_UsedDisk
+	{
+		top:150px;
+		left:30px;
+	}
+
+	.H4_HotspareDisk
+	{
+		top:200px;
+		left:80px;
+	}
+
+	#Combo_HotspareNum
+	{
+		top:200px;
+		left:30px;
+	}
+
+.RaidActionBtn
+{
+	background-color: #9FEDFD;
+	display: block;
+	margin: 0px;
+	margin-left: 50px;
+	padding: 3px;
+	height: 19px;
+	width: 130px;
+	border: 1px solid #007;
+	text-align:center;
+	border-radius:15px;
+	cursor:pointer;
+	float:left;
+}
+.RaidActionBtn:hover
+{
+	background-color: #3CF6F6;
+	border: 2px solid #007;
+}
+.RaidActionBtn:active
+{
+	background-color: #3CF6F6;
+	border: 1px solid #007;
+	color:#F90;
+}
+
+.table-wrapper {
+  position:relative;
+}
+.table-scroll {
+  height:300px;
+  overflow:auto;  
+  margin-top:10px;
+}
+.table-wrapper table {
+  width:100%;
+    
+}
+.table-wrapper table * {
+  /*background:yellow;*/
+  /*color:black;*/
+}
+.table-wrapper table thead th{  
+  height:20px;  
+}
+.table-wrapper table thead th .text {  
+  height:20px;  
+}
+/*#table-wrapper table thead th .text {
+  position:absolute;   
+  top:-20px;
+  z-index:2;
+  height:20px;
+  width:35%;
+  border:1px solid red;
+}*/  
+
+#Div_RAIDList
+{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;   
+    height: 70%;
+    width: 100%; 
+    background-color: #EFF;
+    border: 2px solid #000;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
+    overflow-x:auto; /* 2017.11.17 william 修改 hidden -> auto*/
+    overflow-y:auto;
+}
+
+.Div_RAIDRow
+{
+    position:relative;
+    padding:0px;
+    margin:0px;
+    margin-top:3px;		
+    /* height:35px;    /* 修改40px 2016.03.03 william */
+    width:100%; 
+}
+
+.Div_RAIDRowHeader
+{
+    height:35px;    /* 新式樣修改(藍黃) 2016.12.13 william */
+    width:1000px;
+}
+
+.RAIDList_ItemNo {
+    left:0px;
+    height: 27px;
+    width: 60px;
+    font-size: 18px;
+    padding-top:4px;
+    text-align: -webkit-center;	 
+    text-align: -moz-center;  
+}
+
+.RAIDList_RAIDID {
+    left:60px;
+    height: 27px;
+    width: 140px;
+    font-size: 18px;
+    padding-top:4px;
+    text-align: -webkit-center;	
+    text-align: -moz-center;
+}
+
+.RAIDList_Level
+{
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:200px;
+    height: 27px;
+    width: 140px;
+    font-size: 18px;
+    padding-top:4px;
+    text-align: -webkit-center;	 
+    text-align: -moz-center;   
+}
+
+.RAIDList_VMAssign_Capacity
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:340px;
+    height: 27px;
+    width: 220px;
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:4px;
+    text-align: -webkit-center;	    
+    text-align: -moz-center;
+}
+
+.RAIDList_FreeCapacity
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:560px;
+    height: 27px;
+    width: 150px;
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:4px;
+    text-align: -webkit-center;	    
+    text-align: -moz-center;
+}
+
+.RAIDList_Capacity
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:710px;
+    height: 27px;
+    width: 150px;
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:4px;
+    text-align: -webkit-center;	    
+    text-align: -moz-center;
+}
+
+.RAIDList_TP
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:61.5%;
+    height: 27px;
+    width: 150px;
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:8px;
+}
+
+.RAIDList_Status
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    left:860px;
+    height: 27px;
+    width: 150px;
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:4px;
+    text-align: -webkit-center;	    
+    text-align: -moz-center;
+}
+
+.RAIDList_Action
+{   
+    left:1010px; /* 2017.11.17 william 修改文字位置 89.5% -> 84.5% */
+    height: 27px;
+    width: 850px; /* 2017.11.17 william 修改文字位置 80px -> 250px*/
+    font-size: 18px;
+    /*border-left:1px solid white;*/
+    padding-top:4px;
+    text-align: -webkit-left;	    
+}
+
+.RAIDList_ItemNo_Row {
+    top:0px;
+    left:0px; /* 修改文字位置 2017.11.15 william */
+    height: 45px;
+    line-height: 45px;
+    width: 60px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_RAIDID_Row {
+    top:0px;
+    left:60px; /* 修改文字位置 2017.11.15 william */
+    height: 45px;
+    line-height: 45px;
+    width: 140px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_Level_Row
+{   
+    top:0px;
+    left:200px;  /* 2017.11.17 william 修改文字位置 5% -> 2.5% */
+    height: 45px;
+    line-height: 45px;
+    width: 140px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_VMAssign_Capacity_Row
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    top:0px;
+    left:340px;
+    height: 45px;
+    line-height: 45px;
+    width: 220px;
+    font-size: 12px;
+    text-align: center;    
+}
+
+.RAIDList_FreeCapacity_Row
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    top:0px;
+    left:560px;
+    height: 45px;
+    line-height: 45px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_Capacity_Row
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    top:0px;
+    left:710px;
+    height: 45px;
+    line-height: 45px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_TP_Row
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    top:13px;
+    left:62%;
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+}
+
+.RAIDList_Status_Row
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    top:0px;
+    left:860px;
+    height: 45px;
+    line-height: 45px;
+    width: 150px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.RAIDList_Action_Row
+{
+    top:0px;
+    left:1010px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 45px;
+    line-height: 45px;
+    width: 180px; /* 2017.11.17 william 修改位置 */
+    text-align: left;
+}
+
+.Dedup_Select_Row
+{
+    top:0px;
+    left:1500px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 45px;
+    line-height: 45px;
+    width: 120px; /* 2017.11.17 william 修改位置 */
+    text-align: center;
+}
+
+#combolevel {
+    position: absolute;
+    width: 200px;
+    height: 30px;    
+    left: 180px;
+}
+
+.BtnRowHeader{
+    height: 30px;
+    display: block;
+    width: 99%; /* 修改 2017.03.03 william */
+    margin-left: auto;
+    margin-right: auto
+}

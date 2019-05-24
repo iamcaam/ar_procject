@@ -1,0 +1,771 @@
+/* CSS Document */
+.Div_VM_Logn
+{
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Div_VM_Shot
+{
+    position: relative;
+    width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Div_VMRow
+{
+    position:relative;
+    padding:0px;
+    margin:0px;
+    /*margin-top:3px;*/
+    border-bottom: 1px solid #DDD;
+    height:40px;
+    width:1150px;
+     border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.Div_VMLognRow
+{
+    position:relative;
+    padding:0px;
+    margin:0px;    
+    border-bottom: 1px solid #DDD;
+    height:40px;
+    width:1150px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.LastVMRow
+{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom: 2px solid #000;
+}
+
+.VM_RowHeader
+{    
+    display: block;                
+    top:0px;
+    background-color:#9FEDFD;    
+    border-top: 2px solid #000;	
+    border-right: 2px solid #000;	
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    font-size: 14px;
+    height: 30px;
+}
+
+#Div_VMList
+{
+    top:30px;
+    height: 85%;
+    width: 1150px;
+}
+
+#Div_Borned_List
+{
+    top:30px;
+    height: 85%;
+    width: 1150px;
+}
+
+#Div_VM_Clone_List
+{
+    top:30px;
+    height: 85%;    
+    width: 1150px;    
+}
+
+#Div_VM_Log_List
+{
+    top:30px;
+    height: 80%;    
+    width: 1150px;    
+}
+
+#Div_SeedList{
+    top:30px;
+    height: 85%;    
+    width:1150px;   
+}
+
+.VMList_ItemNo
+{
+    left:20px;
+    height: 30px;
+    width: 40px;
+}
+
+.VMList_Select
+{
+    top : 5px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.VMList_Username
+{    
+    left:120px;
+    height: 30px;
+    width: 120px;
+}
+
+.VMList_Name
+{    
+    left:250px;
+    height: 30px;
+    width: 120px;
+}
+
+/*.VMListType
+{    
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+/*.VMListSeedSrc
+{    
+    left:200px;
+    height: 30px;
+    width: 120px;
+}*/
+
+/*.VMList_CPUUtil
+{    
+    left:360px;
+    height: 30px;
+    width: 120px;
+}*/
+
+
+/*.VMList_MemUtil
+{
+    top:8px;
+    left:400px;
+    height: 30px;
+    width: 130px;
+}*/
+
+.VMList_Auto_Suspend
+{    
+    top : 5px;
+    left:380px;
+    height: 30px;
+    width: 0px;    
+}
+
+.VMList_Status
+{    
+    left:380px;
+    height: 30px;
+    width: 110px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+}
+
+.VMList_Online
+{    
+    left:500px;
+    height: 30px;
+    width: 125px;
+}
+
+.VMList_CreateTime
+{    
+    left:635px;
+    height: 30px;
+    width: 135px;
+}
+
+.VMList_Action
+{    
+    left:780px;
+    height: 30px;  
+    width: 100px;
+}
+
+.VMList_Desc
+{    
+    left:890px;
+    height: 30px;
+    width: 250px;    
+}
+
+.VMList_ItemNo_Row
+{
+    top : 13px;
+    left:20px;
+    height: 30px;
+    width: 40px;
+}
+
+.VMList_Select_Row
+{
+    top : 10px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.VMList_Username_Row
+{    
+    top:13px;
+    left:120px;
+    height: 40px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.VMList_Name_Row
+{
+    top:13px;
+    left:250px;
+    height: 40px;
+    width: 120px;
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+/*.VMListType_Row
+{
+    top:13px;
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+/*.VMListSeedSrc_Row
+{
+    top:13px;
+    left:200px;
+    height: 30px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}*/
+
+/*.VMList_CPUUtil_Row
+{
+    top:13px;
+    left:360px;
+    height: 30px;
+    width: 120px;
+}*/
+
+/*.VMList_MemUtil_Row
+{
+    top:13px;
+    left:400px;
+    height: 30px;
+    width: 130px;
+}*/
+
+.VMList_Auto_Suspend_Row
+{    
+    top : 10px;
+    left:380px;
+    height: 30px;
+    width: 0px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.VMList_Status_Row
+{
+    top:13px;
+    left:380px;
+    height: 30px;
+    width: 110px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+}
+
+.VMList_Online_Row
+{    
+    top:13px;
+    left:500px;
+    height: 30px;
+    width: 125px;
+}
+
+.VMList_CreateTime_Row
+{
+    top:13px;
+    left:635px;
+    height: 30px;
+    width: 135px;
+}
+
+.VMList_Action_Row
+{
+    top:6px;
+    left:780px;
+    height: 30px;  
+    width: 100px;
+/*    left:820px;
+    height: 30px; */
+}
+
+.VMList_Desc_Row
+{
+    top:13px;
+    left:890px;
+    height: 30px;
+    width: 250px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.BornedList_Select
+{
+    top : 5px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.BornedList_Username
+{    
+    left:120px;
+    height: 30px;
+    width: 120px;
+}
+
+.BornedList_Name
+{    
+    left:250px;
+    height: 30px;
+    width: 120px;
+}
+
+.BornedList_Auto_Suspend
+{    
+    top : 5px;
+    left:380px;
+    height: 30px;
+    width: 0px;    
+}
+
+.BornedList_Status
+{    
+    left:380px;
+    height: 30px;
+    width: 110px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+}
+
+.BornedList_Online
+{    
+    left:500px;
+    height: 30px;
+    width: 125px;
+}
+
+.BornedList_CreateTime
+{    
+    left:635px;
+    height: 30px;
+    width: 115px;
+}
+
+.BornedList_Action
+{
+    top:8px;
+    left:760px;
+    height: 30px;  
+    width: 100px;
+/*    left:820px;
+    height: 30px;    */
+}
+
+.BornedList_SeedSrc
+{    
+    left:870px;
+    height: 30px;
+    width: 120px;
+/*    left:700px;
+    height: 30px;
+    width: 110px;*/
+}
+
+.BornedList_Desc
+{    
+    left:1000px;
+    height: 30px;
+    width: 140px;    
+}
+
+
+
+.BornedList_Select_Row
+{
+    top : 10px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.BornedList_Username_Row
+{
+    top:13px;
+    left:120px;
+    height: 40px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.BornedList_Name_Row
+{
+    top:13px;
+    left:250px;
+    height: 40px;
+    width: 120px;
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+/*.VMListType_Row
+{
+    top:13px;
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+.BornedList_Auto_Suspend_Row
+{    
+    top : 10px;
+    left:380px;
+    height: 30px;
+    width: 0px;   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.BornedList_Status_Row
+{
+    top:13px;
+    left:380px;
+    height: 30px;
+    width: 110px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+}
+
+.BornedList_Online_Row
+{    
+    top:13px;
+    left:500px;
+    height: 30px;
+    width: 125px;
+}
+
+.BornedList_CreateTime_Row
+{
+    top:13px;
+    left:635px;
+    height: 30px;
+    width: 115px;
+}
+
+.BornedList_Action_Row
+{
+    top:6px;
+    left:760px;
+    height: 30px;  
+    width: 100px;
+/*    left:820px;
+    height: 30px; */
+}
+
+.BornedList_SeedSrc_Row
+{
+    top:13px;
+    left:870px;
+    height: 30px;
+    width: 120px;
+/*    left:700px;
+    height: 30px;
+    width: 110px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.BornedList_Desc_Row
+{
+    top:13px;
+    left:1000px;
+    height: 30px;
+    width: 140px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+
+
+.VMList_Type
+{    
+    left:10px;
+    height: 30px;
+    width: 100px;
+}
+
+.VMList_Source_Name
+{    
+    left:120px;
+    height:30px;
+    width:180px;    
+}
+
+.VMList_Dest_Name
+{    
+    left:310px;
+    height: 30px;
+    width:180px;
+}
+
+.VMList_Task_Progress
+{    
+    left:500px;
+    height: 30px;
+    width: 150px;
+}
+
+.VMList_Task_Status
+{    
+    left: 660px;
+    height: 30px;
+    width: 150px;
+}
+
+.VMList_Start_Time
+{    
+    left: 820px;
+    height: 30px;
+    width: 160px;
+}
+
+.VMList_End_Time
+{    
+    left: 990px;
+    height: 30px;
+    width: 160px;
+}
+
+.VMList_Type_Row
+{
+    top:13px;
+    left:10px;
+    height: 30px;
+    width: 100px;
+}
+
+.VMList_Source_Name_Row
+{
+    top:13px;
+    left:120px;
+    height:30px;
+    width:180px;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.VMList_Dest_Name_Row
+{
+    top:13px;
+    left:310px;
+    height: 30px;
+    width:180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.VMList_Task_Progress_Row
+{    
+    top: 6px;
+    left:500px;
+    height: 30px;
+    width: 150px;
+}
+
+.VMList_Task_Status_Row
+{
+    top: 13px;
+    left: 660px;
+    height: 30px;
+    width: 150px;   
+}
+
+.VMList_Start_Time_Row
+{
+    top: 13px;
+    left: 820px;
+    height: 30px;
+    width: 160px;
+}
+
+.VMList_End_Time_Row
+{
+    top: 13px;
+    left: 990px;
+    height: 30px;
+    width: 160px;
+}
+
+.SeedList_Select
+{
+    top : 5px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.SeedList_Name
+{    
+    left:120px;
+    height: 30px;
+    width: 180px;
+}
+
+.SeedList_VDICount
+{    
+    left:310px;
+    height: 30px;
+    width: 150px;
+}
+
+.SeedList_CreateTime
+{    
+    left:470px;
+    height: 30px;
+    width: 180px;
+}
+
+
+.SeedList_Action
+{
+    top:8px;
+    left:660px;
+    width: 120px;
+    height: 30px;    
+}
+
+.SeedList_Description
+{    
+    left:790px;
+    height: 30px;
+}
+
+.SeedList_Select_Row
+{
+    top : 10px;
+    left:60px;
+    height: 30px;
+    width: 50px;    
+}
+
+.SeedList_Name_Row
+{
+    top:13px;
+    left:120px;
+    height: 30px;
+    width: 180px;
+}
+
+.SeedList_VDICount_Row
+{
+    top:13px;
+    left:310px;
+    height: 30px;
+    width: 150px;
+}
+
+.SeedList_CreateTime_Row
+{
+    top:13px;
+    left:470px;
+    height: 30px;
+    width: 180px;
+}
+
+.SeedList_Action_Row
+{
+    top:6px;
+    left:660px;
+    width: 120px;
+    height: 30px;    
+}
+
+.SeedList_Description_Row
+{
+    top:13px;
+    left:790px;
+    height: 30px;
+    width: 360px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.truncate {
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:block;
+  cursor:default
+}

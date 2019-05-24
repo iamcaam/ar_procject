@@ -1,0 +1,28 @@
+var LanguageStr_Raid =
+{
+    RAID_Not_Enough_Disk : "没有足够磁盘建立",
+    RAID_Least_One : "(至少需选择一颗磁盘)",
+    RAID_Least_Two : "(至少需选择两颗磁盘)",
+    RAID_Least_Three : "(至少需选择三颗磁盘)",
+    RAID_Least_Four : "(至少需选择四颗磁盘)",
+    RAID_Least_Four : "(至少需选择五颗磁盘)",
+    RAID_Not_Enough_RAID7 : "没有足够磁盘建立 RAID 7.",
+    RAID_Not_Enough_RAID6 : "没有足够磁盘建立 RAID 6.",
+    RAID_Not_Enough_RAID5 : "没有足够磁盘建立 RAID 5.",
+    RAID_Not_Enough_RAID0 : "没有足够磁盘建立 RAID 0.",
+    RAID_Not_Enough_RAID1 : "没有足够磁盘建立 RAID 1.",
+    RAID_Recovery : "修复",
+    RAID_Delete : "删除",
+    RAID_Recovery_Ask : "您想要修复 RAID 吗?",
+    RAID_Delete_Ask : "您想要删除 RAID 吗?",
+    RAID_Delete_Fail : "RAID 删除失败，因为 RAID 使用中。",
+    RAID_Enable : "启用",
+    RAID_Disable : "停用",
+    RAID_Expand : "扩充",
+    RAID_Create : "建立",
+    RAID_Expand_DialogTitle : "建立扩充",
+    RAID_Waring_Have_VD : "警告!!! 请先删除此 RAID 的桌面已配置容量。",
+    Disk_Info_DialogTitle : "磁盘资讯",
+    Disk_Info : "磁盘资讯",
+    Str_alert_unimportable : "有多组重复的@，请移除或初始化不需要的磁盘，再重新开机"
+}

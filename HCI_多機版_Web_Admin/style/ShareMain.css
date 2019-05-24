@@ -1,0 +1,304 @@
+@charset "utf-8";
+
+body
+{
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	
+	background-color:#17A5F0;
+	overflow:auto;
+	/*
+	background: rgb(30,87,153);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzRmYTdlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk2JSIgc3RvcC1jb2xvcj0iIzIwN2NjYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(79,167,234,1) 51%, rgba(32,124,202,1) 96%, rgba(125,185,232,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(51%,rgba(79,167,234,1)), color-stop(96%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1)));
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(79,167,234,1) 51%,rgba(32,124,202,1) 96%,rgba(125,185,232,1) 100%);
+	background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(79,167,234,1) 51%,rgba(32,124,202,1) 96%,rgba(125,185,232,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(79,167,234,1) 51%,rgba(32,124,202,1) 96%,rgba(125,185,232,1) 100%);
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(79,167,234,1) 51%,rgba(32,124,202,1) 96%,rgba(125,185,232,1) 100%);
+	filter: none;
+	*/
+}
+
+/* 整個主畫面 */
+#Div_MainFull
+{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	border-radius: 15px;
+	font-family: "微軟正黑體";
+}
+
+/* 資料夾圖示 */
+.DialogIcon
+{
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+
+/* 大標題 */
+.DialogTitleMsg
+{
+	color: #FFF;
+	position: absolute;
+	left: 50px;
+	top: 10px;
+	height: 40px;
+}
+
+/* 大標題 */
+#Div_Header
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 80px;
+	background:#006;
+}
+
+/* TabBar */
+#apDiv_TabBar
+{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	left: 0px;
+	top: 40px;
+	padding: 0px;
+}
+
+/* Tab 按鈕外觀 */
+.H3_TabBtn
+{
+	padding: 5px;
+	color: #FFF;
+	text-decoration: none;
+	text-align:center;
+	background-color: #3d72b7;
+	display: block;
+	float: left;
+	border: 2px solid #FFF;
+	border-radius: 5px;
+	cursor:pointer;
+	width:100px;
+}
+
+/* Tab 按鈕-當滑鼠在上 */
+.H3_TabBtn:hover
+{
+	background-color: #2164df;
+}
+
+/* Tab 按鈕-當滑鼠 mouse down */
+.H3_TabBtn:active
+{
+	color: #ecde03;
+	background-color: #3d72b7;
+}
+
+
+
+.Btn_PublicShare
+{
+	position:absolute;
+	left:5%;
+}
+
+
+
+.Btn_AssignAccount
+{
+	position:absolute;
+	left:300px;
+}
+
+
+
+.Btn_GroupManage
+{
+	position:absolute;
+	left:430px;
+}
+
+
+
+.Btn_ShareList
+{
+	position:absolute;
+	left:560px;
+}
+
+
+
+.Btn_SharePeriod
+{
+	position:absolute;
+	left:690px;
+}
+
+
+
+
+/* 下方的內容區整大塊 */
+#apDiv_TabContent
+{
+	background-color: #e0eeee;
+	clear: both;
+	height: 530px;
+	width: 90%;
+	
+	position: absolute;
+	top: 120px;
+	left: 5%;
+	
+	overflow: auto;
+	padding: 0px;
+	margin:0px;
+	
+	border-radius: 10px;
+	border-width: 3px;
+	border-style: solid;
+	border-top-color: #333;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #333;
+	
+	/* 漸層 */
+	background: #a1dbff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ExZGJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iI2UwZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg0JSIgc3RvcC1jb2xvcj0iI2NiZWJmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNhMWRiZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #a1dbff 1%, #e0eeee 19%, #cbebff 84%, #a1dbff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#a1dbff), color-stop(19%,#e0eeee), color-stop(84%,#cbebff), color-stop(100%,#a1dbff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #a1dbff 1%,#e0eeee 19%,#cbebff 84%,#a1dbff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #a1dbff 1%,#e0eeee 19%,#cbebff 84%,#a1dbff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #a1dbff 1%,#e0eeee 19%,#cbebff 84%,#a1dbff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #a1dbff 1%,#e0eeee 19%,#cbebff 84%,#a1dbff 100%); /* W3C */
+	filter: none;
+
+}
+
+/* 下方內容區的大標頭 */
+.H3_TabContent_Title {
+	background-color: #669B86;
+	display: block;
+	width: 200px;
+	height: 25px;
+	padding: 5px;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 0px;
+	color: #FFF;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+	
+	background: #b8e1fc; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I4ZTFmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwJSIgc3RvcC1jb2xvcj0iI2E5ZDJmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI1JSIgc3RvcC1jb2xvcj0iIzkwYmFlNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjM3JSIgc3RvcC1jb2xvcj0iIzkwYmNlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzkwYmZmMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzZiYThlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgzJSIgc3RvcC1jb2xvcj0iIzQ0YjdlZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTgxYmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #b8e1fc 0%, #a9d2f3 10%, #90bae4 25%, #90bcea 37%, #90bff0 50%, #6ba8e5 51%, #44b7ed 83%, #1e81bf 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b8e1fc), color-stop(10%,#a9d2f3), color-stop(25%,#90bae4), color-stop(37%,#90bcea), color-stop(50%,#90bff0), color-stop(51%,#6ba8e5), color-stop(83%,#44b7ed), color-stop(100%,#1e81bf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#44b7ed 83%,#1e81bf 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#44b7ed 83%,#1e81bf 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#44b7ed 83%,#1e81bf 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #b8e1fc 0%,#a9d2f3 10%,#90bae4 25%,#90bcea 37%,#90bff0 50%,#6ba8e5 51%,#44b7ed 83%,#1e81bf 100%); /* W3C */
+	filter: none;
+
+}
+
+/* 左右區塊的標題*/
+.H4_AreaTitle
+{
+	background-color: #5eb071;
+	display: block;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	height: 30px;
+	padding-top: 10px;
+	color: #FFF;
+	padding-left: 30px;
+	text-indent: 0px;
+}
+
+#Div_TempSpace {
+	height: 500px;
+	width: 100%;
+}
+
+/* 指定群組分享的設計容器*/
+#Div_TabAssignGroup {
+	background-color: #CF9;
+	height: 480px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+#Div_TabGroupManager {
+	padding: 0px;
+	height: 480px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	background-color: #CFF;
+}
+.Div_AccountSourceEdit_BigArea
+{
+	height: 450px;
+	width: 960px;
+	background-color: #00FF99;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.Div_AccountSourceEdit_Area
+{
+	height: 420px;
+	width: 520px;
+	background-color: #9FF;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+
+
+.Div_RelativeLayout 
+{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+
+.DisableSelect
+{
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+
+.Btn_Exit
+{
+	position:absolute;
+	top:90%;
+	left:47%;
+}

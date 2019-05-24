@@ -1,0 +1,175 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/3/28, 下午 03:13:19
+    Author     : sabrina_yeh
+*/
+
+#Title {
+    -fx-font-size: 38px;
+    -fx-font-family:"Times New Roman";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: 600;
+}
+
+#Title2 {
+    -fx-font-size: 38px;
+    -fx-font-family:"DFKai-sb";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: 900;
+}
+
+#Logo {
+    -fx-font-size: 30px;
+    -fx-font-family: "Serif";
+    -fx-text-fill: red;    
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.root {
+    -fx-background-color:rgb(118,185,237) ; /*rgb(118,185,237);0,180,240*/
+}
+
+.label{   
+    -fx-text-fill: white;
+    -fx-font-size: 19px;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: 900; 
+    -fx-alignment: CENTER_LEFT;
+}
+
+.Colon {
+    -fx-text-fill: white;
+    -fx-font-size: 17px;
+    -fx-font-family: 'Microsoft JhengHei';
+    -fx-font-weight: 900;     
+    -fx-alignment: CENTER_LEFT;    
+}
+
+
+
+.HboxbgColor {
+    -fx-background-color: rgb(0,180,240);
+}
+
+#button {
+    /*-fx-font-family:"Microsoft JhengHei";*/
+    /*-fx-font-weight: 900;*/     
+}
+
+#Installing {
+    -fx-font-family:"DFKai-sb";
+    -fx-font-size: 25px;
+    -fx-text-fill: black;
+}
+
+/*.button {    
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+    -fx-font-weight: 900; 
+    -fx-background-color: rgb(228,228,228);  #0281ce -> #448AFF
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;   
+}
+
+.button:hover {
+    
+    -fx-background-color:linear-gradient(#82b1ff, #1e67e2);#81D4FA #00BCD4
+    -fx-text-fill: #E1F5FE;
+    
+    -fx-background-color:linear-gradient(#82b1ff, #1A237E);
+    -fx-text-fill: white;
+    
+    -fx-background-color:linear-gradient(#E1F5FE, #4FC3F7);
+    -fx-text-fill: black;
+}
+
+.button:focused {
+    -fx-background-color:rgb(169,210,229);linear-gradient(#E1F5FE, #4FC3F7);
+    -fx-text-fill: black;
+}*/
+
+#Button_Leave{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-font-family:"Microsoft JhengHei";
+    -fx-background-color:rgb(169,210,229);
+    /*-fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);*/
+}
+
+#Button_Install{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-font-family:"Microsoft JhengHei";
+    -fx-background-color:rgb(169,210,229);
+    /*-fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);*/
+}
+
+.btn_style{    
+    -fx-font-size: 15px;
+    -fx-text-fill: black;
+    -fx-font-weight: 900; 
+    -fx-background-color: rgb(228,228,228);  /*#0281ce -> #448AFF*/
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;   
+}
+
+.btn_style:hover {
+/*    -fx-border-style:solid;
+    -fx-border-width:1px;
+    -fx-border-color:rgb(3,158,211);*/
+    -fx-opacity: 0.9;
+}
+
+/*.btn_style:focused {
+    -fx-background-color:rgb(169,210,229);linear-gradient(#E1F5FE, #4FC3F7);
+    -fx-text-fill: black;
+}*/
+
+.btn_click_style {
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-font-family:"Microsoft JhengHei";
+    -fx-background-color:rgb(169,210,229);
+}
+
+.btn_hover_style {
+    -fx-border-style:solid;
+    -fx-border-width:1px;
+    -fx-border-color:rgb(3,158,211);
+}
+
+.btn_focused_style {
+    -fx-background-color:rgb(169,210,229);
+    -fx-text-fill: black;
+}
+
+.btn_blink_style1 {
+    -fx-font-size: 15px;
+    -fx-text-fill: red;
+    -fx-font-weight: 900; 
+    -fx-background-color: rgb(228,228,228);  /*#0281ce -> #448AFF*/
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;   
+}
+
+.btn_blink_style2 {
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: rgb(228,228,228);  /*#0281ce -> #448AFF*/
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;   
+}

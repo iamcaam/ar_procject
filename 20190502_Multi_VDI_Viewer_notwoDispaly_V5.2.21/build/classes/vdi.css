@@ -1,0 +1,539 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016/12/6, 上午 08:35:37
+    Author     : duck_chang , sabrina_yeh
+*/
+
+
+#Title {
+    -fx-font-size: 50px;
+    -fx-font-family:"FreeSerif";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+}
+
+#Ver_namber{
+    -fx-font-size: 18px;
+    -fx-font-family: "FreeSerif"; /** DejaVu Serif ; Liberation Serif ; Droid Serif ; FreeSerif **/
+    -fx-text-fill: white;    
+    -fx-font-weight: bold;
+}
+
+#Logo {
+    -fx-font-size: 32px;
+    -fx-font-family: "FreeSerif"; /** DejaVu Serif ; Liberation Serif ; Droid Serif ; FreeSerif **/
+    -fx-text-fill: red;    
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    
+}
+
+.root {
+    -fx-background-color: rgb(0,180,240);
+    
+}
+
+.text-field {
+    -fx-font-size: 14pt;
+    -fx-font-family: 'Ubuntu';
+    -fx-font-weight: 700; 
+     
+    
+}
+
+.password-field{
+    -fx-font-size: 7pt;
+    -fx-font-family: 'Ubuntu';
+}
+
+#Loginbutton {    
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;       
+}
+
+
+#Loginbutton:hover{
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+
+#Loginbutton:focused {
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.button {    
+    -fx-background-color: transparent ;     
+}
+
+
+.button:hover{
+    -fx-outer-border: #fdda2d; /* #303F9F */ /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+.button:focused {
+    -fx-outer-border: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+/*
+.button:pressed{
+    -fx-background-color: linear-gradient(#bbdefb, #64b5f6) ;
+}
+*/
+
+#Button_Login{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+#Button_web{
+    -fx-outer-border:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#Button_ThinClient{
+    -fx-outer-border:  #88C7F0;  /* linear-gradient(#fff176, #f9a825); yellow-> bule: linear-gradient(#F7ED78, #4BBDF2); */ /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color: #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#Button_ManageVD{
+    -fx-outer-border: #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color: #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#Button_ChangePW{    
+    -fx-outer-border:  #88C7F0; /* linear-gradient(#fff176, #f9a825) **/ /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#Button_SShutdown{    
+    -fx-outer-border:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:#88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#Button_RReboot{    
+    -fx-outer-border:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#ToggleButton_time{    
+    -fx-outer-border:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-alignment:CENTER;
+    -fx-font-family: 'Ubuntu' ; 
+}
+
+/* 2018.01.23 william 新增快照Tooltip提示框及按鈕變色 */ 
+#Button_SS{
+    -fx-outer-border: #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color: #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+.label{
+   
+    -fx-text-fill: white;
+    -fx-alignment:CENTER_LEFT;
+}
+
+.combo-box{    
+    -fx-font-size: 14px;
+    -fx-font-family: 'Ubuntu' ; 
+}
+
+.combo-box:focused{    
+   -fx-border-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+   -fx-border-width:0;
+}
+
+.combo-box:hover{    
+    -fx-border-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-border-width:0;
+}
+
+.combo-box:pressed{    
+   -fx-border-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+   -fx-border-width:0;
+}
+
+
+.toggle-button:hover{
+    -fx-background-color:#BBDEFB; /* 2017.06.06 william Disable linear-gradient(#BBDEFB,#E3F2FD) */ 
+}
+
+
+.toggle-button{
+    -fx-background-color: white;
+}
+
+.check-box{
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+  
+}
+
+.tooltip {
+    -fx-text-fill: white;
+    -fx-background-color: #303030;
+    /*
+    -fx-background-radius: 2px;
+    14
+    */
+    -fx-font-size: 14px;    
+}
+
+#Label_right{
+    
+    -fx-background-color: transparent ;
+    -fx-alignment:CENTER;
+   /*
+    -fx-border-color:#303F9F;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+   -fx-background-color: transparent ;
+    */
+}
+#Label_right:hover{
+   /*
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color ;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; 
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+   */
+   
+    -fx-outer-border: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-alignment:CENTER;
+   /* 
+    -fx-border-width:3;
+    -fx-border-color:#303F9F;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+    -fx-background-color: transparent ;
+    */
+}
+
+#Button_shutdown{
+    
+    -fx-background-color: transparent ;
+   /*
+    -fx-border-color:#303F9F;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+   -fx-background-color: transparent ;
+    */
+}
+#Button_shutdown:hover{
+    
+    -fx-outer-border: #303F9F;
+    -fx-body-color: #303F9F;
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+   /* 
+    -fx-border-color:black;  
+    -fx-border-width:3;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+    -fx-background-color: transparent ;
+    */
+}
+#Button_shutdown:pressed{
+    -fx-background-color: #64b5f6 ; /* 2017.06.06 william Disable linear-gradient(#bbdefb, #64b5f6) */ 
+}
+
+#Button_reboot{
+    
+    -fx-background-color: transparent ;
+   /*
+    -fx-border-color:#303F9F;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+   -fx-background-color: transparent ;
+    */
+}
+#Button_reboot:hover{
+    -fx-border-color:#303F9F;
+    
+    -fx-background-color: #303F9F ;
+   /* 
+    -fx-border-width:3;
+    -fx-opacity: 0.6 ; 
+    -fx-background-radius: 4;
+    -fx-background-color: transparent ;
+    */
+}
+#Button_reboot:pressed{
+    -fx-background-color: #64b5f6 ; /* 2017.06.06 william Disable linear-gradient(#bbdefb, #64b5f6) */ 
+}
+
+#Time{
+    -fx-background-color:transparent ;  /*  transparent  -fx-spacing: 5; */
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-alignment:CENTER;
+    -fx-font-family: 'Ubuntu' ; 
+    
+}
+
+#Time:hover{
+    -fx-outer-border: #fdda2d; /* #303F9F */ /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: black;
+}
+
+
+#Time:focused {
+    -fx-outer-border: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: black;
+}
+
+#Thread_status{
+    -fx-font-size: 30px;   
+    -fx-text-fill: #1A237E;
+    -fx-font-weight: 900;
+    -fx-font-family: 'Microsoft JhengHei' ; 
+}
+
+/**************************************************************/
+/*-------------icon and Button change color method-------------*/ 
+#Button_Normal {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center; 
+}
+
+#Button_Normal:hover{
+    -fx-background-color:#1e67e2; 
+    -fx-text-fill: #E1F5FE;
+}
+
+#Button_Normal:focused {
+    -fx-background-color:#1e67e2; 
+    -fx-text-fill: #E1F5FE;
+}
+
+#Button_ColorChange {
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d;
+}
+
+#Icon_Normal {    
+    -fx-background-color: transparent ;     
+}
+
+#Icon_Normal:hover{
+    -fx-outer-border: #fdda2d; /* #303F9F */ /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#Icon_Normal:focused {
+    -fx-outer-border: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-body-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(#fff176, #f9a825) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+#Icon_ColorChange {
+    -fx-outer-border:  #88C7F0; /* linear-gradient(#fff176, #f9a825) **/ /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-body-color:  #88C7F0; /* 2017.06.06 william Disable linear-gradient(#88C7F0, #7D7CC4) */ 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;        
+}
+
+#Time_Normal{
+    -fx-background-color:transparent ;  
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-alignment:CENTER;
+    -fx-font-family: 'Ubuntu' ;     
+}
+
+#Time_Normal:hover{
+    -fx-outer-border: #fdda2d; 
+    -fx-body-color: #fdda2d;
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: black;
+}
+
+#Time_Normal:focused {
+    -fx-outer-border: #fdda2d; 
+    -fx-body-color: #fdda2d; 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-text-fill: black;
+}
+
+#Time_ColorChange {
+    -fx-outer-border:  #88C7F0; 
+    -fx-body-color:  #88C7F0; 
+    -fx-background-color: 
+         -fx-outer-border, 
+         -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius:3px, 3px, 2px, 1px; 
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-alignment:CENTER;
+    -fx-font-family: 'Ubuntu' ;        
+}
+
+/* 2019.01.02 Remember10 username */
+.combo-box:disabled, .combo-box:disabled > * {
+  -fx-opacity: 1 ;
+  -fx-text-fill: black;  
+  -fx-background-color: white;  
+}

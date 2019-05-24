@@ -1,0 +1,423 @@
+/* Stylesheet */
+
+/* Imports */
+
+/* Selections */
+
+::selection {
+    color: #fff;
+    text-shadow: none;
+    background: #444;
+}
+
+::-moz-selection {
+    color: #fff;
+    text-shadow: none;
+    background: #444;
+}
+
+/* Basics */
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    background: #1565c0; /* #0281ce -> #1565c0	*/	
+}
+
+#login {
+    position:relative;
+    /*width: 340px;*/
+    width: 590px;
+    height: 365px;
+    /*height:100%;*/
+    text-align: center;
+    /*background: #ba0b0b;*/
+    top: 50%;
+    left: 50%;
+    /*margin-left: -170px;*/
+    margin-left: -295px;
+    margin-top: -200px;
+}
+
+#title {
+    /*position: relative;
+    width: 100%;
+    margin: auto;*/
+    font-size: 37px;    /* 新式樣修改(藍黃) 2016.12.13 william */
+    color:#ffffff;      /* 2016.10.03 (1)title樣式，修改-原：#007acc->e5ebef */
+    /*height: 232px;*/
+    /*left: 50%;*/
+    /*margin-top: 30px;*/
+    /*margin-left: -80px;*/
+    font-family: "Times New Roman","DFKai-SB","BiauKai","TW-Kai"; /* 新式樣修改(藍黃) 2016.12.13 william */
+    font-weight:900; 
+    filter: drop-shadow(0 1mm 1mm rgba(0,0,0,0.6));
+}
+
+#container {
+    position: relative;
+    width: 590px;
+    height: 365px;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    margin-top: 18px;
+    /*margin-left: -170px;*/
+    background: #00b4f0;     /* #0273b7 -> #00b4f0 */          
+    border-radius: 3px;
+    /*border: 1.5px solid #000000; /* 2016.10.03 (3)container樣式，修改-原：1px solid #ccc */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    filter: drop-shadow(0 1mm 1mm rgba(0,0,0,0.6));
+}
+
+form {
+    margin: 0 auto;
+    margin-top: -25px;
+}
+
+label {
+    color: #ffffff;  /* 2016.10.03 (4)label樣式，修改-原：#007acc->aadfff */
+    display: inline-block;
+    margin-left: 0px;  /* 2016.10.03 (4)label樣式，修改-原：5px->20px */
+   /* padding-top: 10px;*/  /* 新式樣修改(藍黃) 2016.12.13 william */
+    font-size: 23px; /* 2016.10.03 (4)label樣式，修改-原：16px->20px */
+    /*width: 76px;     /* 2016.10.03 (4)label樣式，修改-原：60px */
+    text-align: right;
+	font-family: "Times New Roman","DFKai-SB","BiauKai","TW-Kai"; /* 2016.10.03 (4)label樣式，新增-標題字型 */
+}
+/* 新式樣修改(藍黃) 2016.12.13 william */
+.label_rmbme {
+   /*display: inline;*/
+    white-space: nowrap;
+    position: relative;
+    margin-left: 23px;
+    top: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.L1 {
+top:3px;
+position: relative;  
+}
+
+p a {
+    font-size: 11px;
+    color: #aaa;
+    float: right;
+    margin-top: -13px;
+    margin-right: 20px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+p a:hover {
+    color: #555;
+}
+
+input {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+
+input[type=text]
+{
+    color:#000000;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 15px; /* 2016.10.03 (8)帳號樣式，修改-原：22px->28px */
+    margin-right: 0px;
+    width: 305px;      /* 2016.10.03 (8)帳號樣式，修改-原：200px */
+    height: 39px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+   /* box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;  2016.10.03  (8)帳號樣式，取消 */
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    font-size: 23px;
+    font-family: "Times New Roman","DFKai-SB","BiauKai","TW-Kai";
+    font-weight: 600;    
+}
+    
+input[type=password] {
+    color:#000000;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 12px;
+    margin-left: 15px;  /* 2016.10.03 (9)帳號樣式，修改-原：22px->28px */
+    margin-right: 0px;
+    width: 305px;       /* 2016.10.03 (9)帳號樣式，修改-原：200px */
+    height: 39px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+   /* box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;  2016.10.03  (9)密碼樣式，取消 */
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    font-size: 23px;
+    font-family: "Times New Roman","DFKai-SB","BiauKai","TW-Kai";
+    font-weight: 600;        
+}
+
+input[type=text]:hover,
+input[type=password]:hover {
+    border: 1px solid #b6bfc0;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0px 0px 1px 5px #f5f7f8;
+}
+
+/* 2016.10.03  (8)帳號樣式(9)密碼樣式，取消
+input[type=text]:focus,
+input[type=password]:focus {
+    border: 1px solid #a8c9e4;
+    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
+}
+*/
+
+#lower {
+   /* background: #ecf2f5; 2016.10.03  (5)lower樣式，取消 */
+    width: 100%;
+    height: 15px;    /*2016.10.03  (5)lower樣式，修改-原：71px */
+    /*margin-top: 20px;*/
+    margin-top: 25px; /* 新式樣修改(藍黃) 2016.12.13 william */
+   /* box-shadow: inset 0 1px 1px #fff; 2016.10.03  (5)lower樣式，取消 */
+   /* border-top: 1px solid #ccc;       2016.10.03  (5)lower樣式，取消 */
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+input[type=checkbox] { /* 新式樣修改(藍黃) 2016.12.13 william */
+    margin-left: 3%;
+    margin-top: 3%;
+    position: relative;
+}
+
+.check {
+    margin-left: 3px;
+    font-size: 11px;
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+input[type=submit] {
+   /*
+    float: center;      2016.10.03 (6)按鈕樣式，修改-原：right -> 取消       
+    margin-right: 20px;
+   */   
+	margin-left: 164px; /* 2016.10.03 (6)按鈕樣式，新增，修改-原：77px->90px->132px */
+    margin-top: 12px;
+    width: 160px;       /* 2016.10.03 (6)按鈕樣式，修改-原：80px->210px */
+    height: 35px;
+    font-size: 18px;    /* 2016.10.03 (6)按鈕樣式，修改-原：14px */
+    font-weight: bold;
+    color: white;       /* 2016.10.03 (6)按鈕樣式，修改-原：#fff */
+	
+	
+	padding-left: 3px; /* 2016.10.03 (6)按鈕樣式，新增 */
+	
+	/*
+    background-color: #90d7ab; /*IE fallback*/    /*2016.10.03 (6)按鈕樣式，修改-原：#acd6ef*/
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#90d7ab), to(#90d7ab));  /*2016.10.03 (6)按鈕樣式，修改-原：from(#acd6ef), to(#6ec2e8)*/
+    /*background-image: -moz-linear-gradient(top left 90deg, #90d7ab 0%, #90d7ab 100%);  /*2016.10.03 (6)按鈕樣式，修改-原：from(#acd6ef), to(#6ec2e8)*/
+   /* background-image: linear-gradient(top left 90deg, #90d7ab 0%, #90d7ab 100%);  /*2016.10.03 (6)按鈕樣式，修改-原：from(#acd6ef), to(#6ec2e8)*/
+   
+	/*background: rgb(182,226,255); 
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(182,226,255,1) 0%, rgba(110,194,232,1) 32%, rgba(104,192,232,1) 75%, rgba(196,231,255,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(182,226,255,1)), color-stop(32%,rgba(110,194,232,1)), color-stop(75%,rgba(104,192,232,1)), color-stop(100%,rgba(196,231,255,1)));
+    background: -webkit-linear-gradient(top, rgba(182,226,255,1) 0%,rgba(110,194,232,1) 32%,rgba(104,192,232,1) 75%,rgba(196,231,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(182,226,255,1) 0%,rgba(110,194,232,1) 32%,rgba(104,192,232,1) 75%,rgba(196,231,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(182,226,255,1) 0%,rgba(110,194,232,1) 32%,rgba(104,192,232,1) 75%,rgba(196,231,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(182,226,255,1) 0%,rgba(110,194,232,1) 32%,rgba(104,192,232,1) 75%,rgba(196,231,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b6e2ff', endColorstr='#c4e7ff');
+
+    border-radius: 3px;     
+    border: 1px solid #90d7ab;     
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);*/
+    cursor: pointer;
+    filter: drop-shadow(0 0mm 0mm rgba(0,0,0,0.6));
+    background-color: #0281ce;
+    border-radius: 3px;     
+    border: 1px solid #0281ce; 
+}
+
+#label_expire {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: red;
+    width: auto
+}
+
+input[type=submit]:hover {
+    /*
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5d883), to(#f3ed03));
+    background-image: -moz-linear-gradient(top left 90deg, #f5d883 0%, #f3ed03 100%);
+    background-image: linear-gradient(top left 90deg, #f5d883 0%, #f3ed03 100%);
+    */
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+
+    /*background: rgb(251,243,212);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(251,243,212,1) 0%, rgba(241,193,18,1) 32%, rgba(244,187,22,1) 75%, rgba(250,241,209,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,243,212,1)), color-stop(32%,rgba(241,193,18,1)), color-stop(75%,rgba(244,187,22,1)), color-stop(100%,rgba(250,241,209,1)));
+    background: -webkit-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbf3d4', endColorstr='#faf1d1');*/
+    background-color: #1e67e2;
+    border: 1px solid #1e67e2;     
+}
+
+input[type=submit]:active {
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    /*background: rgb(251,243,212);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(251,243,212,1) 0%, rgba(241,193,18,1) 32%, rgba(244,187,22,1) 75%, rgba(250,241,209,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(251,243,212,1)), color-stop(32%,rgba(241,193,18,1)), color-stop(75%,rgba(244,187,22,1)), color-stop(100%,rgba(250,241,209,1)));
+    background: -webkit-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,243,212,1) 0%,rgba(241,193,18,1) 32%,rgba(244,187,22,1) 75%,rgba(250,241,209,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbf3d4', endColorstr='#faf1d1');*/
+    background-color: #fdda2d;
+    border: 1px solid #fdda2d;     
+    color: black;   
+}
+
+input[type=submit]:focus {
+    background-color: #fdda2d;
+    border: 1px solid #fdda2d;     
+    color: black;       
+}
+
+
+select{
+    padding-left: 17px;   /* 2016.10.03 (7)下拉式選單樣式，修改-原：10px->65px->70px->63px */ 
+    margin: 10px;         
+    margin-top: 12px;
+    margin-left: 6px;    /* 2016.10.03 (7)下拉式選單樣式，修改-原：20px->30px */
+    width: 120px;
+    height: 30px;
+	font-size: 18px; /* 2016.10.03 (7)下拉式選單樣式，新增 */		
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    bottom:200px;
+    font-weight: 700;
+    padding-top: 1px;
+}
+
+/* 新式樣修改(藍黃) 2016.12.13 william */
+.Logo{
+    position: relative; 
+    float:left;
+    z-index:3; 
+    left: 6px; 
+    top:0px; 
+    width: 180px; 
+    height: 70px; 
+    font-style:italic; 
+    font-weight:900; 
+    font-size:xx-large; 
+    color:red; 
+    text-align:center; 
+    line-height:70px; 
+    font-family: "Times New Roman";
+    padding-left: 15px;
+    padding-top: 15px;    
+}
+
+#chk_rmpwd{ /* 新式樣修改(藍黃) 2016.12.13 william */
+    position: relative; 
+    top:14px;
+    left: 24px;
+    margin-right:5px; 
+}
+
+.title_wrap {
+    vertical-align: middle;
+    line-height: 100%;
+    height: 20%;
+    position: relative;
+    top: 18px;
+}
+
+.title_offset {
+    position: relative;
+    /*text-align: left;*/
+    left: 42px;
+}
+
+#formlogin {
+    position: relative;
+    top: 7px;
+}
+
+.formlogin_wrap {
+    position: relative;
+    top:0px;
+}
+
+.username_wrap {
+    position:  relative;
+    width: 100%;
+    height: 20%;
+    bottom: 8px;
+    left: 12px;
+}
+
+.label_username_div {
+    float:left;
+    text-align: right;
+    line-height: 45px;
+    width: 150px;
+    right: -5px;
+    position: relative;
+}
+
+.pwd_wrap {
+    position:  relative;
+    width: 100%;
+    height: 20%;
+    bottom: 5px;
+    left: 12px;
+}
+
+.label_password_div {
+    float:left;
+    text-align: right;
+    line-height: 45px;
+    width: 150px;
+    right: -5px;
+    position: relative;
+}
+
+.div_icon {
+    width: 43px;
+    height: 43px;
+    background-color:  white;
+    border-radius: 3px;
+    position:  relative;
+    top: 12px;
+    left: 1px;
+    float: right;
+}
+
+.pic_eyes {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 10px auto;
+}
+
+.btn_wrap {
+    position:  relative;
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+}

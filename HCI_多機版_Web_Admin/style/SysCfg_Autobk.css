@@ -1,0 +1,368 @@
+/* Basics */
+
+/*-----------------------*/
+.table_top_row {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    height: 24px;
+    line-height: 22px;
+}
+
+/* Content 2017.02.14*/
+
+div.autobk_wrapper {
+    position: relative;
+    /*
+    top: 50%;
+    left: 50%;
+    margin: 42px 0 0 -375px;
+    */
+    width: 750px;
+    height: 650px;
+    padding: 0;
+    text-align: left;
+    border: 2px ridge #91979c;
+    border-radius: 5px;
+    background: #0273b7;
+}
+
+/* ----- schedule header Start-----*/
+
+.autobk_header {
+    position: relative;
+    height: 40px;
+}
+
+.autobk_header_inner1 {
+    position: relative;
+    left: 5px;
+    top: -4px;
+    width: 125px;
+    height: 100%;
+    float: left;
+}
+
+.autobk_name {
+    position: relative;
+    top: 12px;
+    margin: 0px 5px;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#btn_close_autobk {
+    position: absolute;
+    font-weight: bold;
+    left: 662px;
+    top: 5px;
+    max-height: 25px;
+    font-size: 14px;
+}
+/* ----- schedule header End----- */
+/* ----- schedule body ----- */
+
+.autobk_body {
+    position: relative;
+    height: 285px;
+}
+
+.autobk_content {
+    border: 2px ridge #c0c0c0;
+    margin: -3px 5px 5px 5px;
+    height: 251px; /*280*/
+    border-radius: 5px;
+}
+
+.autobk_content_inner {
+    background: white;
+    border: 2px solid #444;
+    margin: 13px 5px 8px 5px;
+    height: 230px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.autobk_content_innertop {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #444;
+    height: 34px;
+}
+
+#autobk_ListTop {
+    position: absolute;
+    top: 0px;
+    border: 0px !important;
+}
+
+#autobk_ListTop tr{
+    background: #0281ce;
+    color: white;
+}
+
+#autobk_ListTop td{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    /* border-right: 1px solid #444 !important; */ 
+    border: 0px !important;
+}
+
+.autobk_top0 {
+    width: 60px;
+}
+
+.autobk_top1 {
+    width: 147px;
+}
+
+.autobk_top2 {
+    width: 100px;
+}
+
+.autobk_top3 {
+    width: 100px;
+}
+
+.autobk_top4 {
+    width: 100px;
+}
+
+.autobk_top5 {
+    width: 285px;
+    text-align: left !important;
+}
+
+.autobk_selectall_topchk {
+    width: 30px;
+    padding: 0px 0px 1px 4px;
+}
+
+.ss_selectall_bottom_chk {
+    width: 30px;
+    padding: 0px 0px 1px 4px;
+}
+
+.autobk_content_innerbottom {
+    position: relative;
+    width: 100%;
+    height: 194px;
+    overflow: auto;
+}
+
+#autobk_ListBottom {
+    position: absolute;
+    top: 0px;
+    border: 0px !important;
+}
+
+#autobk_ListBottom tr{
+    background-color: #fff;
+    border-bottom: 1px solid #DDD;
+}
+
+#autobk_ListBottom td{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    /* border-right: 1px solid #444 !important; */ 
+    border: 0px !important;
+}
+
+#autobk_ListJobBottom {
+    position: absolute;
+    top: 0px;
+    border: 0px !important;
+}
+
+#autobk_ListJobBottom tr{
+    background-color: #fff;
+    border-bottom: 1px solid #DDD;
+}
+
+#autobk_ListJobBottom td{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    /* border-right: 1px solid #444 !important; */ 
+    border: 0px !important;
+}
+
+.autobk_bottom0 {
+    width: 60px;
+}
+
+.autobk_bottom1 {
+    width: 147px;
+}
+
+.autobk_bottom2 {
+    width: 100px;
+}
+
+.autobk_bottom3 {
+    width: 100px;
+}
+
+.autobk_bottom4 {
+    width: 100px;
+}
+
+.autobk_bottom5 {
+    width: 285px;
+    text-align: left !important;
+}
+
+.autobk_top_bottomchk {
+    width: 30px;
+    padding: 0px 0px 1px 5px;
+}
+
+.ss_bottom_chk {
+    width: 30px;
+    padding: 0px 0px 1px 4px;
+}
+
+.downwards_arrow_wrapper{
+    position: absolute;
+    left: 47.5%;
+    top: 245px;
+    margin: 4px 0 0 -22.5px;
+    width: 37px;
+    text-align: center;
+    background: #0273b7;
+    z-index: 1;
+}
+
+.upwards_arrow_wrapper{
+    position: absolute;
+    left: 52%;
+    top: 245px;
+    margin: 4px 0 0 -22.5px;
+    width: 37px;
+    text-align: center;
+    background: #0273b7;
+    z-index: 1;
+}
+
+.arrowtext {
+    font-size: 20px;
+    width: 17px;
+    height: 22px;
+    border: 2px ridge #91979c;
+    background: #ffffff;
+    font-weight: 700;
+    padding: 0px 1px;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgba(20%, 20%, 40%, 0.5);
+    text-align: center;
+}
+
+.arrowtext:hover {
+     background: #3ec6e5;
+}
+
+.arrowtext:active {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+    border: 2px inset #91979c;
+}
+
+.autobk_wrapperbottom {
+    position: relative;
+}
+
+.autobk_wrapperbottom_body {
+    position: relative;
+    height: 332px;
+}
+
+.autobk_wrapperbottom_content {
+    border: 2px ridge #c0c0c0;
+    margin: 5px;
+    height: 285px;
+    border-radius: 5px;
+    position: relative;
+    top: 13px;
+}
+
+.autobk_wrapperbottom_contentinner {
+    background: white;
+    border: 2px solid #444;
+    margin: 13px 5px 8px 5px;
+    height: 230px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.autobk_btn_row {
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    text-align: right;
+}
+
+#autobk_Confirm {
+    float: right;
+    margin: 0px 3px 0px 3px;
+    max-height: 25px;
+    font-size: 14px;
+}
+
+#autobk_Cancel {
+    float: right;
+    margin: 0px 9px 0px 3px;
+    max-height: 25px;
+    font-size: 14px;    
+}
+
+/* Checkbox功能式樣*/
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+    padding-left: 29px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label {
+    background-position: 0 -24px;
+}
+
+label.css-label {
+    background-image: url(images/csscheckbox_c59519622db72e6ffbfb1417bb694e25.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn_autobk > span {
+    position: relative;
+    bottom: 3px;
+}

@@ -1,0 +1,41 @@
+body{
+	background-color: silver;
+}
+
+h1{
+	color: #990000;
+	background-color: #FC9804;
+}
+
+table{
+	color: gray;
+}
+pre{
+	color: #990000;
+
+}
+button{
+	color: #990000;
+	position:absolute;
+	top: 450px;
+	left: 250px;
+	width: 120px
+}
+input{
+	color: #990000;
+	position:absolute;
+	top: 450px;
+	left: 450px;
+	width: 120px
+}
+strong {
+     color: red;
+     font-style: italic;
+	   font-weight: normal;
+}
+
+img{
+		position: relative; 
+		top: +5px; 
+}
+

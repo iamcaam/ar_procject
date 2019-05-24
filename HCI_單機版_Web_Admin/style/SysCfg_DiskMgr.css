@@ -1,0 +1,419 @@
+/* CSS Document */
+.Div_DiskRow
+{
+    position:relative;
+    padding:0px;
+    margin:0px;
+    margin-top:3px;
+    /*border: 1px solid #DDD;*/
+    height:35px; /* 修改40px 2017.03.03 william */
+    width:100%; 
+}
+
+.Div_DiskRowHeader
+{
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    height:32px;	
+    width:100%;
+	padding-bottom: 3px;
+}
+
+.RowHeader
+{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;    
+    background-color:#0273b7;  /* SnapShot&Schedule&Backup 2017.01.11 william */   
+    border-top: 2px solid #000;	
+    border-right: 2px solid #000;	
+    border-left: 2px solid #000;
+	/* SnapShot&Schedule&Backup 2017.01.11 william */   
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+	color: white;	
+}
+
+.H4_RowHeader
+{
+    display:table-cell;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    vertical-align: middle;
+	font-size: 18px;
+	font-family: "Times New Roman","PMingLiU","新細明體";
+}
+
+.label_RowHeader
+{
+    display:table-cell;
+    vertical-align: middle
+}
+
+.div_RowHeader
+{
+    position:relative;
+    display: table;
+    height: 30px
+}
+
+#Div_DiskList
+{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;
+    height: 70%;
+    width: 100%;	/* 新式樣修改(藍黃) 2016.12.13 william */
+    background-color: #FFFFFF; /* SnapShot&Schedule&Backup 2017.01.11 william */ 
+    border: 2px solid #000;
+	/* SnapShot&Schedule&Backup 2017.01.11 william */ 
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+
+    /*overflow-x:hidden;*/
+    overflow-y:auto;
+}
+
+#Div_DiskAction
+{
+	position:absolute;
+	margin: 0px;
+	padding: 5px;
+	height: 240px;
+	width: 300px;
+	top:30px;
+	left:350px;
+	border: 1px solid #9DD;
+	border-radius:5px;
+	background:#FDEBD2;
+}
+
+#UsrDisk_BtnAdd
+{
+	top:290px;
+	left:5px;
+}
+
+#UsrDisk_BtnCancel
+{
+	top:290px;
+	left:470px;
+}
+
+#UsrDisk_BtnOk
+{
+	top:290px;
+	left:540px;
+}
+
+.DiskList_ItemNo {
+    left:0px;
+    height:30px;
+    width:60px;
+	padding-top:4px;
+	text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+.DiskList_Slot
+{   
+    left: 60px;
+    height: 30px;
+    width: 80px;
+    padding-top: 4px;
+    text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+
+.DiskList_Status
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    left:140px;	/*11.5% -> 9%*/
+    height:31px;
+    width:100px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+    text-align: -webkit-center;
+	text-align: -moz-center;
+}
+
+
+/*.DisktList_FreeCapacity
+{
+	top:5px;
+	left:260px;
+	height: 20px;
+	width: 80px;
+}*/
+
+
+.DisktList_Capacity
+{   
+	/* 新式樣修改(藍黃) 2016.12.13 william */ 
+    left:240px; /*24% -> 20%*/
+    height:31px;
+    width:150px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+    text-align: -webkit-center;	
+	text-align: -moz-center;
+}
+
+
+.DiskList_Vendor
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    left:390px;	/*35.5% -> 32%*/
+    height:31px;
+    width:130px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+	text-align: -webkit-center;	
+	text-align: -moz-center;
+}
+
+
+.DiskList_Speed
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    left:520px;	/*47.5% -> 44%*/
+    height:31px;
+    width:150px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+	text-align: -webkit-center;	
+	text-align: -moz-center;
+}
+
+
+.DiskList_Model
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    left:670px;	/*61.5% -> 58%*/
+    height:31px;
+    width:180px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+	text-align: -webkit-center;	
+	text-align: -moz-center;
+}
+
+
+.DiskList_FirmwareVer
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+    left:850px;
+    height:31px;
+    width:150px;
+	/*border-left:1px solid white;*/
+	padding-top:4px;
+	text-align: -webkit-center;		
+	text-align: -moz-center;
+}
+
+
+.DiskList_BtnInitial
+{	
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:1000px;
+	height: 27px;
+	width: 300px;
+	font-size: 18px;
+	/*border-left:1px solid white;*/
+	padding-top:8px;
+	text-align: -webkit-left;		
+	font-family: "Times New Roman","PMingLiU","新細明體";
+}
+
+.DiskList_ItemNo_Row {
+	top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 60px;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.DiskList_Slot_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:60px; /*3% -> 1%*/
+	height:100%;
+	width:80px;
+	font-size:12px; 
+	line-height: 35px;
+	text-align: center;
+}
+
+
+.DiskList_Status_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:140px; /*11.5% -> 9%*/
+	height:100%;
+	width:100px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;	
+}
+
+
+/*.DisktList_FreeCapacity
+{
+	top:5px;
+	left:260px;
+	height: 20px;
+	width: 80px;
+}*/
+
+
+.DisktList_Capacity_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:240px; /*24% -> 20%*/
+	height:100%;
+	width:150px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;	
+}
+
+
+.DiskList_Vendor_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:390px;	/*35.5% -> 32%*/
+	height:100%;
+	width:130px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;			
+}
+
+
+.DiskList_Speed_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:520px;	/*47.5% -> 44%*/
+	height:100%;
+	width:150px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;	
+}
+
+
+.DiskList_Model_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:670px;	/*61.5% -> 58%*/
+	height:100%;
+	width:180px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;	
+}
+
+
+.DiskList_FirmwareVer_Row
+{
+	top:0px;
+	/* 新式樣修改(藍黃) 2016.12.13 william */
+	left:850px;
+	height:100%;
+	width:150px;
+	font-size:12px;
+	line-height: 35px;
+	text-align: center;		
+}
+
+
+.DiskList_BtnInitial_Row
+{
+	top:0px;
+	left:1000px;
+	height:100%;
+	width:285px; /* 100px List 資料欄位修改 2017.03.06 william */      
+	text-align: left;	
+}
+
+/* 2017.11.13 william 新增Raid擴充 */
+#Div_RAIDExpandList
+{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;
+    height: 87%;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 2px solid #000;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+
+.label_disk_arrow {
+	width: 13px;
+}
+
+.adjust_Disk_div_RowHeader {
+	left: 7px;
+}
+
+#label_alert_unimportable {
+	font-weight: 900;
+    color: red;
+    position: relative;
+    /*top: 5px;	*/
+	padding-right: 5px;
+	font-size: 14px;
+}
+
+.wrap_div_for_unimportable {
+    border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+	width: 200px;		
+    margin-right: 10px;
+    margin-bottom: 10px;
+	float: left;		
+}
+
+.RowHeader_for_unimportable {
+	width: 200px;
+	font-size: 14px;
+	height: 35px;
+	display: block;
+    background-color: #0273b7;
+    /*border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;*/
+	border-bottom: 2px solid #000;
+    color: white;		
+}
+
+.List_for_unimportable {
+	font-size: 12px;
+    width: 100%;
+    height: 410px;
+    overflow-y: auto;
+}
+
+#div_unimportable_list {
+	position: relative;
+	width: 99%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+}

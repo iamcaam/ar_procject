@@ -1,0 +1,33 @@
+lang={
+    asklogout : "Logout?",
+    askdelete : "Would you like to delete selected files or folders?",
+    askshare : "The file/folder has not shared yet, would you like to share it ?",
+    askmove : "Please select one or more than one files or folders to move.",
+    selectall : "Select All",
+    cancelall : "Cancel All",
+    delwar : "Please select one or more than one files or folders to delete.",
+    root : "root",
+    charwarning: "The first letter can not be :/,._ and not allow enter \\*<>|\"/\'",
+    SearchResult : "Search Result",
+    SortOutDOC : "Document",
+    SortOutAUDIO : "Audio",
+    SortOutVIDEO : "Video",
+    SortOutPHOTO : "Photo",
+    RecycleBin : "Recycle Bin",
+    FreeSpace : "Free Space :",
+    Account : "User :",
+    TotalSpace : "Total Space :",
+    FreeSpace : "Free Space :",    
+    SpaceStatus : "Free / Total Space:",
+    File : "File",
+    Folder : "Folder",
+    ShareUser: "Shared By",
+    ShareType: "Share Mode",
+    Type: "Type",
+    Name: "Name",
+    UploadDownloadMode: "Upload & Download",
+    DownloadMode: "Download",
+    HomewordMode: "Homework"
+}
+
+

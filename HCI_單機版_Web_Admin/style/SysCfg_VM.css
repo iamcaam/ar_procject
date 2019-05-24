@@ -1,0 +1,1407 @@
+/* CSS Document */
+.Div_VM_Logn
+{   /* 新式樣修改(藍黃) 100%->96% 2016.12.13 william */
+    position: relative;
+    width: 99%; /*100%->96%->1300px*/
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #000;
+    /* SnapShot&Schedule&Backup 2017.01.11 william */     
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Div_VM_Shot
+{   /* 新式樣修改(藍黃) 2016.12.13 william */
+    position: relative;
+    width: 1300px; /*100%->96%*/
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #000;
+    /* SnapShot&Schedule&Backup 2017.01.11 william */     
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Div_VMRow
+{   /* 新式樣修改(藍黃) 2016.12.13 william */
+    position:relative;
+    padding:0px;
+    margin:0px;
+    /*margin-top:3px;*/
+    border-bottom: 1px solid #DDD;
+    height:40px;
+    width:100%; 
+    /*border-left: 2px solid #000;
+    border-right: 2px solid #000;*/
+}
+
+.Div_VMLognRow
+{   /* 新式樣修改(藍黃) 2016.12.13 william */
+    position:relative;
+    padding:0px;
+    margin:0px;    
+    border-bottom: 1px solid #DDD;
+    height:40px;
+    width:100%; 
+    /* overflow: hidden;  取消overflow: hidden; 2017.03.03 william  */
+    /*border-left: 2px solid #000;
+    border-right: 2px solid #000;*/
+}
+
+.LastVMRow
+{   /* 新式樣修改(藍黃) 2016.12.13 william */
+    /*border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom: 2px solid #000;*/
+}
+
+.VM_RowHeader
+{   /* 新式樣修改(藍黃) 2016.12.13 william */ 
+    display: block;                
+    top:0px;
+    /* SnapShot&Schedule&Backup 2017.01.11 william */     
+    background-color:#0281ce; 
+    color: white;  
+    /*border-top: 2px solid #000;	
+    border-right: 2px solid #000;	
+    border-left: 2px solid #000;*/
+    border-bottom: 2px solid #000;
+    /*border-top-left-radius:15px;
+    border-top-right-radius:15px;*/
+    font-size: 14px;
+    height: 30px;
+}
+
+
+
+#Div_VMList
+{
+    top:30px;
+    height: 85%;
+    width: 1150px;
+}
+
+#Div_Borned_List
+{
+    top:30px;
+    height: 85%;
+    width: 1150px;
+}
+
+#Div_VM_Clone_List
+{
+    top:30px;
+    height: 85%;    
+    width: 1150px;    
+}
+  
+/* ----------- 快照-任務清單功能實作 2017.02.07 Start ----------- */
+.Div_Snapshot_Task
+{   /* 新式樣修改(藍黃) 2016.12.13 william */
+    position: relative;
+    width: 99%; /*100%->96%*/
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid #000;
+    /* SnapShot&Schedule&Backup 2017.01.11 william */     
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#Div_Snapshot_Task_List 
+{
+    top:30px;
+    height: 85%;    
+    width: 1150px;    
+}
+
+
+.VMSnapshotList_Task_LayerDesc
+{    
+    left: 595px; 
+    height:30px;
+    width:120px;    
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_VDName
+{    
+    left:230px; 
+    height: 30px;
+    width:150px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_State
+{    
+    left:895px; 
+    height: 30px;
+    width:150px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_Type
+{    
+    left:100px; 
+    height: 30px;
+    width:150px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_LayerDate
+{    
+    left:440px; 
+    height: 30px;
+    width:150px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_StartTime
+{    
+    left:1065px; 
+    height: 30px;
+    width:150px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_EndTime
+{    
+    left:1255px; 
+    height: 30px;
+    width:170px;
+    line-height: 35px;
+}
+
+.VMSnapshotList_Task_Type_Row {
+    /* List 資料欄位修改 2017.03.06 william */ 
+    top: 0px;
+    left: 100px;
+    height: 100%;
+    width: 150px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_VDName_Row {
+    /* List 資料欄位修改 2017.03.06 william */        
+    top: 0px;
+    left: 230px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_LayerDate_Row {
+    /* List 資料欄位修改 2017.03.06 william */       
+    top: 0px;
+    left: 440px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_LayerDesc_Row {
+    /* List 資料欄位修改 2017.03.06 william */   
+    top: 0px;
+    left: 595px;
+    height: 100%;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_State_Row {
+    /* List 資料欄位修改 2017.03.06 william */      
+    top: 0px;
+    left: 895px;
+    height: 100%;
+    width: 170px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_StartTime_Row {
+    /* List 資料欄位修改 2017.03.06 william */  
+    top: 0px;
+    left: 1065px;
+    height: 100%;
+    width: 190px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMSnapshotList_Task_EndTime_Row {
+    /* List 資料欄位修改 2017.03.06 william */    
+    top: 0px;
+    left: 1255px;
+    height: 100%;
+    width: 150px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+/* ----------- 快照-任務清單功能實作 2017.02.07 End ----------- */
+
+#Div_VM_Log_List
+{
+    top:30px;
+    height: 80%;    
+    width: 1150px;    
+}
+
+#Div_SeedList{
+    top:30px;
+    height: 85%;    
+    width:1150px;   
+}
+
+.VMList_ItemNo
+{
+    left:15px; /* 新式樣修改(藍黃) 2016.12.13 william  1% */
+    height: 30px;
+    width: 40px;
+    line-height: 35px;
+}
+
+.VMList_Select
+{
+    /* 新式樣修改(藍黃) 2016.12.13 william  5.5%; */
+    /*top : 8px;*/
+    left:55px;
+    height: 30px;
+    width: 35px;  
+    line-height: 35px;
+}
+
+.VMList_Username
+{    
+    left:90px; /* 新式樣修改(藍黃) 2016.12.13 william  9% */
+    height: 30px;
+    width: 120px;
+    line-height: 35px;
+}
+
+.VMList_Name
+{    
+    left:300px; /* 新式樣修改(藍黃) 2016.12.13 william  17% */
+    height: 30px;
+    width: 115px;
+    line-height: 35px;
+}
+
+/*.VMListType
+{    
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+/*.VMListSeedSrc
+{    
+    left:200px;
+    height: 30px;
+    width: 120px;
+}*/
+
+/*.VMList_CPUUtil
+{    
+    left:360px;
+    height: 30px;
+    width: 120px;
+}*/
+
+
+/*.VMList_MemUtil
+{
+    top:8px;
+    left:400px;
+    height: 30px;
+    width: 130px;
+}*/
+
+.VMList_Auto_Suspend_Select
+{   
+    /* 新式樣修改(藍黃) 2016.12.22 william 27% */ 
+    left: 510px;
+    height: 30px;
+    width: 25px;
+    line-height: 35px;
+}
+.VMList_Auto_Suspend
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william 27% */ 
+    /*top : 5px;*/
+    left:535px;
+    height: 30px;
+    width: 150px; 
+    line-height: 35px;   
+}
+
+.VMList_Status
+{    
+    left:720px; /* 新式樣修改(藍黃) 2016.12.13 william 39% */
+    height: 30px;
+    width: 115px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+    line-height: 35px;
+}
+
+.VMList_Online
+{    
+    left:860px; /* 新式樣修改(藍黃) 2016.12.13 william 47% */
+    height: 30px;
+    width: 155px;
+    line-height: 35px;
+}
+
+.VMList_RAM
+{    
+    left:1050px; /* 新式樣修改(藍黃) 2016.12.13 william 59% */
+    height: 30px;
+    width: 105px;
+    line-height: 35px;
+}
+
+.VMList_Action
+{    
+    left:1190px; /* 新式樣修改(藍黃) 2016.12.13 william 69% */
+    height: 30px;  
+    width: 80px;
+    line-height: 35px;
+}
+
+.VMList_CreateTime
+{    
+    left:1340px; /* 新式樣修改(藍黃) 2016.12.13 william  76% */
+    height: 30px;
+    width: 135px;
+    line-height: 35px;
+}
+
+.VMList_AllSize {    /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    left:1600px; 
+    height: 30px;
+    width: 100px;
+    line-height: 35px;
+}
+
+.VMList_Desc
+{   
+    left:1700px; /* 桌面設定-修改 2017.05.03 william */
+    height: 30px;
+    width: 320px; 
+    line-height: 35px;   
+}
+
+.VMList_ItemNo_Row
+{
+    top : 5px;
+    left:8px; /* 新式樣修改(藍黃) 2016.12.13 william 2% */
+    height: 30px;
+    width: 32px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.VMList_Select_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top : 0px;
+    left:55px; 
+    height: 100%;
+    width: 20px;    
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;    
+}
+
+.VMList_Username_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;   
+    left:90px;
+    height: 100%; 
+    width: 200px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+
+.VMList_Name_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;
+    left:300px; 
+    height: 100%; 
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;     
+}
+
+/*.VMListType_Row
+{
+    top:13px;
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+/*.VMListSeedSrc_Row
+{
+    top:13px;
+    left:200px;
+    height: 30px;
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}*/
+
+/*.VMList_CPUUtil_Row
+{
+    top:13px;
+    left:360px;
+    height: 30px;
+    width: 120px;
+}*/
+
+/*.VMList_MemUtil_Row
+{
+    top:13px;
+    left:400px;
+    height: 30px;
+    width: 130px;
+}*/
+
+.VMList_Auto_Suspend_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top : 0px;
+    left:510px;
+    height: 100%; 
+    width: 230px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+
+.VMList_Status_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;
+    left:735px; 
+    height: 100%; 
+    width: 155px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_Online_Row
+{    /* List 資料欄位修改 2017.03.06 william */    
+    top:0px;
+    left:885px;
+    height: 100%; 
+    width: 225px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+
+
+.VMList_RAM_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1103px; 
+    height: 100%; 
+    width: 85px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+
+.VMList_Action_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1180px; 
+    height: 100%;  
+    width: 160px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_CreateTime_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1335px; 
+    height: 100%;
+    width: 210px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_AllSize_Row {   /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    top:0px;
+    left:1495px; 
+    height: 100%;
+    width: 140px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+    text-align: right;
+    padding-right: 70px;
+}
+
+.VMList_Desc_Row {
+    top:0px;
+    left:1700px; /* 桌面設定-修改 2017.05.03 william */
+    height: 100%;
+    width: 300px;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.BornedList_Select
+{
+    /* 新式樣修改(藍黃) 2016.12.13 william */ 
+    /*top : 8px;*/
+    left:55px;
+    height: 30px;
+    width: 30px;   
+    line-height: 35px; 
+}
+
+.BornedList_Username
+{    
+    left:88px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 115px;
+    line-height: 35px;
+}
+
+.BornedList_Name
+{    
+    left:295px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 115px;
+    line-height: 35px;
+}
+
+.BornedList_Auto_Suspend_Select
+{   
+    /* 新式樣修改(藍黃) 2016.12.22 william */ 
+    left:500px;
+    height: 30px;
+    width: 25px;   
+    line-height: 35px; 
+}
+.BornedList_Auto_Suspend
+{   
+    /* 新式樣修改(藍黃) 2016.12.13 william */ 
+    /*top : 5px;*/
+    left:525px;
+    height: 30px;
+    width: 150px;  
+    line-height: 35px;
+}
+
+.BornedList_Status
+{    
+    left:720px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 115px;
+/*    left:540px;
+    height: 30px;
+    width: 80px;*/
+    line-height: 35px;
+}
+
+.BornedList_Online
+{    
+    left:860px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 155px;
+    line-height: 35px;
+}
+
+.BornedList_RAM
+{
+    left:1050px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 110px;
+    line-height: 35px;
+}
+
+.BornedList_Action
+{
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    /*top:5px;*/
+    left:1190px;
+    height: 30px;  
+    width: 80px;
+    font-size: 18px;
+    line-height: 35px;
+/*    left:820px;
+    height: 30px;    */
+    font-family: "Times New Roman","PMingLiU","新細明體";
+}
+
+.BornedList_SeedSrc
+{    
+    left:1340px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 120px;
+/*    left:700px;
+    height: 30px;
+    width: 110px;*/
+    line-height: 35px;
+}
+
+.BornedList_CreateTime
+{    
+    left:1595px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 135px;
+    line-height: 35px;
+}
+
+.BornedList_AllSize {  /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    left:1855px; 
+    height: 30px;
+    width: 100px;
+    line-height: 35px;
+}
+
+.BornedList_Desc {   
+    left:1955px;   /* 桌面設定-修改 2017.05.03 william */
+    height: 30px;
+    width: 320px;  
+    line-height: 35px;  
+}
+
+
+
+.BornedList_Select_Row
+{    /* List 資料欄位修改 2017.03.06 william */  
+    top : 0px;
+    left:55px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 100%;
+    width: 20px; 
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;   
+}
+
+.BornedList_Username_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top:0px;
+    left:88px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_Name_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top:0px;
+    left:295px; 
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+/*.VMListType_Row
+{
+    top:13px;
+    left:180px;
+    height: 30px;
+    width: 60px;
+}*/
+
+.BornedList_Auto_Suspend_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top : 0px;
+    left:500px; 
+    height: 100%;
+    width: 235px;   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    font-weight: bold;
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_Status_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top:0px;
+    left:735px; 
+    height: 100%;
+    width: 155px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_Online_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top:0px;
+    left:885px; 
+    height: 100%;
+    width: 225px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_RAM_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1103px; 
+    height: 100%;
+    width: 85px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_Action_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1180px; 
+    height: 100%;
+    width: 160px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_SeedSrc_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1340px; 
+    height: 100%;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_CreateTime_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1590px; 
+    height: 100%;
+    width: 210px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.BornedList_AllSize_Row {    /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    top:0px;
+    left:1750px; 
+    height: 100%;
+    width: 140px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+    text-align: right;
+    padding-right: 70px;
+}
+
+.BornedList_Desc_Row {
+    top:0px;
+    left:1955px; /* 桌面設定-修改 2017.05.03 william */
+    height: 100%;
+    width: 300px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMList_Task_ItemNo{
+    left: 30px;
+    height: 30px;
+    width: 40px;
+    line-height: 35px;
+}
+
+/* 未來新增之項目 2016.12.23 william
+.TaskList_Select{
+    left: 55px;
+    height: 30px;
+    width: 35px;
+    line-height: 24px;
+}
+*/
+
+.VMList_Type
+{    
+    left:100px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 130px;
+    line-height: 35px;
+}
+
+.VMList_Source_Name
+{    
+    left:245px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height:30px;
+    width:200px;   
+    line-height: 35px; 
+}
+
+.VMList_Dest_Name
+{    
+    left:450px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width:200px;
+    line-height: 35px;
+}
+
+.VMList_Task_Progress
+{    
+    left:655px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 190px;
+    line-height: 35px;
+}
+
+.VMList_Task_Status
+{    
+    left: 850px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 170px;
+    line-height: 35px;
+}
+
+.VMList_Start_Time
+{    
+    left: 1020px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 190px;
+    line-height: 35px;
+}
+
+.VMList_End_Time
+{    
+    left: 1210px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 190px;
+    line-height: 35px;
+}
+
+.VMList_Type_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:100px; 
+    height: 100%;
+    width: 150px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_Source_Name_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:245px; 
+    height: 100%;
+    width:200px;  
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_Dest_Name_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:450px; 
+    height: 100%;
+    width:200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.VMList_Task_Progress_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top: 0px;
+    left:655px; 
+    height: 100%;
+    width: 150px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;    
+}
+
+.VMList_Task_Status_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top: 0px;
+    left: 850px; 
+    height: 100%;
+    width: 170px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMList_Start_Time_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top: 0px;
+    left: 1020px; 
+    height: 100%;
+    width: 190px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMList_End_Time_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top: 0px;
+    left: 1210px; 
+    height: 100%;
+    width: 160px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+.TaskList_ItemNo_Row{
+    top : 5px;
+    left:20px; 
+    height: 30px;
+    width: 32px;
+    line-height: 30px;
+    text-align: right;    
+}
+/* 未來新增之項目 2016.12.23 william
+.TaskList_Select_Row 
+{
+    top : 10px;
+    left:70px; 
+    height: 30px;
+    width: 20px;    
+}
+*/
+.SeedList_Select
+{
+    /* 新式樣修改(藍黃) 2016.12.13 william */
+    /*top : 8px;*/
+    left:70px;
+    height: 30px;
+    width: 50px;   
+    line-height: 35px; 
+}
+
+.SeedList_Name
+{    
+    left:120px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 165px;
+    line-height: 35px;
+}
+
+.SeedList_Status
+{    
+    left:325px; 
+    height: 30px;
+    width: 115px;
+    line-height: 35px;
+}
+
+.SeedList_VDICount
+{    
+    left:460px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 200px;
+    line-height: 35px;
+}
+
+.SeedList_RAM
+{    
+    left:665px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 160px;
+    line-height: 35px;
+}
+
+.SeedList_CreateTime
+{    
+    left:870px; /* 新式樣修改(藍黃) 2016.12.13 william */
+    height: 30px;
+    width: 160px;
+    line-height: 35px;
+}
+
+.SeedList_AllSize {    /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    left:1120px; 
+    height: 30px;
+    width: 120px;
+    line-height: 35px;
+}
+
+
+.SeedList_Action {
+    /*top:8px;*/
+    left:1220px;  /* 桌面設定-修改 2017.05.03 william */
+    width: 100px;
+    height: 30px;
+    font-size: 18px;   
+    line-height: 35px; 
+}
+
+.SeedList_Description {    
+    left:1330px; /* 桌面設定-修改 2017.05.03 william */
+    height: 30px;
+    width: 320px;
+    line-height: 35px;
+}
+
+.SeedList_Select_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top : 0px;
+    left:70px; 
+    height: 100%;
+    width: 20px;    
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;    
+}
+
+.SeedList_Name_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;
+    left:120px; 
+    height: 100%;
+    width: 200px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.SeedList_Status_Row
+{
+    top:0px;
+    left:325px; 
+    height: 100%; 
+    width: 155px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+}
+
+.SeedList_VDICount_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;
+    left:535px; 
+    height: 100%;
+    width: 125px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.SeedList_RAM_Row
+{    /* List 資料欄位修改 2017.03.06 william */   
+    top:0px;
+    left:720px; 
+    height: 100%;
+    width: 155px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD; 
+}
+
+.SeedList_CreateTime_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:870px; 
+    height: 100%;
+    width: 210px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD; 
+}
+
+.SeedList_AllSize_Row {    /* 桌面設定-新增VD檔案大小實作 2017.05.03 william */
+    top:0px;
+    left:1070px; 
+    height: 100%;
+    width: 100px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+    text-align: right;
+    padding-right: 70px;
+}
+
+.SeedList_Action_Row {
+    top:0px;
+    left:1215px; /* 桌面設定-修改 2017.05.03 william */
+    width: 150px;
+    height: 100%;  
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;     
+}
+
+.SeedList_Description_Row {
+    top:0px;
+    left:1335px;    /* 桌面設定-修改 2017.05.03 william */
+    height: 100%;
+    width: 300px;    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+
+.truncate {
+  width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:block;
+  cursor:default
+}
+/********************* Seed list Dialog *********************/
+.Dialog_SeedlistContainer {
+    width: 473px;
+    height: 244px;
+    border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    float:left;
+}
+
+.Dialog_Seedrow_title:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Dialog_Seeddata_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Dialog_Seedlistview_title {
+    display: block;
+    top: 0px;
+    background-color: #0281ce;
+    color: white;
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+}
+
+#Dialog_Seedlistview_content {
+    overflow-y: overlay;
+    height: 89%;
+}
+
+.Dialog_no_Seed {
+    float: left;
+    width: 13%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.Dialog_column_Seed {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Dialog_Seed_action {
+    float: left;
+    width: 17%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/********************* User list Dialog with checkbox *********************/
+.listContainer_cb {
+    width: 473px;
+    height: 244px;
+    /*border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    overflow: hidden;
+    float:left;
+}
+
+.row_title_cb:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.data_row_cb:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.data_row_cb {
+    border-bottom: 1px solid #DDD;
+}
+
+.listview_title_cb {
+    display: block;
+    top: 0px;
+    /*background-color: #0281ce;*/
+    color: black;
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+}
+
+#listview_content_cb_clone {
+    overflow-y: overlay;
+    height: 85%;
+}
+
+#listview_content_cb_bornuser {
+    overflow-y: overlay;
+    height: 89%;
+}
+
+.no_user_cb {
+    float: left;
+    width: 13%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.column_user_cb {
+    float: left;
+    width: 39%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.select_user_cb {
+    float: left;
+    width: 8%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column_vd_cb {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.listview_inputext {
+    width: 200px;
+    height: 16px;
+    padding: 0px;
+}
+

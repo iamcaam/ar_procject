@@ -1,0 +1,160 @@
+/*h4
+{
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}*/
+
+
+
+
+#Div_TabShareList {
+	background-color: #FF9;
+	padding: 0px;
+	height: 480px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	overflow: auto;
+}
+
+
+
+#Div_ShareListContain {
+	background-color: #FFF;
+	padding: 0px;
+	height: 350px;
+	width: 94%;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #000;
+	top: 150px;
+	overflow: auto;
+}
+
+
+
+
+#Div_ShareListContainHeader {
+	background-color: #669B86;
+	padding: 0px;
+	height: 30px;
+	width: 94%;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border: 1px solid #000;
+	top: 130px;
+	overflow: auto;
+}
+
+
+
+.Div_ShareListRowHeader {
+	padding: 0px;
+	height: 30px;
+	width: 100%;
+	position: relative;
+	margin: 0px;
+	background-color: #669B86;
+	color: #fff;
+}
+
+
+
+.Div_ShareListRow {
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	width: 100%;
+	/*font-size:0.7em;*/
+	position: relative;
+}
+
+
+.Img_ShareListPeople {
+	padding: 0px;
+	position: absolute;
+	left: 2%;
+	top: 5px;
+	margin: 0px;
+	height: 20px;
+	width: 20px;
+}
+
+.H4_ShareListAccount {
+	padding: 0px;
+	margin: 0px;
+	width: 30%;
+	height: 20px;
+	position: absolute;
+	top: 5px;
+	left: 10%;
+}
+
+.H4_ShareListMode {
+	padding: 0px;
+	margin: 0px;
+	width: 30%;
+	height: 20px;
+	left: 40%;
+	top: 5px;
+	position: absolute;
+}
+
+.Img_ShareListRemove {
+	padding: 0px;
+	position: absolute;
+	left: 90%;
+	top: 5px;
+	margin: 0px;
+	height: 20px;
+	width: 20px;
+}
+
+
+.Img_ShareListRemove:hover {
+	padding: 0px;
+	position: absolute;
+	left: 90%;
+	top: 1px;
+	margin: 0px;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+}
+
+
+
+.Img_ShareListRemove:active {
+	padding: 0px;
+	position: absolute;
+	left: 90%;
+	top: 5px;
+	margin: 0px;
+	height: 25px;
+	width: 25px;
+}
+
+.H4_ShareListResult {
+	padding: 0px;
+	margin: 0px;
+	width: 20%;
+	height: 20px;
+	left: 70%;
+	top: 5px;
+	position: absolute;
+	font-weight: bold;
+}
+
+.H4_SharePeriod {
+	padding: 0px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 400px;
+}

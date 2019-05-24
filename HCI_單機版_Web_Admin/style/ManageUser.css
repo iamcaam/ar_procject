@@ -1,0 +1,580 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body
+{
+    position: absolute;
+	top:0%;
+	left:0%;
+    height:100%;
+    width:100%;
+	margin:0px;
+	padding:0px;
+}
+    
+	.Div_MainArea
+	{
+		position: absolute;
+		top:0%;
+		left:0%;
+		width:930px; 
+		height:550px; 
+		background-color: #0077aa;
+	}
+	
+		.Div_GridTop
+		{
+			background: #2989D8; /* Old browsers */
+			
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5OWJlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTM2OTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(left,  rgba(73,155,234,1) 0%, rgba(21,54,153,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(21,54,153,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* IE10+ */
+			background: linear-gradient(to right,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#153699',GradientType=1 ); /* IE6-8 */
+			
+			position: absolute;
+			top:0%;
+			left:0%;
+			height:100px;
+			width:100%;
+		}
+		
+			.Img_AcroCloudTitle
+			{
+				position: absolute;
+				top:25%;
+				left:0.5%;
+				height:69px;
+				width:210px;
+			}
+		#systemManageZ {z-index: 2;}
+		#otherManageZ {z-index: 1;}
+		.Div_GridLeft
+		{
+			position: absolute; 
+			top:100px;
+			left:0px;
+			width:130px;
+			
+			background: rgb(73,155,234); /* Old browsers */
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5OWJlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNTM2OTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+			background: -moz-linear-gradient(top,  rgba(73,155,234,1) 0%, rgba(21,54,153,1) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(21,54,153,1))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(73,155,234,1) 0%,rgba(21,54,153,1) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#153699',GradientType=0 ); /* IE6-8 */
+
+			text-align:center;
+			color:white;
+		}
+				.managementFrame
+				{
+					height:35px;
+					width:90px;
+					border-radius:5px;
+				}
+                .manageDefaultColor
+                {
+                    background-color:#0B38BF;
+                    border: 2px solid #fff;
+                    color:#f1da36;
+                }
+                .manageDefaultColor:hover
+                { 
+                    background-color: #1B6BD3;
+                    border: 3px solid #fff;
+                    color:#f1da36;
+                }
+                .manageDefaultColor:active
+                {
+                    background-color:#0B38BF;
+                    border: 2px solid #fff;
+                    color:#E2B434;
+                }
+
+                .manageSelectedColor
+                {
+                    background-color:#0B38BF;
+                    border: 3px solid #f1da36;
+                    color:#f1da36;
+                }
+                
+		.Div_GridRight
+		{
+			position: absolute;
+			top: 100px;
+			left: 130px;
+			background-color:#87e0fd;
+		}
+	
+		.Div_GridRight_Layout
+		{
+			position:relative;
+			top: 0px;
+			left: 0px;
+		}
+			
+			.Div_GridActionHeader
+			{
+				position:absolute;
+				top:0px;
+				left:0px;
+				height:80px;
+				width:420px;
+			}
+            
+                .Div_DiskList
+                {
+                    position:absolute;
+                    top:80px;
+                    left:0px;
+					background-color:#87e0fd;
+                }
+				.TabFrame
+				{
+					height:30px;
+					width:100px;
+				}
+
+                .TabBtnDefaultColor
+                {
+					background: #37B7DD;
+                    border: 1px solid #eef;
+                    color:#000;
+					border-radius:10px;
+                }
+                .TabBtnDefaultColor:hover
+                {
+					background: #74C4DB;
+                    border: 2px solid #eef;
+                    color:#000;
+					border-radius:10px;
+                }
+                .TabBtnDefaultColor:active
+                {
+					background: #37B7DD;
+                    border: 1px solid #eef;
+                    color:#00f;
+					border-radius:10px;
+                }
+
+				.TabBtnSelectedColor
+				{
+					background: #37B7DD;
+                    border: 1px solid #eef;
+					border-radius:10px;
+				}
+
+				.TabBtnSelectedColor:hover
+				{
+					background: #74C4DB;
+                    border: 2px solid #eef;
+                    color:#000;
+					border-radius:10px;
+				}
+
+				.TabDetailBtn
+				{
+					position:absolute;
+					top:20px;
+					left:350px;
+				}
+
+				.TabCreateBtn
+				{
+					position:absolute;
+					top:20px;
+					left:460px;
+				}
+
+				.TabModifyBtn
+				{
+					position:absolute;
+					top:20px;
+					left:570px;
+				}
+
+                .TabDeleteBtn
+				{
+					position:absolute;
+					top:20px;
+					left:680px;
+				}
+
+                .TabHotSpareBtn
+				{
+					position:absolute;
+					top:20px;
+					left:790px;
+				}
+
+            .Div_GridDetail
+            {
+				position:absolute;
+				top:80px;
+				left:350px;
+				width: 450px;
+				height:380px;
+                background-color:#87e0fd;
+				overflow:auto;
+            }
+			#diskDetailZ	{z-index: 2;}
+            #raidDetailZ	{z-index: 1;}
+			#userDetailZ	{z-index: 1;}
+			#companyDetailZ{	z-index: 1;}
+			#departmentDetailZ{z-index: 1;}
+			#titleDetailZ{	z-index: 1;}
+			
+			.Div_GridUserList
+			{
+				position:absolute;
+				top:80px;
+				left:0px;
+				width:350px;
+				height:380px;
+				background-color:#87e0fd;
+			}
+
+			.Div_GridUserListLayout
+			{
+				position:relative;
+				top:0px;
+				left:0px;
+			}
+			
+			.Div_GridCompanyListLayout
+			{
+				position:relative;
+				top:0px;
+				left:0px;
+				z-index: 1;
+			}
+			.Div_GridDepartmentListLayout
+			{
+				position:relative;
+				top:0px;
+				left:0px;
+				z-index: 1;
+			}
+			.Div_GridTitleListLayout
+			{
+				position:relative;
+				top:0px;
+				left:0px;
+				z-index: 1;
+			}
+
+			.Div_List
+			{
+				position:absolute;
+				top:30px;
+				left:15px;
+				height:200px;
+				width:310px;
+				border-style:solid;
+				border-radius:10px;
+				border-width:3px;
+				border-color:#000;
+				background-color:#FFF;
+				
+				overflow:auto;
+			}
+
+				.Div_DiskSlotListRow
+				{
+					position:relative;
+					top:20px;
+					left:0px;
+					height:30px;
+					width:40px;
+				}
+				.Div_ListRow
+				{
+					position:relative;
+					top:20px;
+					left:0px;
+					height:30px;
+					width:100px;
+				}
+					.Btn_ListEntity_Checkbox
+					{
+						position:absolute;
+						top:0px;
+						left:0px;
+					}
+
+					.Lbl_ListEntity
+					{
+						position: absolute;
+						top: 0px;
+						left: 20px;
+						height: 20px;
+						width: 190px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						background-color: #FFFFFF;
+                        
+					}
+					.Lbl_ListEntity:hover
+					{
+						background-color: #CCFFFF;
+                    }
+					.Lbl_ListEntity:active
+					{
+                        background-color: #AAAAFF;
+                    }
+
+					.Lbl_DiskListEntitySlot
+					{
+						position: absolute;
+						top: 0px;
+						left: 20px;
+						height: 20px;
+						width: 40px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+                        background-color: #FFFFFF;
+					}
+					.Lbl_DiskListEntitySlot:hover
+					{
+						background-color: #CCFFFF;
+                    }
+					.Lbl_DiskListEntitySlot:active
+					{
+                        background-color: #AAAAFF;
+                    }
+					.Lbl_DiskListEntityStatus
+					{
+						position: absolute;
+						top: 0px;
+						left: 60px;
+						height: 20px;
+						width: 80px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+                        background-color: #FFFFFF;
+					}
+					.Lbl_DiskListEntityStatus:hover
+					{
+                        background-color: #CCFFFF;
+                    }
+					.Lbl_DiskListEntityStatus:active
+					{
+                        background-color:#AAAAFF;
+                    }
+					.Lbl_DiskListEntityType
+					{
+						position: absolute;
+						top: 0px;
+						left: 140px;
+						height: 20px;
+						width: 120px;
+						white-space: nowrap;
+						overflow: hidden;
+						text-overflow: ellipsis;
+                        background-color: #FFFFFF;
+					}
+					.Lbl_DiskListEntityType:hover
+					{
+                        background-color: #CCFFFF;
+                    }
+					.Lbl_DiskListEntityType:active
+					{
+                        background-color:#AAAAFF;
+                    }
+
+					.btnSelectAll
+					{
+						position: absolute;
+						top: 0px;
+						left: 20px;
+					}
+					.lblSelectAll
+					{
+						position: absolute;
+						top: 0px;
+						left: 45px;
+					}
+					
+					.btnDeleteSelected
+					{
+						position: absolute;
+						top:0px;
+						left:250px;
+					}
+
+					.Selected
+					{
+						background-color:#e0f0e0;
+					}
+					
+					.Btn_ListEntity_Delete
+					{
+						position:absolute;
+						top:0px;
+						left:230px;
+					}
+									
+					.Btn_ListEntity_AddHotSpare
+					{
+						position:absolute;
+						top:0px;
+						left:230px;
+					}
+									
+				.tableA
+				{
+					border-collapse:separate;
+					border-spacing:10px;
+				}
+		
+				.lblStorageLabelLeft
+				{
+					height: 20px;
+					width: 120px;
+				}
+
+				.iptFormA
+				{
+					height:20px;
+					width:280px;
+				}
+                
+				.iptFormB
+				{
+					height:20px;
+					width:100px;
+				}
+
+				.iptFormC
+				{
+					height:20px;
+					width:50px;
+				}
+				.iptIpField
+				{
+					height:20px;
+					width:40px;
+				}
+				
+				.lblMsg
+				{
+					height: 20px;
+					width: 400px;
+					color: #ff0000;
+				}
+
+				/* 輸入元件 */
+				/* OK 按鈕 */
+				.Btn_CreateUserOK
+				{
+					alignment-adjust:central;
+					height:25px;
+					width:100px;
+					cursor:pointer;
+				}
+			
+			
+
+/* 對話框 */
+.Div_DialogBase
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+	
+	width:10px;
+	height:10px;
+	overflow:hidden;
+	z-index : -10;
+}
+
+	.Div_Message
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+		
+		.Img_Dialog_Message
+		{
+			position:absolute;
+			top:20px;
+			left:30px;
+			width:30px;
+			height:30px;
+		}
+		
+		.Lbl_Dialog_Message
+		{
+			position:absolute;
+			top:20px;
+			left:60px;
+			width:400px;
+
+			text-align:left;
+			font-size:20px;
+		}
+		
+	.Div_DlgConfirm
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+		
+	.Div_DlgCompany
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+	
+	.Div_DlgDepartment
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+	
+	.Div_DlgTitle
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+	
+	.Div_WaitAjax
+	{
+		position:relative;
+		left:2%;
+		height:90%;
+		width:90%;
+	}
+	
+		.Img_Dialog_WaitAjax
+		{
+			position:absolute;
+			left:120px;
+			top:55px;
+			width:32px;
+			height:32px;
+		}
+	

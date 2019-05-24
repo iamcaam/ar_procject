@@ -1,0 +1,160 @@
+/* Clear floats after the columns */
+.userdata_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row_title:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.listContainer {
+    width: 30%;
+    height: 356px;
+    border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    float:left;
+}
+
+.userdata_row {
+    border-bottom: 1px solid #DDD;
+}
+
+.userdata_row:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3ec6e5), color-stop(1, #a1dbff) ); /*#378de5 #79bbff*/
+	background:-moz-linear-gradient( center top, #3ec6e5 5%, #a1dbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3ec6e5', endColorstr='#a1dbff');
+	background-color:#3ec6e5;
+}
+
+
+.no_user {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.column_user {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+}
+
+.userrnable {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.listview_title {
+    display: block;
+    top: 0px;
+    background-color: #0281ce;
+    color: white;
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+}
+
+#listview_content {
+    overflow-y: overlay;
+    height: 89%;
+    /*-ms-overflow-style: -ms-autohiding-scrollbar;*/
+}
+
+#tab-user-container {
+    float:right;
+    padding-left: 10px;
+}
+
+.SelectedUser {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+/*************************** Dialog Style ***************************/
+.Dialog_listContainer {
+    width: 473px;
+    height: 273px;
+    /*border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    overflow: hidden;
+    float:left;
+}
+
+.Dialog_row_title:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Dialog_userdata_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Dialog_userdata_row {
+    border-bottom: 1px solid #DDD;
+}
+
+.Dialog_userdata_row:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+    color:#FFFFFF;
+}
+
+.Dialog_listview_title {
+    display: block;
+    top: 0px;
+    /*background-color: #0281ce;*/
+    color: black;
+    border-bottom: 2px solid #000;
+    font-size: 14px;
+}
+
+#Dialog_listview_content {
+    overflow-y: overlay;
+    height: 85%;
+}
+
+.Dialog_no_user {
+    float: left;
+    width: 13%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.Dialog_column_user {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Dialog_action {
+    float: left;
+    width: 17%;
+    padding: 10px;
+    box-sizing: border-box;
+}

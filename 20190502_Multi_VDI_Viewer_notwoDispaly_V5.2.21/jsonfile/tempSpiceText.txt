@@ -1,0 +1,9 @@
+[virt-viewer]
+type = spice
+host= 192.168.91.81
+port = 5900
+username = william
+password = !QAZ2wsx
+fullscreen = 1
+delete-this-file = 1
+title =  william-192.168.91.81

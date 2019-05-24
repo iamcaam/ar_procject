@@ -1,0 +1,315 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019/2/15, 上午 11:31:47
+    Author     : william
+*/
+.root {
+    -fx-padding: 10;
+    /*
+    -fx-border-style: solid inside;
+    -fx-border-width: 2;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: white;
+    */
+    -fx-background-color: rgb(0,180,240);
+}
+
+.button {
+  
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment:center;
+}
+
+.button:hover {
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:focused {
+     -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:pressed {
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+
+.button:active {
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+
+/* 2017.11.24 william 單一帳號多個VD登入 */ 
+/*
+#LoginMultiVD_Exit {    
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;       
+}
+
+
+#LoginMultiVD_Exit:hover{
+    -fx-background-color:#1e67e2; 
+    -fx-text-fill: #E1F5FE;
+}
+
+
+#LoginMultiVD_Exit:focused {
+    -fx-background-color:#1e67e2; 
+    -fx-text-fill: #E1F5FE;
+}
+*/
+/* 調整ListView cell的仕樣*/
+.list-cell {
+  -fx-font: 18pt "Arial";
+}
+
+#Select_VD {
+    -fx-font-size: 30px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+}
+
+.ListTitle_label {
+    -fx-font-size: 18px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-style: solid inside;
+    -fx-border-width: 0 0 3 0; 
+    -fx-border-color: red blue #eaeae1 yellow;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    
+}
+
+#List_label {
+    -fx-font-size: 18px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+#Thread_status{
+    -fx-font-size: 30px;   
+    -fx-text-fill: #1A237E;
+    -fx-font-weight: 900;
+    -fx-font-family: 'Microsoft JhengHei' ; 
+}
+
+
+.check-box .box {
+
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px; 
+/*-fx-text-fill: white;
+-fx-text-background-color: white;*/
+-fx-background-image: url("images/uncheck.png");
+-fx-background-repeat: no-repeat;
+-fx-background-size: 100%;
+-fx-background-position:center;
+}
+/*https://stackoverflow.com/questions/18082549/javafx-replace-standard-checkbox-with-image*/
+.check-box:selected .mark {
+
+-fx-background-color: transparent; /* white -＞　transparent 隱藏打勾符號*/
+
+}
+
+.check-box:selected .box {
+
+  -fx-background-color: white; /* #28a3f4 -> white */
+  -fx-background-image: url("images/check.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 120%;
+  -fx-background-position:center;
+}
+
+.hbox {
+}
+
+.list-cell {
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';    
+}
+
+.list-cell:filled:selected:focused, 
+.list-cell:filled:selected {
+    /*-fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);*/
+    -fx-background-color: #0281ce; /* #1565c0 -> #0281ce*/
+    -fx-text-fill: white;
+}
+
+/*.list-cell:even {  <=== changed to even 
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}*/
+
+/* 調整TableView cell的仕樣*/
+.table_header {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;   
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); 
+}
+
+.table-view {   /* 2018.04.12 william  多VD登入新增開機狀態   */
+/*    -fx-border-style: solid inside;
+    -fx-border-width: 5;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: white; #F7F7F7 */
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:linear-gradient(derive(#0049a6, 120%), derive(#0049a6, 90%));
+    -fx-background-radius: 4, 3;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: derive(#0049a6, -60%);
+}
+
+.table-row-cell:empty {
+    -fx-background-color: lightyellow;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-cell{  
+     -fx-alignment: CENTER;
+     -fx-font-size: 16px;
+ 
+}
+
+.table-btn {
+    -fx-font-size: 12px;
+}
+
+.table-btn_favoriteVD {
+    -fx-font-size: 16px;
+    -fx-background-image: url("images/uncheck.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+    /*-fx-background-position:center;*/  
+    -fx-background-color: transparent; /* white -＞　transparent 隱藏打勾符號*/
+}
+
+.table-btn_favoriteVD:hover {
+    -fx-background-color: transparent; /* white -＞　transparent 隱藏打勾符號*/
+}
+
+/*.table-btn_favoriteVD:focused {
+    -fx-background-color: transparent;  white -＞　transparent 隱藏打勾符號
+}*/
+
+.table-btn_favoriteVD:focused {
+  -fx-font-size: 16px;
+  -fx-background-image: url("images/check.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 120%;
+  -fx-background-position:center;
+  -fx-background-color: transparent; 
+}
+
+.table-btn_favoriteVD:active {
+  -fx-font-size: 16px;
+  -fx-background-image: url("images/check.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 120%;
+  -fx-background-position:center;
+  -fx-background-color: transparent; /* white -＞　transparent 隱藏打勾符號*/
+}
+/*
+.table-view .column-resize-line {
+    -fx-background-color: transparent; 
+
+}
+
+.table-view .filler,
+.table-view:constrained-resize .filler{
+    -fx-background-color: transparent;   
+}
+
+.table-view .filler{
+     -fx-background-color: transparent;    
+     -fx-border-width: 0px;
+}
+
+ http://www.cnblogs.com/maokun/p/6710834.html
+*/
+
+#Title {   /* 2018.04.12 william  多VD登入新增開機狀態   */
+    -fx-background-color:yellow;
+    -fx-text-fill: black;
+    -fx-font-size: 22px;
+    -fx-font-weight: 900;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;   
+}
+
+/* 2018.11.11 新增AcroDesk & RDP Protocol */
+/*.combo-box{    
+    -fx-font-size: 8px;
+    -fx-font-family: 'Ubuntu' ; 
+    -fx-background-color: transparent; 
+}*/
+
+
+
+.combo-box-base {
+    /*-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;*/
+    -fx-background-color: transparent; 
+    /*-fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;*/ /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;    
+}
+
+.combo-box .list-cell 
+{
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font-size: 14px;
+        -fx-alignment: CENTER;
+    -fx-content-display: CENTER; 
+/*    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; */
+    -fx-pref-width:100;
+}
+
+.combo-box-popup .list-view 
+{
+    -fx-background-color: white;    
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+    -fx-pref-width:130;
+} 

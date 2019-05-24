@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+
+/* 公開分享的設計容器*/
+#Div_TabPublicShare {
+	height: 480px;
+	width: 960px;
+	background-color: #CC3;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.H4_StatusDescription {
+	position: absolute;
+	height: auto;
+	width: auto;
+	left: 30px;
+	top: 75px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+.H4_StartSetBtn {
+	display: block;
+	float: left;
+	text-decoration: none;
+	background-color: #09F;
+	color: #FFF;
+	text-align: center;
+	border: 1px solid #FFF;
+	position: absolute;
+	left: 128px;
+	top: 75px;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+}
+
+.Btn_InsideShort {
+	background-color: #693;
+	color: #FFF;
+	display: block;
+	height: 15px;
+	width: 80px;
+	border: 1px solid #FFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	margin: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btn_InsideShort:hover {
+	background-color: #0C0;
+	color: #FFF;
+	display: block;
+	height: 15px;
+	width: 80px;
+	border: 1px solid #FFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	margin: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.Btn_InsideShort:active {
+	background-color: #693;
+	color: #F90;
+	display: block;
+	height: 15px;
+	width: 80px;
+	border: 1px solid #FFF;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	margin: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.InputChkBxPwd {
+	position: absolute;
+	left: 28px;
+	top: 120px;
+	font-size: 1em;
+	height: 20px;
+	width: 20px;
+}
+.H4_PwdTitle {
+	position: absolute;
+	height: auto;
+	width: auto;
+	left: 58px;
+	top: 124px;
+	margin: 0px;
+	padding: 0px;
+}
+.InputPwd {
+	font-size: 1em;
+	width: 250px;
+	position: absolute;
+	left: 141px;
+	top: 122px;
+	margin: 0px;
+	padding: 0px;
+}
+.H4_CreateBtn {
+	position: absolute;
+	left: 407px;
+	top: 122px;
+}
+.H4_CancelBtn {
+	position: absolute;
+	left: 500px;
+	top: 122px;
+}
+.H4_Link {
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	position: absolute;
+	left: 28px;
+	top: 223px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.H4_CopyBtn {
+	position: absolute;
+	left: 118px;
+	top: 260px;
+}
+.H4_DeleteBtn {
+	position: absolute;
+	background-color: #F00;
+	color: #FFF;
+	left: 28px;
+	top: 260px;
+}
+
+.H4_Link_Title
+{
+	position: absolute;
+	left: 28px;
+	top: 180px;
+}

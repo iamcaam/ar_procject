@@ -1,0 +1,60 @@
+/* iCheck plugin Minimal skin, blue
+----------------------------------- */
+.icheckbox_minimal-blue,
+.iradio_minimal-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0px 0px; /* SnapShot&Schedule&Backup 2017.01.11 william 原值0.5px -> 0px 0.2px(2017.02.03) */ 
+    padding: 0;
+    width: 19px; /* 修改 2017.02.03 william 原值18.5px */ 
+    height: 19px; /* 修改 2017.02.03 william 原值18.5px */ 
+    background: url(blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-blue {
+    background-position: 0.5px 0.5px; /* SnapShot&Schedule&Backup 2017.01.11 william 原值0.5px -> 0.3px 0(2017.02.03)*/ 
+}
+    .icheckbox_minimal-blue.hover { /* 修改 2017.02.16 william 原值-20px 0*/ 
+        background-position: -19.5px 0.5px;
+    }
+    .icheckbox_minimal-blue.checked {
+        background-position: -40px 0;
+    }
+    .icheckbox_minimal-blue.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .icheckbox_minimal-blue.checked.disabled {
+        background-position: -80px 0;
+    }
+
+.iradio_minimal-blue {
+    background-position: -100px 0;
+}
+    .iradio_minimal-blue.hover {
+        background-position: -120px 0;
+    }
+    .iradio_minimal-blue.checked {
+        background-position: -140px 0;
+    }
+    .iradio_minimal-blue.disabled {
+        background-position: -160px 0;
+        cursor: default;
+    }
+    .iradio_minimal-blue.checked.disabled {
+        background-position: -180px 0;
+    }
+
+/* HiDPI support */
+@media (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    .icheckbox_minimal-blue,
+    .iradio_minimal-blue {
+        /*background-image: url(blue@2x.png);*/
+        background-image: url(blue.png);
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}

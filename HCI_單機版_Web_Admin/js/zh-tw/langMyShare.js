@@ -1,0 +1,61 @@
+var LanguageStr_MyShare =
+{
+	Div_WaitAjax : "資料處理中，請稍候",
+	h4_ShareListRow_TargetName_FromOther : "誰分享給我",
+	h4_ShareListRow_TargetName_FromMe : "我分享給誰",
+	
+	IsFolder : "（資料夾）",
+	ShareDateTimeStr : "沒有分享期限",
+	PublicShare : "公開分享",
+	NoFileShareOutNow : "目前沒有「檔案」或「資料夾」被分享出去！",
+	NoFileShareInNow : "目前沒有別人分享「檔案」或「資料夾」給我！",
+	ShareCaseStr00 : "上下傳全開放",
+	ShareCaseStr01 : "僅下載模式",
+	ShareCaseStr02 : "交作業模式",
+	ShareCaseStr03 : "公開分享",
+	
+	AjaxMsg00 : "取得由我分享的分享清單錯誤，參數錯誤:",
+	AjaxMsg01 : "取得由我分享的分享清單錯誤，Access Key 錯誤:",
+	AjaxMsg02 : "取得由我分享的分享清單錯誤錯誤，資料庫錯誤:",
+	AjaxMsg03 : "取得由我分享的分享清單錯誤，其他錯誤:",
+	AjaxMsg04 : "取得由我分享的分享清單錯誤，未知的原因，代碼為：",
+	AjaxMsg05 : "取得由我分享的分享清單錯誤，Ajax Error:",
+	
+	AjaxMsg10 : "取得由別人分享的分享清單錯誤，參數錯誤:",
+	AjaxMsg11 : "取得由別人分享的分享清單錯誤，Access Key 錯誤:",
+	AjaxMsg12 : "取得由別人分享的分享清單錯誤錯誤，資料庫錯誤:",
+	AjaxMsg13 : "取得由別人分享的分享清單錯誤，其他錯誤:",
+	AjaxMsg14 : "取得由別人分享的分享清單錯誤，未知的原因，代碼為：",
+	AjaxMsg15 : "取得由別人分享的分享清單錯誤，Ajax Error:",
+	
+	AjaxMsg20 : "刪除公開分享錯誤，參數錯誤",
+	AjaxMsg21 : "刪除公開分享錯誤，Access Key 錯誤",
+	AjaxMsg22 : "刪除公開分享錯誤，資料庫錯誤",
+	AjaxMsg23 : "刪除公開分享錯誤，其他錯誤:",
+	AjaxMsg24 : "刪除公開分享錯誤，未知的原因，代碼為：",
+	AjaxMsg25 : "刪除公開分享失敗，Ajax Error:",
+	
+	AjaxMsg30 : "刪除由我分享的個人分享項目錯誤，參數錯誤",
+	AjaxMsg31 : "刪除由我分享的個人分享項目錯誤，Access Key 錯誤",
+	AjaxMsg32 : "刪除由我分享的個人分享項目錯誤，資料庫錯誤",
+	AjaxMsg33 : "刪除由我分享的個人分享項目錯誤，其他錯誤",
+	AjaxMsg34 : "刪除由我分享的個人分享項目錯誤，未知的原因，代碼為：",
+	AjaxMsg35 : "刪除由我分享的個人分享項目錯誤",
+	AjaxMsg36 : "刪除由我分享的個人分享清單錯誤，Ajax Error:",
+	
+	AjaxMsg40 : "刪除由我分享的群組分享項目錯誤，參數錯誤",
+	AjaxMsg41 : "刪除由我分享的群組分享項目錯誤，Access Key 錯誤",
+	AjaxMsg42 : "刪除由我分享的群組分享項目錯誤，資料庫錯誤",
+	AjaxMsg43 : "刪除由我分享的群組分享項目錯誤，其他錯誤",
+	AjaxMsg44 : "刪除由我分享的群組分享項目錯誤，未知的原因，代碼為：",
+	AjaxMsg45 : "刪除由我分享的群組分享項目錯誤",
+	AjaxMsg46 : "刪除由我分享的群組分享清單錯誤，Ajax Error:",
+	
+	AjaxMsg50 : "刪除由別人分享的分享項目，參數錯誤:",
+	AjaxMsg51 : "刪除由別人分享的分享項目，Access Key 錯誤:",
+	AjaxMsg52 : "刪除由別人分享的分享項目，資料庫錯誤:",
+	AjaxMsg53 : "刪除由別人分享的分享項目，其他錯誤:",
+	AjaxMsg54 : "刪除由別人分享的分享項目，未知的原因，代碼為：",
+	AjaxMsg55 : "刪除時有錯誤發生，可能有些分享項目沒有刪除，請確認",
+	AjaxMsg56 : "刪除由別人分享的分享項目，Ajax Error:"
+}

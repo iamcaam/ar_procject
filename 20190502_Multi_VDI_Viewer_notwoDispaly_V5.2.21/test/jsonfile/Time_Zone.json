@@ -1,0 +1,355 @@
+{   
+    "Zone":
+        [
+            {
+                "zoneId":"Pacific/Midway",
+                "zoneName":"(GMT-11:00) Samnona Standard Time; Midway Is."
+            },
+            {
+                "zoneId":"Pacific/Honolulu",
+                "zoneName":"(GMT-10:00) Hawaii Standard Time"                
+            },
+            {
+                "zoneId":"US/Alaska",
+                "zoneName":"(GMT-09:00) Alaska Standard Time"                
+            },
+            {
+                "zoneId":"US/Pacific",
+                "zoneName":"(GMT-08:00) Pacific Time(US & Canada); Tijuana"                
+            },
+            {
+                "zoneId":"US/Arizona",
+                "zoneName":"(GMT-07:00) Arizona"                
+            },
+            {
+                "zoneId":"US/Mountain",
+                "zoneName":"(GMT-07:00) Chihuahua, Mazatlan"                
+            },
+            {
+                "zoneId":"America/Chihuahua",
+                "zoneName":"(GMT-07:00) Mountain Time (US & Canada)"                
+            },
+            {
+                "zoneId":"America/Guatemala",
+                "zoneName":"(GMT-06:00) Central America Standard Time; Guate"                
+            },
+            {
+                "zoneId":"US/Central",
+                "zoneName":"(GMT-06:00) Central Time (US & Canada)"                
+            },
+            {
+                "zoneId":"America/Mexico_City",
+                "zoneName":"(GMT-06:00) Mexico City; Tegucigalpa"                
+            },
+            {
+                "zoneId":"Canada/Saskatchewan",
+                "zoneName":"(GMT-06:00) Saskatchewan"                
+            },
+            {
+                "zoneId":"America/Bogota",
+                "zoneName":"(GMT-05:00) Bogota, Lima, Quito, Rio Branco"                
+            },
+            {
+                "zoneId":"US/Eastern",
+                "zoneName":"(GMT-05:00) Eastern Time (US & Canada)"                
+            },
+            {
+                "zoneId":"US/East-Indiana",
+                "zoneName":"(GMT-05:00) Indiana (East)"                
+            },
+            {
+                "zoneId":"America/Caracas",
+                "zoneName":"(GMT-04:30) Caracas"                
+            },
+            {
+                "zoneId":"Canada/Atlantic",
+                "zoneName":"(GMT-04:00) Atlantic Time (Canada)"                
+            },
+            {
+                "zoneId":"America/La_Paz",
+                "zoneName":"(GMT-04:00) La Paz"                
+            },
+            {
+                "zoneId":"America/Manaus",
+                "zoneName":"(GMT-04:00) Manaus"                
+            },
+            {
+                "zoneId":"America/New_York",
+                "zoneName":"(GMT-04:00) New York"                
+            },
+            {
+                "zoneId":"Canada/Newfoundland",
+                "zoneName":"(GMT-03:30) Newfoundland"                
+            },
+            {
+                "zoneId":"America/Santiago",
+                "zoneName":"(GMT-03:00) Santiago"                
+            },
+            {
+                "zoneId":"America/Fortaleza",
+                "zoneName":"(GMT-03:00) Brasilia"                
+            },
+            {
+                "zoneId":"America/Buenos_Aires",
+                "zoneName":"(GMT-03:00) Buenos Aires, Georgetown"                
+            },
+            {
+                "zoneId":"America/Godthab",
+                "zoneName":"(GMT-03:00) Greenland Standard Time"                
+            },
+            {
+                "zoneId":"America/Montevideo",
+                "zoneName":"(GMT-02:00) Montevideo"                
+            },
+            {
+                "zoneId":"Atlantic/South_Georgia",
+                "zoneName":"(GMT-02:00) Mid-Atlantic Standard Time"                
+            },
+            {
+                "zoneId":"Atlantic/Azores",
+                "zoneName":"(GMT-01:00) Azores Standard Time"                
+            },
+            {
+                "zoneId":"Atlantic/Cape_Verde",
+                "zoneName":"(GMT-01:00) Cape Verde Is."                
+            },
+            {
+                "zoneId":"Africa/Casablanca",
+                "zoneName":"(GMT) Casablanca"                
+            },
+            {
+                "zoneId":"Europe/London",
+                "zoneName":"(GMT) Dublin, Edinburgh, Lisbon, London"                
+            },
+            {
+                "zoneId":"Africa/Monrovia",
+                "zoneName":"(GMT) Monrovia, Reykjavik"                
+            },
+            {
+                "zoneId":"Europe/Amsterdam",
+                "zoneName":"(GMT+01:00) Amsterdam, Berlin, Rome, Stockholm, Vienna"                
+            },
+            {
+                "zoneId":"Europe/Belgrade",
+                "zoneName":"(GMT+01:00) Belgrade, Bratislava, Budapest, Prague"                
+            },
+            {
+                "zoneId":"Europe/Brussels",
+                "zoneName":"(GMT+01:00) Brussels, Copenhagen, Madrid, Paris"                
+            },
+            {
+                "zoneId":"Europe/Sarajevo",
+                "zoneName":"(GMT+01:00) Sarajevo, Skopie, Warsaw, Zagreb"                
+            },
+            {
+                "zoneId":"Africa/Kinshasa",
+                "zoneName":"(GMT+01:00) Western Africa Time"                
+            },
+            {
+                "zoneId":"Africa/Windhoek",
+                "zoneName":"(GMT+02:00) Windhoek"                
+            },
+            {
+                "zoneId":"Asia/Amman",
+                "zoneName":"(GMT+02:00) Amman"                
+            },
+            {
+                "zoneId":"Europe/Athens",
+                "zoneName":"(GMT+02:00) Athens, Bucharest, Istanbul"                
+            },
+            {
+                "zoneId":"Asia/Beirut",
+                "zoneName":"(GMT+02:00) Beirut"                
+            },
+            {
+                "zoneId":"Egypt",
+                "zoneName":"(GMT+02:00) Egypt Standard Time"                
+            },
+            {
+                "zoneId":"Africa/Harare",
+                "zoneName":"(GMT+02:00) Harare, Pretoria"                
+            },
+            {
+                "zoneId":"Europe/Helsinki",
+                "zoneName":"(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius"                
+            },
+            {
+                "zoneId":"Israel",
+                "zoneName":"(GMT+02:00) Israel Standard Time"                
+            },
+            {
+                "zoneId":"Africa/Gaborone",
+                "zoneName":"(GMT+02:00) Central Africa Time"                
+            },
+            {
+                "zoneId":"Europe/Sofia",
+                "zoneName":"(GMT+02:00) Eastern Europe Standard Time"                
+            },
+            {
+                "zoneId":"Europe/Minsk",
+                "zoneName":"(GMT+03:00) Minsk"                
+            },
+            {
+                "zoneId":"Asia/Baghdad",
+                "zoneName":"(GMT+03:00) Baghdad"                
+            },
+            {
+                "zoneId":"Asia/Kuwait",
+                "zoneName":"(GMT+03:00) Kuwait"                
+            },
+            {
+                "zoneId":"Africa/Nairobi",
+                "zoneName":"(GMT+03:00) Nairobi"                
+            },
+            {
+                "zoneId":"Europe/Moscow",
+                "zoneName":"(GMT+03:00) Moscow, St. Petersburg, Kazan, Volgograd"                
+            },
+            {
+                "zoneId":"Iran",
+                "zoneName":"(GMT+03:30) Iran Standard Time"                
+            },
+            {
+                "zoneId":"Asia/Muscat",
+                "zoneName":"(GMT+04:00) Abu Dhabi, Muscat"                
+            },
+            {
+                "zoneId":"Asia/Baku",
+                "zoneName":"(GMT+04:00) Baku"                
+            },
+            {
+                "zoneId":"Asia/Tbilisi",
+                "zoneName":"(GMT+04:00) Tbilisi"                
+            },
+            {
+                "zoneId":"Asia/Yerevan",
+                "zoneName":"(GMT+04:00) Yerevan"                
+            },
+            {
+                "zoneId":"Asia/Kabul",
+                "zoneName":"(GMT+04:30) Afghanistan Standard Time"                
+            },
+            {
+                "zoneId":"Asia/Karach",
+                "zoneName":"(GMT+05:00) Karachi, Islamabad, Tashkent"                
+            },
+            {
+                "zoneId":"Asia/Yekaterinburg",
+                "zoneName":"(GMT+05:00) Ekaterinburg"                
+            },
+            {
+                "zoneId":"Asia/Calcutta",
+                "zoneName":"(GMT+05:30) Bombay, Calcutta, Madras, New Delhi, Colombo"                
+            },
+            {
+                "zoneId":"Asia/Kathmandu",
+                "zoneName":"(GMT+05:45) Kathmandu"                
+            },
+            {
+                "zoneId":"Asia/Almaty",
+                "zoneName":"(GMT+06:00) Almaty, Astana"                
+            },
+            {
+                "zoneId":"Asia/Dhaka",
+                "zoneName":"(GMT+06:00) Dhaka"                
+            },
+            {
+                "zoneId":"Asia/Novosibirsk",
+                "zoneName":"(GMT+06:00) Novosibirsk"                
+            },
+            {
+                "zoneId":"Asia/Rangoon",
+                "zoneName":"(GMT+06:30) Yangon(Rangoon)"                
+            },
+            {
+                "zoneId":"Asia/Bangkok",
+                "zoneName":"(GMT+07:00) Bangkok, Hanoi, Jakarta"                
+            },
+            {
+                "zoneId":"Asia/Krasnoyarsk",
+                "zoneName":"(GMT+07:00) Krasnoyarsk"                
+            },
+            {
+                "zoneId":"Asia/Taipei",
+                "zoneName":"(GMT+08:00) Taipei"                
+            },
+            {
+                "zoneId":"Asia/Hong_Kong",
+                "zoneName":"(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi"                
+            },
+            {
+                "zoneId":"Asia/Ulaanbaatar",
+                "zoneName":"(GMT+08:00) Ulaanbaatar"                
+            },
+            {
+                "zoneId":"Asia/Kuala_Lumpur",
+                "zoneName":"(GMT+08:00) Kuala Lumpur, Singapore"                
+            },
+            {
+                "zoneId":"Australia/Perth",
+                "zoneName":"(GMT+08:00) Perth"                
+            },
+            {
+                "zoneId":"Asia/Irkutsk",
+                "zoneName":"(GMT+08:00) Irkutsk"                
+            },
+            {
+                "zoneId":"Asia/Tokyo",
+                "zoneName":"(GMT+09:00) Tokyo, Osaka, Sapporo"                
+            },
+            {
+                "zoneId":"Asia/Seoul",
+                "zoneName":"(GMT+09:00) Seoul"                
+            },
+            {
+                "zoneId":"Asia/Yakutsk",
+                "zoneName":"(GMT+09:00) Yakutsk"                
+            },
+            {
+                "zoneId":"Australia/Darwin",
+                "zoneName":"(GMT+09:30) Darwin"                
+            },
+            {
+                "zoneId":"Australia/Brisbane",
+                "zoneName":"(GMT+10:00) Brisbane"                
+            },
+            {
+                "zoneId":"Pacific/Guam",
+                "zoneName":"(GMT+10:00) Guam, Port Moresby"                
+            },
+            {
+                "zoneId":"Asia/Vladivostok",
+                "zoneName":"(GMT+10:00) Vladivostok"                
+            },
+            {
+                "zoneId":"Asia/Magadan",
+                "zoneName":"(GMT+10:00) Magadan, Solomon Is., New Caledonia"                
+            },
+            {
+                "zoneId":"Australia/Adelaide",
+                "zoneName":"(GMT+10:30) Adelaid"                
+            },
+            {
+                "zoneId":"Australia/Tasmania",
+                "zoneName":"(GMT+11:00) Tasmania Standard Time"                
+            },
+            {
+                "zoneId":"Australia/Melbourne",
+                "zoneName":"(GMT+11:00) Melbourne, Sydney, Canberra"                
+            },
+            {
+                "zoneId":"Pacific/Noumea",
+                "zoneName":"(GMT+11:00) New Caledonia"                
+            },
+            {
+                "zoneId":"Pacific/Auckland",
+                "zoneName":"(GMT+12:00) Auckland, Wellington"                
+            },
+            {
+                "zoneId":"Pacific/Fiji",
+                "zoneName":"(GMT+12:00) Fiji, Kamchatka, Marshall Is."                
+            }
+            
+        ]
+       
+}

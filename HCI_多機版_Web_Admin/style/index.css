@@ -1,0 +1,574 @@
+html, body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    min-width: 1024px;
+}
+div.Logo{
+    position: absolute; 
+    z-index:3; 
+    left: 0px; 
+    top:0px; 
+    width: 180px; 
+    height: 70px; 
+    font-style:italic; 
+    font-weight:900; 
+    font-size:xx-large; 
+    color:red; 
+    text-align:center; 
+    line-height:70px; 
+    font-family: "Times New Roman","DFKai-SB","BiauKai","TW-Kai";
+/*    background-image: linear-gradient( to bottom , #FFFFFF 0%, #BDBDBD 100%); 
+    box-shadow: #666 0px 2px 3px;*/
+}
+div.Header{
+    position: absolute; 
+    z-index:2; 
+    left: 0px; 
+    top:0px; 
+    width: 100%; 
+    height: 40px; 
+    color: white; 
+    text-align:center; 
+    line-height:40px; 
+    font-size:x-large; 
+    font-weight:600; 
+    background-image: linear-gradient( to bottom , #FF0D0D 0%, #6B0404 100%); 
+    box-shadow: #666 0px 2px 3px;
+}
+div.Version{
+    position: absolute; 
+    right: 20px; 
+    top:20px;  
+    height: 10px; 
+    z-index:4; 
+    font-size:16px; 
+    color:white; 
+    text-align:right;
+}
+div.OptionBar{    
+    position: absolute; 
+    z-index:2; 
+    left: 0px; 
+    width: 100%; 
+    height: 30px; 
+    background-image: linear-gradient( to bottom , #F8FF3B 0%, #EFDF00 100%);
+    box-shadow: #666 0px 2px 3px;
+}
+div#rl{
+    position: absolute;    
+    z-index:2; 
+    left: 180px; 
+    width: 130px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;    
+}
+div#ise{
+    position: absolute; 
+    z-index:2; 
+    left: 320px; 
+    width: 130px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;
+}
+div#ss{
+    position: absolute; 
+    z-index:2; 
+    left: 460px; 
+    width: 130px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;
+}
+div#sup{
+    position: absolute; 
+    z-index:2; 
+    left: 600px; 
+    width: 170px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;
+}
+div#el{
+    left: 780px; 
+    position: absolute; 
+    z-index:2; 
+    width: 140px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;
+}
+div#lo{
+    right: 10px;
+    position: absolute; 
+    z-index:2; 
+    width: 100px; 
+    height: 30px; 
+    text-align:center; 
+    line-height:30px; 
+    font-size: larger;
+}
+#rl{position: relative;height: 60px;width: 100%;}
+#div_relay_header{position: relative;width: 100%;}
+/*#div_option{position: relative;height: 40px;width: 100%;}*/
+#div_relay_control{position: relative; width: 100%;top:80px}
+#div_ip_control{position: relative; width: 100%;top:80px}
+#div_sys_config{position: relative; width: 100%;top:80px}
+#div_upgrade_control{position: relative; width: 100%;top:20px}
+#div_log_control{position: relative; width: 100%;top:80px}
+/*#div_relay_table{margin: 20px auto;width: 1024px}*/
+/*#div_control_table{margin-top: 10px}*/
+a {text-decoration: none;}
+.btn-dark {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background-color: #363636;
+    background-image: -moz-linear-gradient(top, #444444, #222222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222));
+    background-image: -webkit-linear-gradient(top, #444444, #222222);
+    background-image: -o-linear-gradient(top, #444444, #222222);
+    background-image: linear-gradient(to bottom, #444444, #222222);
+    background-repeat: repeat-x;
+    border-color: #222222 #222222 #000000;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.btn-light {
+    display: inline-block;
+    padding: 4px 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+/*input[type="text"]{    // text和password風格一致，將原input=text的設計風格取消 2017.03.17 william
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}*/
+.iptext{width: 180px; height: 20px}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{    
+     background: #96f8ff;
+    font-weight:bolder;
+    height: 25px;
+    cursor:default
+}
+th, td {    
+   
+    font-family:"Times New Roman";
+    padding: 5px;
+}
+table tr:nth-child(odd) {
+    background-color: #eee;
+}
+table tr:nth-child(even) {
+   background-color:#fff;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {  /*safari and chrome*/
+    select {
+        width:120px;
+        height:30px;
+        line-height:30px;
+        background:#f4f4f4;
+    } 
+}
+select::-moz-focus-inner { /*Remove button padding in FF*/ 
+    border: 0;
+    padding: 0;
+}
+@-moz-document url-prefix() { /* targets Firefox only */
+    select {
+        padding: 15px 0!important;
+    }
+}        
+@media screen\0 { /* IE Hacks: targets IE 8, 9 and 10 */        
+    select {
+        height:30px;
+        line-height:30px;
+    }     
+}
+
+legend {
+    color:blue;
+}
+
+.div_fieldcontent{
+    margin-left: 40px
+}
+
+.file-upload {
+    position: relative;
+    overflow: hidden;
+}
+.file-upload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.btn 
+{
+display: inline-block;
+margin-bottom: 0;
+font-weight: normal;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.btn-primary {
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}
+
+#uploadFile{
+    font-size: 15px; 
+    width: 250px;
+    height: 30px
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 5px;
+}
+input::-moz-placeholder {
+    padding-left: 5px;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    padding-left: 5px;
+}
+input:-ms-input-placeholder { 
+    padding-left: 5px;
+}
+
+#modal_update_progress_content {display:none;}
+
+/* Overlay */
+/*#simplemodal-overlay {background-color:#000;}*/
+
+/* Container */
+/*#simplemodal-container 
+{
+    height:400px; 
+    width:560px; color:black; 
+    background-color:white; 
+    border:4px 
+    solid #444; 
+    padding:12px;
+}*/
+/*#simplemodal-container .simplemodal-data {padding:8px;}*/
+/*#simplemodal-container a.modalCloseImg {background:url(../img/basic/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}*/
+/*#simplemodal-container h3 {color:#84b8d9;}*/
+
+    /*#progressbar
+    {
+        position:absolute;
+        left: 100px;
+        width:400px; 
+        height: 25px;
+        top: -5px;
+    }*/
+
+.progress-label 
+{
+    position: absolute;    
+    top: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    text-align: center;
+    width:400px;
+}
+
+.scrollit {
+    overflow:auto;
+    height:260px;    
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-dialog .ui-widget-header:first-child{
+    border: 1px solid black;
+    background: #0273b7;  /* SnapShot&Schedule&Backup  2017.01.11 william */ 
+}
+.ui-dialog-title{
+    color: white; /* SnapShot&Schedule&Backup  2017.01.11 william */ 
+}
+
+.FunctionControl{
+    position: absolute;
+    cursor: pointer;
+    top:40px;
+}
+
+.OptionSelect{
+    background-image: linear-gradient( to bottom , #FFD712 0%, #DB9B05 100%);
+}
+
+.OptionUnSelect{
+    background-image: linear-gradient( to bottom , #F8FF3B 0%, #EFDF00 100%);
+}
+
+.LabelHead{
+    display: inline-block;
+    width: 210px;
+}
+
+.L1{
+    position: relative;
+    top: 3px
+}
+
+.LabelRelayStarHead{
+    display: inline-block;
+    width: 10px;
+}
+
+.LabelRelayHead{
+    display: inline-block;
+    width: 230px;
+}
+.LabelAddRelayHead{
+    display: inline-block;
+    width: 190px;
+}
+.LabelIPHead{
+    display: inline-block;
+    width: 130px;
+}
+
+.LabelSuspendHead{
+    display: inline-block;
+    width: 100px;
+}
+
+.InputText{
+    width: 250px;
+    height: 25px;
+}
+
+.InputRelay{
+    height: 25px;
+    width: 250px;
+}
+
+.LabelVersionHead{
+    display: inline-block;
+    width: 136px; /* 新式樣修改(藍黃) 2017.02.03 william 132px */
+}
+
+.LabelSource{
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
+    display: inline-block;    
+    width: 300px;    
+}
+
+div.ui-tooltip {
+    max-width: 650px;
+}
+
+.TooltipURL{
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
+    display: inline-block;
+    width:350px
+}
+
+.wrapword{
+    white-space: pre;           /* CSS 2.0 */
+    white-space: pre-wrap;      /* CSS 2.1 */
+    white-space: pre-line;      /* CSS 3.0 */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: -moz-pre-wrap; /* Mozilla */
+    white-space: -hp-pre-wrap;  /* HP Printers */
+    word-wrap: break-word;      /* IE 5+ */
+    display: block;    
+    width:280px
+}
+
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+
+#combotimezone {
+    /*position: absolute;*/
+    width: 355px;
+    height: 30px;
+    top: 10px;
+    left: 220px;
+}
+
+#combontpserver{
+    position: absolute;
+    width: 355px;
+    height: 30px;
+    top: 155px;
+    left: 220px;
+}
+
+#combohour{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top:80px;
+    left: 220px
+}
+
+#lablehourmin{
+    position: absolute;
+    line-height: 30px;
+    height: 30px;
+    top:85px;
+    text-align: center;
+    left: 337px
+}
+
+#combomin{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top:80px;
+    left: 348px
+}
+
+#lableminsecond{
+    position: absolute;
+    line-height: 30px;
+    height: 30px;
+    top:85px;
+    text-align: center;
+    left: 463px
+}
+
+#combosecond{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top:80px;
+    left: 475px
+}
+
+.TimeShift{
+    left: 20px;
+}
+
+.TimeSettingShift{
+    left: 50px;
+}
+
+#combocache{    
+    position: absolute;
+    width: 150px;
+    height: 30px;    
+    left: 220px
+}
+
+.LabelEnableBridge{
+    cursor:pointer;
+/*    position:absolute;
+    padding-top:1px;
+    padding-left:5px*/
+}
+
+.adminmain_eyes { /* 新增修改密碼的密碼顯示 2017.03.17 william */
+    width: 31px;
+    height: 31px;
+    background: white;
+    border: 1px solid #dbd5d5;
+    position: relative;
+    margin: 0 auto;
+    left: -3px;
+    top: 12px;
+    border-radius: 3px;
+}

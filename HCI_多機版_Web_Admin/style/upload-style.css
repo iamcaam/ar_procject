@@ -1,0 +1,284 @@
+﻿/* 2013.03.15 Foxy 改用 HTML5 的上傳元件之後，上傳的介面都交給 Client 的 OS 跟 Browser 來處理，在近日原本不提供上傳
+	的 iPad 跟 iPhone 也都提供上傳功能了，甚至還提供了立即拍照並上傳，為了配合這項新出現的舊功能，要作一些修改，首先
+	要先修改的是，要讓使用者可以改檔名。 需要先加大視窗（ 修改 Div_Container 與 content.php 的按鈕事件 ) 然後修改 UI
+	位置*/
+
+
+body
+{
+	margin:0;
+	padding:0;
+}
+
+iframe
+{
+	visibility:hidden;
+	height:0px;
+	width:0px;
+}
+
+#container{
+margin:0px;
+}
+
+#formDiv{
+	
+	
+background-color: wheat
+
+}
+#formDiv form{
+	margin:8px;
+}
+
+#formDiv form #stateDiv{
+	margin:8px;
+
+}
+#btn_close{
+	display:none;        
+}
+
+
+.Div_Container
+{   
+    position:absolute;
+    left: auto;
+    top: auto;
+	width:400px;
+	height:380px;
+	background: #66ccff;
+	color:#fff;
+ 
+    border-radius: 5px;
+}
+
+
+
+.DivUpload
+{
+	position:absolute;
+    border-width: 1px;
+	border-style:solid;
+    border-color: white;
+    background-color: 66ccff;
+	border-radius: 5px;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    height: 80%;
+}
+
+
+
+.Lbl_Title
+{
+	position:absolute;
+    top: 20px;
+    left: 150px;
+    width: 100px;
+    height: 30px;
+    
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 22px;
+    font-weight:bold;
+    color: white;
+}
+
+
+.TitleLine
+{
+	position:absolute;
+    border-width: 1px;
+    border-color: wheat;
+    background-color: wheat;
+    top: 50px;
+    left: 10px;
+    width: 380px;
+    height: 2px;
+}
+
+
+.GotoSilverlightUpload 
+{
+	position:absolute;
+    top: 10px;
+    left: 0px;
+    width: 90%;
+    height: auto;
+	text-align: right;
+	color:blue;
+}
+
+
+
+.Lbl_PlzSelFile
+{
+	text-align: left;
+	position:absolute;
+    top: 50px;
+    left: 30px;
+    width: 220px;
+    height: 25px;
+    
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.SpecDivForFile
+{
+	position:absolute;
+    top: 80px;
+    left: 30px;
+    width: 330px;
+    height: 30px;
+    text-align: center;
+    text-wrap: normal;
+    font-size: 20px;
+}
+
+
+
+.SelectFile
+{
+	position:absolute;
+    top: 1px;
+    left: 0px;
+    width: 330px;
+    text-align: center;
+    text-wrap: normal;
+    
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+
+.Div_UploadInfo
+{
+	position:absolute;
+    top: 110px;
+    left: 30px;
+    width: 350px;
+    height: 110px;
+
+	overflow:hidden;
+    text-wrap: normal;
+    font-size: 20px;
+	visibility:hidden;
+}
+
+
+	.FileNameTitle 
+	{
+		position:absolute;
+		top: 20px;
+		left: 0px;
+		width: 95px;
+		height: 25px;
+		text-align:right;
+	}
+
+
+
+	.FileNameInfo 
+	{
+		position:absolute;
+		top: 20px;
+		left: 105px;
+		width: 200px;
+		height: 25px;
+		
+		font-size: 18px;
+	}
+
+
+
+	.FileSizeTitle 
+	{
+		position:absolute;
+		top: 60px;
+		left: 0px;
+		width: 95px;
+		height: 25px;
+		text-align:right;
+	}
+
+
+
+	.FileSizeInfo 
+	{
+		position:absolute;
+		top: 60px;
+		left: 105px;
+		width: 200px;
+		height: 25px;
+	}
+
+
+
+.ChkBx_CloseAtFinish
+{
+	position:absolute;
+    top: 200px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+
+.Lbl_CloseAtFinish
+{
+	position:absolute;
+    top: 202px;
+    left: 65px;
+    width: 320px;
+    height: 25px;
+    text-align:left;
+    
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+.Progress
+{
+	position:absolute;
+    top: 230px;
+    left: 70px;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    font-size: 20px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+
+.UploadStart
+{
+	position:absolute;
+    top: 260px;
+    left: 70px;
+    width: 114px;
+    height: 38px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.UploadCancel
+{
+	position:absolute;
+    top: 260px;
+    left: 200px;
+    width: 114px;
+    height: 38px;
+    text-align: center;
+    font-size: 20px;
+}
+

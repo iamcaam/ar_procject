@@ -1,0 +1,33 @@
+lang={
+    asklogout : "您是否要注销?",
+    askdelete : "您是否要删除这些目录或档案?",
+    askshare : "此档案/目录尚未分享，你是否要分享此档案/目录?",
+    askmove : "请选择一个以上的档案或目录来移动。",
+    selectall : "选择全部",
+    cancelall : "取消全部",
+    delwar : "请选择一个以上的档案或目录来删除。",
+    root : "根目录",
+    charwarning: "名称第一个字符不许输入:/,._以及名称内不许输入\\*<>|\"/\'",
+    SearchResult: "搜尋結果",
+    SortOutDOC : "文件",
+    SortOutAUDIO : "音乐",
+    SortOutVIDEO : "视频",
+    SortOutPHOTO : "图片",
+    RecycleBin : "资源回收桶",
+    FreeSpace : "剩余空间 :",
+    Account : "账号 :",
+    TotalSpace : "总空间 :",
+    FreeSpace : "剩余空间 :",
+    SpaceStatus : "剩余容量 / 总容量:",
+    File : "档案",
+    Folder : "目录",
+    ShareUser: "分享者",
+    ShareType: "分享模式",
+    Type: "类型",
+    Name: "名称",
+    UploadDownloadMode: "上下传全开放",
+    DownloadMode: "下载",
+    HomewordMode: "交作业"
+}
+
+

@@ -1,0 +1,812 @@
+#Div_SysCfg_Network_IPV4_Edit
+{
+    position:absolute;
+    margin: 0px;
+    padding: 0px;
+    left:10%;
+    top:90px;
+
+    background-color: #b5e3ff;
+    width: 410px;
+    height: 200px;
+    border: 2px solid #99C4E5;
+    border-radius: 5px;
+}
+
+#Div_SysCfg_Network_IPV4_Label
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:10%;
+	top:90px;
+	
+	background-color: #b5e3ff;
+	width: 410px;
+	height: 200px;
+	border: 2px solid #99C4E5;
+	border-radius: 5px;
+}
+
+#Div_SysCfg_Network_IPV6_Edit
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:55%;
+	top:90px;
+	
+	background-color: #b5e3ff;
+	width: 410px;
+	height: 250px;
+	border: 2px solid #99C4E5;
+	border-radius: 5px;
+}
+
+#Div_SysCfg_Network_IPV6_Label
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:55%;
+	top:90px;
+	
+	background-color: #b5e3ff;
+	width: 410px;
+	height: 250px;
+	border: 2px solid #99C4E5;
+	border-radius: 5px;
+}
+
+#Div_SysCfg_Network_Host_Edit
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:10%;
+	top:320px;
+	
+	background-color: #b5e3ff;
+	width: 410px;
+	height: 150px;
+	border: 2px solid #99C4E5;
+	border-radius: 5px;
+}
+
+#Div_SysCfg_Network_Host_Label
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:10%;
+	top:320px;
+	
+	background-color: #b5e3ff;
+	width: 410px;
+	height: 150px;
+	border: 2px solid #99C4E5;
+	border-radius: 5px;
+}
+
+.H5_GreenBtn 
+{
+	text-decoration: none;
+	background-color: #693;
+	display: block;
+	margin: 0px;
+	padding: 3px;
+	height: 16px;
+	width: 80px;
+	color: #FFF;
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid #050;
+	border-radius: 15px;
+}
+.H5_GreenBtn:hover 
+{
+	background-color: #6E3;
+}
+.H5_GreenBtn:active
+ {
+	background-color: #693;
+}
+
+
+.Btn_Network_Edit
+{
+	position: absolute;
+	left:20px;
+	top:80px;
+}
+
+
+.Btn_Network_Cancel
+{
+	position: absolute;
+	left:20px;
+	top:130px;
+}
+
+
+.Btn_Network_OK
+{
+	position: absolute;
+	left:20px;
+	top:180px;
+}
+
+.H3_SysCfg_Network_Title
+{
+	margin: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	background-color: #EFFE98;
+	border: 1px solid #AAF;
+	border-radius:15px;
+	display: block;
+}
+
+.H3_SysCfg_Network_Title_IPV6
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position:absolute;
+	left:10px;
+	top:5px;
+}
+
+.H3_SysCfg_Network_Title_Host
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position:absolute;
+	left:10px;
+	top:5px;
+}
+
+#Div_SysCfg_Network h6
+{
+	float: left;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+
+.Div_SysCfg_Network_Row
+{
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	width: 100%;
+	height: 30px;
+	
+	border: 1px solid #AAF;
+}
+
+.InputNetwork
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	display: block;
+	width: 40px;
+	font-size:16px;
+}
+
+.InputNetworkV6
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+	position: absolute;
+	display: block;
+	width: 240px;
+	font-size:16px;
+}
+
+.FontRed
+{
+	font-size:14px;
+	color:#F00;
+	width:300px;
+}
+
+
+
+
+/********************
+*		IPV4-Edit
+*********************/
+
+.H4_Point
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	display: block;
+	width: 10px;
+}
+
+
+#H4_IpAdderssName
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position:absolute;
+	left:10px;
+	top:45px;
+}
+#H4_MaskName
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	top: 75px;
+}
+#H4_GatewayName
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	top: 105px;
+}
+#H4_DNS1Name
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	top: 135px;
+}
+#H4_DNS2Name
+{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	position: absolute;
+	left: 10px;
+	top: 165px;
+}
+
+
+/* 一共20個輸入框 */
+#Input_IpAdderss_01
+{
+	left: 150px;
+	top: 45px;
+}
+
+#Input_IpAdderss_02
+{
+	left: 200px;
+	top: 45px;
+}
+
+#Input_IpAdderss_03
+{
+	left: 250px;
+	top: 45px;
+}
+
+#Input_IpAdderss_04
+{
+	left: 300px;
+	top: 45px;
+}
+
+#Input_Mask_01
+{
+	left:150px;
+	top:75px;
+}
+
+#Input_Mask_02
+{
+	left:200px;
+	top:75px;
+}
+
+#Input_Mask_03
+{
+	left:250px;
+	top:75px;
+}
+
+#Input_Mask_04
+{
+	left:300px;
+	top:75px;
+}
+
+#Input_Gateway_01
+{
+	left:150px;
+	top:105px;
+}
+
+#Input_Gateway_02
+{
+	left:200px;
+	top:105px;
+}
+
+#Input_Gateway_03
+{
+	left:250px;
+	top:105px;
+}
+
+#Input_Gateway_04
+{
+	left:300px;
+	top:105px;
+}
+
+#Input_DNS1_01
+{
+	left:150px;
+	top:135px;
+}
+
+#Input_DNS1_02
+{
+	left:200px;
+	top:135px;
+}
+
+#Input_DNS1_03
+{
+	left:250px;
+	top:135px;
+}
+
+#Input_DNS1_04
+{
+	left:300px;
+	top:135px;
+}
+
+#Input_DNS2_01
+{
+	left:150px;
+	top:165px;
+}
+
+#Input_DNS2_02
+{
+	left:200px;
+	top:165px;
+}
+
+#Input_DNS2_03
+{
+	left:250px;
+	top:165px;
+}
+
+#Input_DNS2_04
+{
+	left:300px;
+	top:165px;
+}
+
+
+
+/*   [.] 符號	*/
+#H4_IpAdderss_Point01
+{
+	left:190px;
+	top:45px;
+}
+#H4_IpAdderss_Point02
+{
+	left:240px;
+	top:45px;
+}
+#H4_IpAdderss_Point03
+{
+	left:290px;
+	top:45px;
+}
+
+#H4_Mask_Point01
+{
+	left:190px;
+	top:75px;
+}
+#H4_Mask_Point02
+{
+	left:240px;
+	top:75px;
+}
+#H4_Mask_Point03
+{
+	left:290px;
+	top:75px;
+}
+
+#H4_Gateway_Point01
+{
+	left:190px;
+	top:105px;
+}
+#H4_Gateway_Point02
+{
+	left:240px;
+	top:105px;
+}
+#H4_Gateway_Point03
+{
+	left:290px;
+	top:105px;
+}
+
+#H4_DNS1_Point01
+{
+	left:190px;
+	top:135px;
+}
+#H4_DNS1_Point02
+{
+	left:240px;
+	top:135px;
+}
+#H4_DNS1_Point03
+{
+	left:290px;
+	top:135px;
+}
+
+#H4_DNS2_Point01
+{
+	left:190px;
+	top:165px;
+}
+#H4_DNS2_Point02
+{
+	left:240px;
+	top:165px;
+}
+#H4_DNS2_Point03
+{
+	left:290px;
+	top:165px;
+}
+
+
+/********************
+*		IPV4-Label
+*********************/
+
+#H4_IpAdderss_InformationName 
+{
+	position: absolute;
+	left: 10px;
+	top: 45px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#H4_Mask_InformationName 
+{
+	position: absolute;
+	left: 10px;
+	top: 75px;
+}
+
+#H4_Gateway_InformationName 
+{
+	position: absolute;
+	left: 10px;
+	top: 105px;
+}
+
+#H4_DNS1_InformationName 
+{
+	position: absolute;
+	left: 10px;
+	top: 135px;
+}
+
+#H4_DNS2_InformationName 
+{
+	position: absolute;
+	left: 10px;
+	top: 165px;
+}
+
+
+
+
+
+
+#H4_IpAdderss_InformationValue 
+{
+	position: absolute;
+	left: 150px;
+	top: 45px;
+}
+
+#H4_Mask_InformationValue 
+{
+	position: absolute;
+	left: 150px;
+	top: 75px;
+}
+
+#H4_Gateway_InformationValue 
+{
+	position: absolute;
+	left: 150px;
+	top: 105px;
+}
+
+#H4_DNS1_InformationValue 
+{
+	position: absolute;
+	left: 150px;
+	top: 135px;
+}
+
+#H4_DNS2_InformationValue 
+{
+	left: 150px;
+	top: 165px;
+}
+
+
+.AbsoluteLayout
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+/********************
+*		IPV6-Edit
+*********************/
+
+#H4_IpAdderssV6Name
+{
+	left:10px;
+	top:40px;
+}
+#H4_IpAdderssV6PrefixName
+{
+	left: 10px;
+	top: 100px;
+}
+#H4_GatewayV6Name
+{
+	left: 10px;
+	top: 160px;
+}
+
+
+
+/* IP 輸入框 */
+#Input_IpAdderssV6
+{
+	left: 150px;
+	top: 40px;
+}
+
+#Input_IpAdderssV6Prefix
+{
+	left: 150px;
+	top: 100px;
+}
+
+#Input_GatewayV6
+{
+	left: 150px;
+	top: 160px;
+}
+
+
+
+/********************
+*		IPV6-Label
+*********************/
+#H4_IpAdderssV6_InformationName
+{
+	left:10px;
+	top:40px;
+}
+#H4_IpAdderssV6Prefix_InformationName
+{
+	left: 10px;
+	top: 100px;
+}
+#H4_GatewayV6_InformationName
+{
+	left: 10px;
+	top: 160px;
+}
+
+
+
+
+#H4_IpAdderssV6_InformationValue
+{
+	left:150px;
+	top:40px;
+}
+#H4_IpAdderssV6Prefix_InformationValue
+{
+	left: 150px;
+	top: 100px;
+}
+#H4_GatewayV6_InformationValue
+{
+	left: 150px;
+	top: 160px;
+}
+
+
+
+
+
+/********************
+*		Host-Edit
+*********************/
+#H4_TimeServerName
+{
+	left:10px;
+	top:40px;
+}
+#H4_TimeZoneName
+{
+	left: 10px;
+	top: 70px;
+}
+#H4_HostName
+{
+	left: 10px;
+	top: 100px;
+}
+
+
+#ComboBx_TimeServer
+{
+	left: 150px;
+	top: 40px;
+	width: 250px;
+	font-size:16px;
+}
+
+#ComboBx_TimeZone
+{
+	left: 150px;
+	top: 70px;
+	width: 250px;
+	font-size:16px;
+}
+
+#Input_HostName
+{
+	left: 150px;
+	top: 100px;
+}
+
+
+
+/********************
+*		Host-Label
+*********************/
+#H4_TimeServer_InformationName
+{
+	left:10px;
+	top:40px;
+}
+#H4_TimeZone_InformationName
+{
+	left: 10px;
+	top: 70px;
+}
+#H4_Host_InformationName
+{
+	left: 10px;
+	top: 100px;
+}
+
+
+
+#H4_TimeServer_InformationValue
+{
+	left:150px;
+	top:40px;
+}
+#H4_TimeZone_InformationValue
+{
+	left: 150px;
+	top: 70px;
+}
+#H4_Host_InformationValue
+{
+	left: 150px;
+	top: 100px;
+}
+
+		
+		
+				
+/********************
+*		錯誤訊息
+*********************/		
+#H4_IpAdderss_Error {
+	left: 350px;
+	top: 45px;
+}
+
+#H4_Mask_Error {
+	left: 350px;
+	top: 75px;
+}
+
+#H4_Gateway_Error {
+	left: 350px;
+	top: 105px;
+}
+
+#H4_DNS1_Error {
+	left: 350px;
+	top: 135px;
+}
+
+#H4_DNS2_Error {
+	left: 350px;
+	top: 165px;
+}
+
+#H4_IpAdderssV6_Error
+{
+	left:150px;
+	top:65px;
+}
+
+#H4_IpAdderssV6_Prefix_Error
+{
+	left: 150px;
+	top: 125px;
+}
+#H4_GatewayV6_Error
+{
+	left: 150px;
+	top: 160px;
+}
+
+
+#H4_TimeServer_Error
+{
+	left:350px;
+	top:40px;
+}
+#H4_TimeZone_Error
+{
+	left: 350px;
+	top: 70px;
+}
+#H4_StorageName_Error
+{
+	left: 405px;
+	top: 100px;
+}

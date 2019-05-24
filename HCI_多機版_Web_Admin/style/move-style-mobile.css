@@ -1,0 +1,110 @@
+.non_mobile
+{
+	margin:0;
+	padding:0;
+/*	background-color: white;*/    
+}
+
+.move_window_nonmobile
+{
+    background-color: #66ccff; /* Old browsers */
+    
+    /* Foxy 2012/9/18 */
+    position: absolute;
+    width: 800px;
+    height: 600px;
+    
+    /* Foxy 2012/9/19 Edit from 35px to 5px */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+    /* Foxy 2012/9/19 Edit from 35px to 5px */
+}
+
+/* Foxy 2012/9/18 */
+.td_first
+{
+    text-align: left;
+    width: 480px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+
+/* Foxy 2012/9/18 */
+.header_div
+{
+    padding-left: 10px;
+}
+
+.move_window{
+	margin-top:20px;
+	/*background-color: white;*/
+	    background: white; /* Old browsers */
+}
+.movelist{
+	   overflow-y: auto;
+	    height:500px;
+            background: white;
+}
+
+.listTable, .listTable td
+{
+    border-style: solid;
+}
+.listTable
+{
+    border-width: 0 0 0 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.listTable td
+{
+    margin: 0;
+    padding: 4px;
+    border-width: 1px 0 1px 0;
+/*    border-color: #F0F0F0;*/
+    border-color:gray;
+    background: white;
+}
+.close-window
+{
+	position:absolute;
+	width:32px;
+	height:32px;
+	right:8px;
+	top:8px;
+	background:transparent url('../img/close-button.png') no-repeat scroll right top;
+	text-indent:-99999px;
+	overflow:hidden;
+	cursor:pointer;
+	opacity:.5;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+}
+.close-window:hover
+{
+	opacity:.99;
+	filter: alpha(opacity=99);
+	-moz-opacity: 0.99;
+}
+#header_bar
+{
+	background-color: #66ccff;
+}
+#OK 
+{
+    margin-left: 45%;
+    margin-top: 20px;
+}

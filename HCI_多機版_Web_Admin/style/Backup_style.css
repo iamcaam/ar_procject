@@ -1,0 +1,1029 @@
+.CheckBackupLUN_wrapper {
+    position: relative;
+    width: 520px;
+    /*height: 551px;*/
+    top: 0%;
+    left: 50%;
+    margin-left: -250px;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+}
+
+.BKLogin {
+    position: relative;
+    width: 100%;
+    height: 340px;
+}
+
+.LoginContent {
+    position: absolute;
+    width: 500px;
+}
+
+.Backup_Content1 {
+    position: relative;
+    margin-top: 18px;
+    /*background: #0273b7;*/
+    border-radius: 3px;
+    border: 1.5px solid #000000;
+    height: 347px;
+}
+
+.Backup_Content_L1 {
+    top: -5px;
+    position: relative;
+    /*color: #ffffff;*/
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 16px;
+    width: 110px;
+    text-align: right;
+    font-family: "Times New Roman", "PMingLiU", "新細明體";
+}
+
+.BackupInfo_Content1_input1 {
+    color: #777;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 5px;
+    width: 300px;
+    height: 25px;
+    border: 1px solid #c7d0d2;
+    border-radius: 2px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    transition: all .4s ease;
+    top: -5px;
+    position: relative;
+}
+
+
+/*.BackupInfo_Content1_btn {
+    /*margin-left: 120px;*/
+
+
+/*margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 3px;
+    border-radius: 3px;
+    border: 1px solid #90d7ab;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    cursor: pointer;
+}*/
+
+.BKInfo {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 150px;
+    top: 10px;
+}
+
+.InfoContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Backup_Content2 {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 3px;
+    border: 1.5px solid #000000;
+    height: 100%;
+}
+
+.bkchap {
+    position: relative;
+    top: -5px;
+    left: 119px;
+    margin-right: 5px;
+}
+
+.Div_BKRow {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 1px solid #DDD;
+    height: 40px;
+    width: 100%;
+}
+
+
+/*.Backup_div_Arrow {
+    position: relative;
+    float: left;
+    height: 60px;
+    margin: 0px 0px;
+    width: 30px;
+    left: 430px;
+}*/
+
+.arrow_disable {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background: #c1c1c1;
+    border: 2px inset #91979c;
+}
+
+.Source_VDName {
+    left: 130px;
+    height: 30px;
+    width: 270px;
+    top: 5px;
+}
+
+.RestoreBackup1 {
+    left: 430px;
+    height: 30px;
+    width: 270px;
+    top: 5px;
+}
+
+.RestoreBackup2 {
+    left: 492px;
+    height: 30px;
+    width: 270px;
+    top: 5px;
+}
+
+.Backup_VDName {
+    left: 730px;
+    height: 30px;
+    width: 400px;
+    top: 5px;
+}
+
+.Backup_Action {
+    left: 1030px;
+    height: 30px;
+    width: 200px;
+    top: 5px;
+}
+
+.MgtBackupList_ItemNo_Row {
+    top: 5px;
+    left: 20px;
+    height: 30px;
+    width: 32px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.MgtBackupList_Select_Row {
+    left: 90px;
+    top: 8px;
+}
+
+.MgtBackupList_Source_VDName_Row {
+    top: 5px;
+    left: 130px;
+    height: 30px;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 30px;
+}
+
+.MgtBackupList_Backup_VDName_Row {
+    top: 5px;
+    left: 730px;
+    height: 30px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 30px;
+}
+
+.MgtBackupList_Backup_Action_Row {
+    top: 6px;
+    left: 1030px;
+    height: 30px;
+    width: 80px;
+}
+
+.Div_BackupSC_Shot {
+    position: relative;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.BackupMgt_Content {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+#BackupMgt_Content_header_source,
+#BackupMgt_Content_header_backup {
+    border: 0px !important;
+    border-bottom: 2px solid black !important;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+}
+
+#BackupMgt_Content_header_backup tr,
+#BackupMgt_Content_header_source tr {
+    background: #0281ce;
+    color: white;
+}
+
+#BackupMgt_Content_header_backup td,
+#BackupMgt_Content_header_source td {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0px !important;
+}
+
+
+/*#BackupMgt_Content_body_source,
+#BackupMgt_Content_body_backup {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    border: 0px !important;
+    height: 40px;
+}
+
+#BackupMgt_Content_body_source tr,
+#BackupMgt_Content_body_backup tr {
+    background-color: #fff;
+    border-bottom: 1px solid #DDD;
+    height: 35px;
+}
+
+#BackupMgt_Content_body_source td,
+#BackupMgt_Content_body_backup td {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0px !important;
+}*/
+
+.BackupMgt_div_body {
+    width: 99%;
+    position: relative;
+    left: 5px;
+    /* 31px -> 5px*/
+    top: 15px;
+}
+
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+    position: relative;
+    float: left;
+    margin: 0px 5px;
+    bottom: 10px;
+    /*left: 2.5%;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    /*width: 47%;*/
+    height: 100%;
+    top: 40px;
+    
+}
+
+@media screen and (min-width: 4800px) and (max-width: 6401px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 48.6%;
+    }
+}
+
+@media screen and (min-width: 3840px) and (max-width: 4801px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 48.4%;
+    }
+}
+
+@media screen and (min-width: 3200px) and (max-width: 3841px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 48%;
+    }
+}
+
+@media screen and (min-width: 2752px) and (max-width: 3201px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 47.6%;
+    }
+}
+
+@media screen and (min-width: 2400px) and (max-width: 2753px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 47.3%
+    }
+}
+
+@media screen and (min-width: 2144px) and (max-width: 2401px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 47.1%;
+    }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2145px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 46.8%;
+    }
+}
+
+@media screen and (min-width: 1760px) and (max-width: 1921px) { /*100%*/
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 46.5%;
+    }
+}
+
+
+
+@media screen and (min-width: 1600px) and (max-width: 1761px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 46.2%;
+    }
+}
+
+@media screen and (min-width: 1472px) and (max-width: 1601px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 46%;
+    }
+}
+
+
+@media screen and (min-width: 1376px) and (max-width: 1473px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 45.8%;
+    }
+}
+
+
+@media screen and (min-width: 1280px) and (max-width: 1377px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+       width: 45.5%;
+    }
+}
+
+
+@media screen and (min-width: 1216px) and (max-width: 1281px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 45.2%;
+    }
+}
+
+@media screen and (min-width: 1120px) and (max-width: 1217px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup { /*45.2%*/
+        width: 44.6%;
+    }
+}
+
+@media screen and (min-width: 1056px) and (max-width: 1121px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 44.3%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1057px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 44.2%;
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1025px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 43.9%;
+    }
+}
+
+@media screen and (min-width: 928px) and (max-width: 961px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 43.5%;
+    }
+}
+
+@media screen and (min-width: 864px) and (max-width: 929px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 43.2%;
+    }
+}
+
+@media screen and (min-width: 832px) and (max-width: 865px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 42.7%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 833px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 42.4%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 801px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 42%;
+    }
+}
+
+@media screen and (min-width: 763px) and (max-width: 769px) {
+.BackupMgt_div_source,
+.BackupMgt_div_backup {
+        width: 41.8%;
+    }
+}
+
+.BackupMgt_stable_row1 {
+    width: 45px;
+    /*text-align: right !important;*/
+    left: 15px;
+    top: 5px;
+}
+
+.BackupMgt_stable_row2 {
+    width: 20px;
+    left: 65px;
+    top: 8px;
+}
+
+.BackupMgt_stable_row3 {
+    width: 170px;
+    /*text-align: left !important;*/
+    left: 100px;
+    top: 5px;
+}
+
+.BackupMgt_stable_row4 {
+    width: 220px;
+    left: 450px;
+    top: 5px;
+}
+
+.BackupMgt_stable_row5 {
+    width: 110px;
+    /*text-align: right !important;*/
+    left: 690px;
+    top: 5px;
+}
+
+.BackupMgt_stable_row6 {
+    width: 220px;
+    /*text-align: left !important;*/
+    left: 800px;
+    top: 5px;
+}
+
+.BackupMgt_stable_row7 {
+    width: 210px;
+    left: 280px;
+    top: 5px;
+}
+
+.BackupMgt_btable_row1 {
+    width: 45px;
+    left: 15px;
+    /*25px -> 923px*/
+    top: 5px;
+}
+
+.BackupMgt_btable_row2 {
+    width: 20px;
+    left: 65px;
+    /*75px -> 973px*/
+    top: 8px;
+}
+
+.BackupMgt_btable_row3 {
+    width: 170px;
+    left: 100px;
+    /*110px -> 1008px*/
+    top: 5px;
+}
+
+.BackupMgt_btable_row4 {
+    width: 210px;
+    left: 290px;
+    /*300px -> 1197px*/
+    top: 5px;
+}
+
+.BackupMgt_btable_row5 {
+    width: 300px;
+    left: 520px;
+    /*450px -> 1347px*/
+    top: 5px;
+}
+
+.BackupMgt_stablelist_row1 {
+    width: 45px;
+    text-align: right !important;
+    font-size: 14px;
+    left: 2px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_stablelist_row2 {
+    width: 26px;
+    top: 10px;
+    left: 65px;
+}
+
+.BackupMgt_stablelist_row3 {
+    width: 170px;
+    text-align: left !important;
+    font-size: 14px;
+    left: 100px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_stablelist_row4 {
+    width: 240px;
+    font-size: 14px;
+    left: 450px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_stablelist_row5 {
+    /*text-align: right !important;*/
+    width: 110px;
+    font-size: 14px;
+    left: 690px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+    /*padding-right: 40px;*/
+}
+
+.BackupMgt_stablelist_row6 {
+    text-align: left !important;
+    width: 200px;
+    /*200px -> 400px*/
+    font-size: 14px;
+    left: 800px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_stablelist_row7 {
+    width: 220px;
+    font-size: 14px;
+    left: 280px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_btablelist_row1 {
+    width: 45px;
+    /* 45px -> 65px*/
+    text-align: right !important;
+    font-size: 14px;
+    left: 2px;
+    /*12px -> 910px ->947px*/
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_btablelist_row2 {
+    width: 26px;
+    left: 65px;
+    /*75px -> 973px*/
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_btablelist_row3 {
+    width: 170px;
+    /*170px -> 200px*/
+    text-align: left !important;
+    font-size: 14px;
+    left: 100px;
+    /*113px -> 1008px*/
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_btablelist_row4 {
+    width: 235px;
+    font-size: 14px;
+    left: 290px;
+    /*278px -> 1197px*/
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_btablelist_row5 {
+    /*text-align: right !important;*/
+    width: 240px;
+    /*120px -> 90px*/
+    font-size: 14px;
+    left: 520px;
+    /*403px -> 1366px*/
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+    line-height: 40px;
+    height: 100%;
+    top: 0px;
+}
+
+.BackupMgt_div_Arrow {
+    position: relative;
+    float: left;
+    margin: 0px 5px;
+    bottom: 10px;
+    /*left: 2.5%;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 100%;
+    top: 40px;
+}
+
+.Backup_arrow {
+    font-size: 28px;
+    width: 36px;
+    height: 36px;
+    border: 2px ridge #91979c;
+    background: #ffffff;
+    font-weight: bold;
+    margin: 0px 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px rgba(20%, 20%, 40%, 0.5);
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    line-height: 36px;
+    left: 2px;
+}
+
+.Backup_arrow:hover {
+    background: #3ec6e5;
+}
+
+.Backup_arrow:active {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
+    background: -moz-linear-gradient( center top, #378de5 5%, #79bbff 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+    background-color: #378de5;
+    border: 2px inset #91979c;
+}
+
+.BackupMgt_div_Arrowtext {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 38px;
+    border: 0px !important;
+    border-bottom: 2px solid black !important;
+    background: #0281ce;
+    color: white;
+    height: 35px;
+    /*width: 50px;
+    left: 49%;
+    top: 5px;*/
+}
+
+
+/*.BackupMgt_div_Arrowtext {
+    width:50px;
+    background-color:white;
+    padding:10px;
+    border:2px solid black;
+    position: relative;
+    z-index: 10;
+    left: 824px;
+    top: -9px;
+}
+.BackupMgt_div_Arrowtext:after {
+    background-color: #0281ce;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    right: 10px;
+    bottom: -5px;
+    z-index: -1;
+}*/
+
+.BackupMgt_div_Headertext {
+    position: relative;
+    line-height: 20px;
+    width: 200px;
+    /*font-size: large;*/
+    font-weight: 700;
+}
+
+.Schedule_Backup_Select_Row {
+    left: 90px;
+    top: 0px;
+    height: 100%;
+    line-height: 36px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.Schedule_Backup_Name_Row {
+    top: 0px;
+    left: 130px;
+    height: 100%;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.Schedule_Backup_Desc_Row {
+    top: 0px;
+    left: 430px;
+    height: 100%;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.Schedule_Backup_CreateTime_Row {
+    top: 0px;
+    left: 830px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.Schedule_Backup_Action_Row {
+    top: 0px;
+    left: 1030px;
+    height: 100%;
+    width: 80px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_Progress {
+    left: 640px;
+    height: 30px;
+    width: 120px;
+    top: 5px;
+}
+
+.VMBackupList_Task_SourcVD {
+    left: 230px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_State {
+    left: 845px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_Type {
+    left: 100px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_DestVD {
+    left: 435px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_StartTime {
+    left: 1020px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_EndTime {
+    left: 1215px;
+    height: 30px;
+    width: 150px;
+    top: 5px;
+}
+
+.VMBackupList_Task_Type_Row {
+    top: 0px;
+    left: 100px;
+    height: 100%;
+    width: 150px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_source_Row {
+    top: 0px;
+    left: 230px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_dest_Row {
+    top: 0px;
+    left: 435px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_process_Row {
+    top: 0px;
+    left: 640px;
+    height: 100%;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: default;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_State_Row {
+    top: 0px;
+    left: 845px;
+    height: 100%;
+    width: 170px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_StartTime_Row {
+    top: 0px;
+    left: 1020px;
+    height: 100%;
+    width: 190px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.VMBackupList_Task_EndTime_Row {
+    top: 0px;
+    left: 1215px;
+    height: 100%;
+    width: 130px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+
+.Div_Backup_Task {
+    position: relative;
+    width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Backup_transBlink {
+    background: #3ec6e5;
+}
+
+.disable_etabs_underline {
+    text-decoration: none !important;
+}
+
+#BKredirect_Bnt_Confirm span {
+    padding: 4px 7px;
+}
+
+.BackupMgt_div_Sizetext {
+    position: absolute;
+    margin-top: 5px;
+    left: 0px;
+    width: 960px;
+    line-height: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #044de1;
+}
+
+.Div_BackupMgt_RowHeader {
+    background-color: #0281ce;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    height: 50px;
+}
+
+/*.btn_resize_use {
+    /*-webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    letter-spacing: 1px;
+    min-font-size:9px;
+}*/

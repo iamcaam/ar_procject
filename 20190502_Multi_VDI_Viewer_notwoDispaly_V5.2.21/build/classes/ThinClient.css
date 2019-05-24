@@ -1,0 +1,201 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017/2/21, 下午 12:03:40
+    Author     : victor
+*/
+
+.button {
+    
+    -fx-font-size: 15px;
+    -fx-text-fill: white;   
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-alignment:center;
+}
+
+
+.button:hover {
+    
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+    
+}
+
+.button:focused {
+    
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+    -fx-text-fill: black; 
+    
+}
+
+.button:active {
+    
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+    -fx-text-fill: black; 
+    
+}
+#Title {
+    
+    -fx-background-color:#1565c0;
+    -fx-text-fill: white;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+
+}
+
+.text-field {
+    
+    -fx-font-size: 13pt;
+    -fx-font-family: 'Ubuntu';
+    -fx-font-weight: 700; 
+   
+}
+
+.toggle-button{
+    -fx-font-size: 15px;
+    -fx-text-fill: white;   
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-alignment:center;
+}
+
+.toggle-button:hover{
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.tab-pane{
+    -fx-font-size: 12pt;
+    -fx-tab-min-width:60px;
+   
+}
+
+.tab {
+    -fx-background-color: #F5F5F5;
+/*   -fx-background-color: red;  */
+/*   -fx-border-color: gray;
+-fx-border-radius: 4;
+-fx-border-width: 1;*/
+
+/*   -fx-background-color: linear-gradient(rgb(109,109,109), rgb(70,70,70));  */
+
+/*   -fx-border-color: red;
+-fx-border-radius: 4;
+-fx-border-width: 1;*/
+
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+    -fx-background-color: #F5F5F5;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #F5F5F5; /* #e6e6e6 */
+    -fx-font-weight: 900;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #1565C0;
+    -fx-border-color:#1565C0;  
+    -fx-font-weight: 900;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-font-weight: 900;
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+
+
+#title_Label{
+    -fx-font-size: 14pt;    
+    -fx-font-weight: 700;
+    -fx-font-family: 'Ubuntu';
+}
+
+.label{
+    -fx-font-size: 13pt;
+    -fx-font-weight: 900;
+    -fx-font-family: 'Ubuntu';
+}
+
+#label_DNS{
+    -fx-font-size: 12pt;
+    -fx-font-weight: 600;
+    -fx-font-family: 'Ubuntu';
+}
+/*
+.radio-button{
+    -fx-font-weight: 900;
+    -fx-font-size: 15pt;
+    -fx-font-family: 'Liberation Serif';
+}
+*/
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+    -fx-background-color: white;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+    -fx-font-size: 12pt;
+    -fx-font-weight: 900;
+}
+.radio-button .radio:selected {
+    -fx-font-size: 12pt;
+    -fx-font-weight: 900;
+}
+
+.radio-button .radio:focused {
+    -fx-font-size: 12pt;
+    -fx-font-weight: 900;
+    -fx-background-color: yellow;
+}
+
+.combo-box{    
+     -fx-font-size: 14px;
+     -fx-font-family: 'Ubuntu' ; 
+}
+
+#gridpane{
+    -fx-background-color: #F5F5F5 ; 
+    -fx-border-color:#1565C0;
+    -fx-border-width:2;
+    -fx-background-radius:10;
+    -fx-border-radius: 10;
+    
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+    -fx-font-family: 'Ubuntu';
+    -fx-font-weight: 700; 
+     
+    
+}
+
+/* 2017.06.22 william System version check */
+#AlertMessage_Label{
+    -fx-font-size: 12pt;    
+    -fx-font-weight: 700;
+    -fx-text-fill: red;
+    -fx-font-family: 'Ubuntu';
+}
+
+#wifi_pw_view{ /*2018.04.13 william wifi實作*/
+    -fx-background-color: white;
+}

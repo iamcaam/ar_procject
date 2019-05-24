@@ -1,0 +1,295 @@
+/* CSS Document */
+.Div_AccountRow
+{
+	position:relative;
+	padding:0px;
+	margin:0px;
+	margin-top:3px;
+	
+	border: 1px solid #DDD;
+	height:30px;
+	width:1050px;
+}
+
+
+
+.RowHeader
+{
+	position:absolute;
+	margin:0px;
+	
+	/* left 由 JS 計算 */
+	top:80px;
+	background-color:#9FEDFD;
+	border: 2px solid #000;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+}
+
+
+
+#Div_UserList
+{
+	position:absolute;
+	padding:0px;
+	margin-left:0px;
+	margin-right:0px;
+	
+	/* left 由 JS 計算 */
+	top:110px;
+	height: 70%;
+	width: 1050px;
+	background-color: #EFF;
+	border: 2px solid #000;
+	border-bottom-left-radius:15px;
+	border-bottom-right-radius:15px;
+	
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+
+
+.H4_BtnCreateUser
+{
+	left:30px;
+	top: 80px;
+	text-align:center;
+}
+
+
+
+
+#Div_UsrAction
+{
+	position:absolute;
+	margin: 0px;
+	padding: 5px;
+	height: 240px;
+	width: 300px;
+	top:30px;
+	left:350px;
+	border: 1px solid #9DD;
+	border-radius:5px;
+	background:#FDEBD2;
+}
+
+#UsrList_BtnAdd
+{
+	top:290px;
+	left:5px;
+}
+
+#UsrList_BtnCancel
+{
+	top:290px;
+	left:470px;
+}
+
+#UsrList_BtnOk
+{
+	top:290px;
+	left:540px;
+}
+
+
+
+
+
+.UserList_ChkBox
+{
+	top:5px;
+	left:10px;
+	height: 20px;
+	width: 20px;
+}
+
+
+.UserList_UserAccount
+{
+	top:5px;
+	left:30px;
+	height: 20px;
+	width: 100px;
+}
+
+
+.UserList_UserName
+{
+	top:5px;
+	left:130px;
+	height: 20px;
+	width: 120px;
+}
+
+
+.UserList_UserEmail
+{
+	top:5px;
+	left:250px;
+	height: 20px;
+	width: 120px;
+}
+
+
+.UserList_UserPrivilege
+{
+	top:5px;
+	left:370px;
+	height: 20px;
+	width: 150px;
+}
+
+
+.UserList_UserCompany
+{
+	top:5px;
+	left:520px;
+	height: 20px;
+	width: 120px;
+}
+
+
+.UserList_UserDepartment
+{
+	top:5px;
+	left:640px;
+	height: 20px;
+	width: 120px;
+}
+
+
+.UserList_UserTitle
+{
+	top:5px;
+	left:760px;
+	height: 20px;
+	width: 120px;
+}
+
+
+.UserList_UserCapacity
+{
+	top:5px;
+	left:880px;
+	height: 20px;
+	width: 80px;
+}
+
+
+
+.Img_UserList_EditItem
+{
+	top:5px;
+	left:960px;
+	height: 20px;
+	width: 20px;
+	cursor:pointer;
+}
+
+.Img_UserList_EditItem:hover
+{
+	height: 22px;
+	width: 22px;
+}
+
+.Img_UserList_EditItem:active
+{
+	height: 19px;
+	width: 19px;
+}
+
+
+
+
+.Img_UserList_DeleteItem
+{
+	top:5px;
+	left:990px;
+	height: 20px;
+	width: 20px;
+	cursor:pointer;
+}
+
+.Img_UserList_DeleteItem:hover
+{
+	height: 22px;
+	width: 22px;
+}
+
+.Img_UserList_DeleteItem:active
+{
+	height: 19px;
+	width: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Input_UsrAccount
+{
+	position:absolute;
+	top:0px;
+	left:80px;
+	width:200px;
+}
+#Input_UsrName
+{
+	position:absolute;
+	top:30px;
+	left:80px;
+	width:200px;
+}
+#Input_UsrEmail
+{
+	position:absolute;
+	top:60px;
+	left:80px;
+	width:200px;
+}
+#ComboBx_Privilege
+{
+	position:absolute;
+	top:90px;
+	left:80px;
+	width:200px;
+}
+#ComboBx_Company
+{
+	position:absolute;
+	top:120px;
+	left:80px;
+	width:200px;
+}
+#ComboBx_Department
+{
+	position:absolute;
+	top:150px;
+	left:80px;
+	width:200px;
+}
+#ComboBx_Title
+{
+	position:absolute;
+	top:180px;
+	left:80px;
+	width:200px;
+}
+#Input_UsrCapacity
+{
+	position:absolute;
+	top:210px;
+	left:80px;
+	width:200px;
+}
+
+

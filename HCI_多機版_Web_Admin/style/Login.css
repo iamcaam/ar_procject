@@ -1,0 +1,242 @@
+/* CSS Document */
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: rgb(73,155,234);
+}
+
+
+#Div_Main
+{
+	background: rgb(30,87,153);
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlNTc5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMxJSIgc3RvcC1jb2xvcj0iIzI5ODlkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3ZGI5ZTgiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 31%, rgba(125,185,232,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(31%,rgba(41,137,216,1)), color-stop(100%,rgba(125,185,232,1)));
+	background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 31%,rgba(125,185,232,1) 100%);
+	background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 31%,rgba(125,185,232,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 31%,rgba(125,185,232,1) 100%);
+	background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 31%,rgba(125,185,232,1) 100%);
+
+	filter: none;
+	
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:0px;
+	top:0px;
+	
+	height: 100%;
+	width: 100%;
+	overflow:auto;
+	font-family:'Microsoft JhengHei';
+}
+
+
+
+#Div_MainBorder
+{
+	position:relative;
+	background-image:url(../img/LoginFrameBgV2.png);
+	background-repeat:no-repeat;
+	border-radius:10px;
+	
+	margin-top:2%;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:auto;
+	
+	height: 550px;
+	width: 400px;
+}
+
+
+#Div_TitleArea 
+{
+	position: absolute;
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+	left: 0px;
+	top: 140px;
+
+	width:400px;
+	height:auto;
+}
+
+
+#Div_TitleLayout 
+{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+
+
+#LoginTitle
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+#LoginAccount
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 30px;
+	top: 240px;
+}
+
+
+
+#LoginPassword
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 30px;
+	top: 290px;
+}
+
+
+#InputAccount
+{
+	position: absolute;
+	margin: 0px;
+	padding-left: 8px;
+	left: 160px;
+	top: 240px;
+	height: 25px;
+	width: 180px;
+}
+
+
+
+#InputPassword
+{
+	position: absolute;
+	margin: 0px;
+	padding-left: 8px;
+	left: 160px;
+	top: 290px;
+	height: 25px;
+	width: 180px;
+}
+
+
+
+#chk_rmpwd
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 135px;
+	top: 360px;
+	height: 32px;
+	width: 32px;
+	cursor:pointer;
+}
+
+
+
+#H3_KeepLogin
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 178px;
+	top: 365px;
+	height: 25px;
+	width: 200px;
+}
+
+
+
+
+#LoginBtn
+{
+	background:#b2d9ae;
+	text-align: center;
+	display: block;
+	padding: 2px;
+	height: 22px;
+	width: 200px;
+	border: 1px solid #333;
+	position: absolute;
+	cursor: pointer;
+	left: 100px;				
+	top: 420px;
+	border-radius: 5px;
+	font-size:14px;
+}
+
+
+
+#LoginBtn:hover
+{
+	background:#73cb7d;
+}
+
+
+
+#LoginBtn:active
+{
+	background:#187926;
+}
+
+
+#Div_Main_LoginForm
+{
+	position:absolute;
+	margin: auto;
+	padding: 0px;
+	height: 640px;
+	width: 400px;
+	overflow:auto;
+	border: 2px solid #006666;
+}
+
+
+
+
+#Div_Main_Image
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	left:580px;
+	top:50px;
+	height: 640px;
+	width: 400px;
+	overflow:auto;
+	border: 2px solid #006666;
+}
+
+
+.ComBx_PC_Language
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	top: 40px;
+	left: 270px;
+	height: 25px;
+}
+
+
+
+
+#SyncDownload
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	top: 480px;
+	left: 20px;
+	height: 25px;
+}

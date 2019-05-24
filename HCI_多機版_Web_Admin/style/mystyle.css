@@ -1,0 +1,42 @@
+/* 
+    Document   : mystyle
+    Created on : 2012/3/8, 下午 02:25:11
+    Author     : karl
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.lun{
+    margin-top: 10px;    
+    width: 330px;
+    height: 40px;
+    font-size: 16px;   
+    text-align: center;
+    cursor:pointer
+}
+
+.btnlunselect
+{
+    margin-top: 15px;
+    width: 80px;
+    margin-bottom: 20px;    
+}
+
+#labselectdisk
+{
+  top: 20px;
+  left: -20px;
+  
+}
+
+#cancel{    
+    width: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 250px;
+}
+
+#LUN{
+   
+}
+

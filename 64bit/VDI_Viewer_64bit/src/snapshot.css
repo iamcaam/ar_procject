@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 27, 2017, 3:02:48 PM
+    Author     : william
+*/
+.root {
+    -fx-padding: 10;
+    -fx-background-color: rgb(0,180,240);
+}
+
+/* button style */
+.button {  
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900;
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-text-alignment:center;
+}
+
+.button:hover {
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:focused {
+     -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+.button:pressed {
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+
+.button:active {
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+
+/* title */
+.Title_label {
+    -fx-font-size: 24px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+}
+
+#List_label {
+    -fx-font-size: 18px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.ListTitle_label {
+    -fx-font-size: 18px;
+    -fx-font-family:'Droid Sans Fallback, Ubuntu';
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-style: solid inside;
+    -fx-border-width: 0 0 3 0; 
+    -fx-border-color: red blue #eaeae1 yellow;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    
+}
+/* 調整TableView cell的仕樣*/
+.table_header {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;   
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 ); 
+}
+
+.table-view {   
+    -fx-border-style: solid inside;
+    -fx-border-width: 5;
+    -fx-border-insets: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: white; /*#F7F7F7*/ 
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color:linear-gradient(derive(#0049a6, 120%), derive(#0049a6, 90%));
+    -fx-background-radius: 4, 3;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: derive(#0049a6, -60%);
+}
+
+.table-row-cell:empty {
+    -fx-background-color: lightyellow;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-cell{  
+     -fx-alignment: CENTER;
+     -fx-font-size: 16px;
+ 
+}
+
+.table-btn {
+    -fx-font-size: 12px;
+}
+
+.table-row-cell-viewing {
+    -fx-background-color:linear-gradient(derive(#00ff00, 120%), derive(#08dd08, 90%));
+    -fx-background-radius: 4, 3;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow(three-pass-box , rgba(0,0,0,0.55) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: derive(#0049a6, -60%);    
+    -fx-border-color: white;
+}
+
+/* 調整ListView cell的仕樣*/
+.list-cell {
+   /*-fx-font: 18pt "Arial";*/
+   -fx-font: 18pt "Droid Sans Fallback, Ubuntu";
+   /*-fx-font-family:'Droid Sans Fallback, Ubuntu';*/    
+}
+
+.list-cell:filled:selected:focused, 
+.list-cell:filled:selected {
+    /*-fx-background-color: linear-gradient(#328BDB 0%, #207BCF 25%, #1973C9 75%, #0A65BF 100%);*/
+    -fx-background-color: #0281ce; /* #1565c0 -> #0281ce*/
+    -fx-text-fill: white;
+}
+
+/*.list-cell:even {  <=== changed to even 
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}*/
+
+/* screen lock style */
+#Thread_status{
+    -fx-font-size: 30px;   
+    -fx-text-fill: #1A237E;
+    -fx-font-weight: 900;
+    -fx-font-family: 'Microsoft JhengHei' ; 
+}
+/* check-box style */
+.check-box .box {
+-fx-background-color: white;
+-fx-border-color:grey;
+-fx-border-radius:3px; 
+/*-fx-text-fill: white;
+-fx-text-background-color: white;*/
+-fx-background-image: url("images/uncheck.png");
+-fx-background-repeat: no-repeat;
+-fx-background-size: 100%;
+-fx-background-position:center;
+}
+/*https://stackoverflow.com/questions/18082549/javafx-replace-standard-checkbox-with-image*/
+.check-box:selected .mark {
+
+-fx-background-color: transparent; /* white -＞　transparent 隱藏打勾符號*/
+
+}
+
+.check-box:selected .box {
+
+  -fx-background-color: white; /* #28a3f4 -> white */
+  -fx-background-image: url("images/check.png");
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: 120%;
+  -fx-background-position:center;
+}
+
+
+/*2019.01.02 view D Drive*/
+
+.tab {
+    -fx-background-color: #F5F5F5;
+/*   -fx-background-color: red;  */
+/*   -fx-border-color: gray;
+-fx-border-radius: 4;
+-fx-border-width: 1;*/
+
+/*   -fx-background-color: linear-gradient(rgb(109,109,109), rgb(70,70,70));  */
+
+/*   -fx-border-color: red;
+-fx-border-radius: 4;
+-fx-border-width: 1;*/
+
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+    -fx-background-color: #F5F5F5;
+}
+
+.tab-pane .tab
+{
+    -fx-background-color: #F5F5F5; /* #e6e6e6 */
+    -fx-font-weight: 900;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+    -fx-font-size: 12pt;
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #1565C0;
+    -fx-border-color:#1565C0;  
+    -fx-font-weight: 900;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-font-weight: 900;
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius:5;
+}
+

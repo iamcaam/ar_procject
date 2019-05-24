@@ -1,0 +1,84 @@
+/* CSS Document */
+#Div_iSCISList
+{
+    display: block;
+    margin-left: auto;    
+    margin-right: auto;   
+    height: 80%;
+    width: 850px;
+    background-color: #EFF;
+    border: 2px solid #000;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+.Div_iSCSIRow
+{
+    position:relative;
+    padding:0px;
+    margin:0px;
+    margin-top:3px;		
+    /*height:30px;*/
+    width:850px;
+}
+
+.Div_iSCSIRowHeader
+{
+    height:30px;
+    width:850px;
+}
+
+.iSCSIList_Name
+{
+    top:8px;
+    left:10px;
+    height: 40px;
+    width: 250px;
+}
+
+.iSCSIList_IP
+{
+    top:8px;
+    left:270px;
+    height: 40px;
+    width: 250px;
+}
+
+.iSCSIList_Action
+{
+    top:8px;
+    left:530px;
+    height: 40px;    
+}
+
+
+.iSCSIList_Name_Row
+{
+    top:13px;
+    left:10px;
+    height: 40px;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:block;
+    cursor:default
+}
+
+.iSCSIList_IP_Row
+{
+    top:13px;
+    left:270px;
+    /*height: 40px;*/
+    width: 250px;
+}
+
+.iSCSIList_Action_Row
+{
+    top:13px;
+    left:530px;
+    height: 40px;    
+}

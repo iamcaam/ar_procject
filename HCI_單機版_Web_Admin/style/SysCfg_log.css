@@ -1,0 +1,251 @@
+
+.disable_log_btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#b8b8b8;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:25px;
+	line-height:25px;
+	width:33px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+        cursor: default;
+}
+.log_btn {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    /* SnapShot&Schedule&Backup  2017.01.11 william */
+    background-color:#3ec6e5;
+    /*
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+    */
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:25px;
+	line-height:25px;
+	width:33px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #528ecc;
+        cursor:pointer;
+}
+.log_btn:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}
+.log_btn:active {
+	position:relative;
+	top:1px;
+}
+#label_log_level{
+    left : 1px;
+    position: absolute;    
+}
+#div_select_log_level{
+    position: absolute;
+    width: 100px;
+    left: 53px;
+    top:-7px
+}
+#label_log_type{
+    position: absolute;    
+    left: 168px;    
+}
+#div_select_log_type{
+    position: absolute;
+    width: 100px;
+    left: 218px;
+    top:-7px
+}
+#div_select_log{
+    position: absolute;
+    width: 70px;
+    left: 46px;
+    top:-2px
+}
+
+#select_log_page .scombobox-list{
+    /*top:-200px;*/
+    max-height: 200px;
+}
+.LogList_Level
+{    
+    left:90px;
+    height: 30px;
+    width: 110px;
+}
+.LogList_Type
+{    
+    left:205px;
+    height: 30px;
+    width: 100px;
+}
+.LogList_Time
+{    
+    left:315px;
+    height:30px;
+    width:150px;    
+}
+.LogList_EventCode
+{
+    left:475px;
+    height: 30px;
+    width:140px;
+}
+.LogList_Content
+{    
+    left:625px;
+    height: 30px;
+    width:270px;
+}
+.LogList_User
+{    
+    left:910px;
+    height: 30px;
+    width:130px;
+}
+.LogList_SrcIP
+{    
+    left:1050px;
+    height: 30px;
+    width:135px;
+}
+
+.LogList_Level_Row
+{   
+    position: absolute;
+    top:10px;
+    left:104px;
+    z-index: 5;
+/*    height: 30px;
+    width: 60px;*/
+}
+.LogList_Type_Row
+{    /* List 資料欄位修改 2017.03.06 william */ 
+    top:0px;
+    left:205px;
+    height: 100%;
+    width: 70px; 
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;     
+}
+.LogList_Time_Row
+{    /* List 資料欄位修改 2017.03.06 william */  
+    top:0px;
+    left:315px;
+    height:100%;
+    width:145px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;          
+}
+.LogList_EventCode_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:475px;
+    height: 100%;
+    width:110px;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;      
+}
+.LogList_Content_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:625px;
+    height: 100%;
+    max-width: 285px; 
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;  
+    width: 285px;    
+}
+.LogList_User_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:910px;
+    height: 100%;
+    width:140px;   
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;    
+}
+.LogList_SrcIP_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+    top:0px;
+    left:1050px;
+    height: 100%;
+    width:124px;  
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}
+.ui-tooltip
+{
+    font-size:10pt;
+}
+.LogList_ItemNo{
+	left: 30px;
+    height: 30px;
+    width: 45px;
+}
+.LogList_ItemNo_Row
+{    /* List 資料欄位修改 2017.03.06 william */
+	top: 0px;
+    left: 12px;
+    height: 100%;
+    width: 40px;
+	text-align: right;
+    line-height: 40px;
+    vertical-align: middle;
+    border-bottom: 1px solid #DDD;
+}

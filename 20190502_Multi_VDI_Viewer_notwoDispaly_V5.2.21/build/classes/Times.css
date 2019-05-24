@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 23, 2017, 10:35:58 AM
+    Author     : root
+*/
+
+.root {
+    -fx-background-color: rgb(0,180,240);
+    -fx-border-width:3;
+    -fx-font-family: 'Ubuntu' ; 
+    
+}
+
+#Date_Title{
+    
+    -fx-background-color:#1a237e;  /* #1565c0 */
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-font-weight: 900;
+
+}
+
+#Time_Title{
+    
+    -fx-background-color:#1565c0;  /* #1565c0 */
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-font-weight: 900;
+
+}
+
+
+.button {    
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;      
+}
+
+
+.button:hover{
+    -fx-background-color:#1e67e2; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ 
+    -fx-text-fill: #E1F5FE;
+}
+
+
+.button:focused {
+    -fx-background-color:#fdda2d; /* 2017.06.06 william Disable linear-gradient(#82b1ff, #1e67e2) */ /* 2017.06.19 william Time setting Button focused & active #1e67e2 -> #fdda2d*/
+    -fx-text-fill: black; /* #E1F5FE -> black */
+}
+
+
+#Button_Settings{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: #fdda2d; /* 2017.06.06 william Disable linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%) */ 
+}
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;    
+}
+
+.radio-button .radio:focused {
+    -fx-background-color: white;
+   
+}
+/*
+.radio-button .dot {
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+*/
+.combo-box{    
+    -fx-font-size: 17px;
+    -fx-font-family: 'Ubuntu' ; 
+}
+/*
+.label{
+    -fx-font-size: 13pt; 
+    -fx-text-fill: white;
+}
+*/
+#Colon_Label{
+    -fx-font-size: 13px;
+    -fx-font-family: 'Ubuntu' ;
+    -fx-font-weight: 900;
+    -fx-text-fill: white;
+}
+
+#Node{
+    -fx-font-size: 11pt; /* -fx-font-weight: 900;  -fx-font-family: 'Ubuntu';*/
+    -fx-text-fill: black;
+    -fx-font-family: 'Ubuntu';
+}
+
+#DatePicker{
+    -fx-font-size: 12pt; /* -fx-font-weight: 900;  -fx-font-family: 'Ubuntu';*/
+    -fx-text-fill: black;
+    -fx-font-family: 'Ubuntu';
+}
+
+#line{
+    -fx-stroke: red;
+   
+}

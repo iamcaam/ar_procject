@@ -1,0 +1,31 @@
+var LanguageStr_Account =
+{
+	DialogTitleCreaete: "建立用户",
+	DialogTitleEdit: "编辑用户",
+	NoData: "无",
+	ImgEdit: "编辑",
+	ImgDelete: "删除",
+	NoUserAtList: "目前没有建立任何用户账号",
+	CreateUserMsg01: "账号不得为空白",
+	CreateUserMsg02: "配置空间不得为空白或小于1G",
+	CreateUserMsg03: "配置空间必须是数字整数",
+	CreateUserMsg04: "Email不得为空白",
+	CreateUserMsg05: "名不得为空白",
+	CreateUserMsg06: "姓不得为空白",
+	CreateUserMsg07: "公司数值错误",
+	CreateUserMsg08: "部门数值错误",
+	CreateUserMsg09: "子部门数值错误",
+	CreateUserMsg10: "权限数值错误",
+	
+	Ajax00: "查询失败！ 数据传输错误，请确认网络稳定性。 (User)",
+	Ajax01: "目前无法显示任何用户账号",
+	Ajax02: "建立RAID之前，用户功能无法使用",
+	Ajax03: "取得用户清单失败",
+	Ajax04: "建立用户失败，错误代码为：",
+	Ajax05: "建立用户成功",
+	Ajax06: "建立用户失败，数据传输错误，请确认网络稳定性。 (User)",
+	Ajax07: "编辑用户失败，错误代码为：",
+	Ajax08: "编辑用户失败，数据传输错误，请确认网络稳定性。 (User)",
+	Ajax09: "删除用户失败，错误代码为：",
+	Ajax10: "建立用户失败，数据传输错误，请确认网络稳定性。 (User)"
+}

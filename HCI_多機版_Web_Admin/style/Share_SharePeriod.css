@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+
+/* 分享期限的設計容器*/
+#Div_TabSharePeriod {
+	height: 480px;
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #C90;
+	position: relative;
+}
+#Input_RadioPeriodMode_Date
+{
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 30px;
+	top: 50px;
+}
+
+#Input_RadioPeriodMode_NoLimit
+{
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 30px;
+	top: 90px;
+}
+#Input_RadioPeriodMode_DateSelect
+{
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	left: 130px;
+	top: 50px;
+	margin-left:30px;
+}
+.H4_RadioPeriodMode_Date {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 60px;
+	top: 50px;
+}
+.H4_RadioPeriodMode_NoLimit {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 60px;
+	top: 90px;
+}
+.H4_OkBtn {
+	position: absolute;
+	left: 59px;
+	top: 161px;
+}
+.H4_Description {
+	color: #F00;
+	position: absolute;
+	left: 60px;
+	top: 130px;
+	margin: 0px;
+	padding: 0px;
+}

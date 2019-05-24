@@ -1,0 +1,383 @@
+/* Basics */
+
+input[type="button"] {
+    margin: 0 2px;
+}
+
+/* Content */
+
+div.Takess_wrapper {
+    /*
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: 150px 0 0 -375px;
+    width: 750px;
+    */
+    height: 355px;
+    padding: 0;
+    text-align: left;
+    /*border: 2px ridge #91979c;*/
+    border-radius: 5px;
+    /*background: #0273b7;*/
+}
+
+
+/* schedule header */
+
+.Takess_header {
+    position: relative;
+    height: 26px;
+}
+
+.Takess_header_inner1 {
+    position: relative;
+    left: 5px;
+    top: 3px;
+    width: 365px;
+    height: 100%;
+    float: left;
+}
+
+.Takess_desc {
+    position: relative;
+    top: 9px;
+    left: 10px;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.Takess_desc_input {
+    position: absolute;
+    top: 5px;
+    left: 95px;
+    width: 243px;
+    height: 18px;
+}
+
+.takess_header_inner2 {
+    position: absolute;
+    float: right;
+    right: 5px;
+}
+
+#btn_Take_Snapshot {
+    float: left;
+    top: -14px;
+    /*position: relative;*/
+    /*min-width: 80px;*/
+    /*left: 580px; 190px -> 285px*/
+    /*height: 27px;*/
+    margin: 0 3px;
+}
+
+#btn_Take_Snapshot  span{
+    /*padding: 1px;*/
+}
+
+#btn_StopView_snapshot {
+    float: left;
+    /*position: relative;*/
+    top: -14px;
+    /*left: 590px;*/
+    /*min-width: 80px;
+    height: 27px;*/
+    margin: 0 3px;
+}
+
+#btn_StopView_snapshot span{
+    /*padding: 1px;*/
+}
+/* schedule body */
+
+.Takess_body {
+    position: relative;
+    height: 220px;
+}
+
+.Takess_content {
+    /*border: 2px ridge #c0c0c0;*/
+    /*5d9eff*/
+    margin: 5px;
+    height: 292px;
+    /*border-radius: 5px;*/
+}
+
+.Takess_label {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #044de1;
+    font-weight: bold;
+}
+
+.Takess_ContentInner {
+    background: white;
+    border: 2px solid #444;
+    margin: 13px 5px 8px 5px;
+    height: 396px; /* 292px*/
+    position: relative;
+    border-radius: 5px;
+}
+
+.Takess_ContentInner_Top {
+    position: relative;
+    width: 100%;
+    border-bottom: 3px solid #444;
+    height: 33px;
+}
+
+#Takess_ListTop {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    /*border-bottom: 1px solid #444 !important;*/
+    border: 0px !important;
+}
+
+#Takess_ListTop table {
+    border: 0px !important;    
+}
+
+#Takess_ListTop tr{
+    background: #0281ce;
+    color: white;
+}
+
+#Takess_ListTop td{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    /* border-right: 1px solid #444 !important; */ 
+    border: 0px !important;
+}
+
+.takess_table_top_row {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    height: 24px;
+    line-height: 22px;
+}
+
+.takess_top0 {
+    width: 35px;
+    /*top: 3px;
+    left: 5px;*/
+}
+
+.takess_top1 {
+    width: 90px; /* 70px */
+    text-align: left !important
+}
+
+.takess_top2 {
+    width: 100px; /* 150px */
+    text-align: left !important;
+    left: 20px;
+    position: relative;
+}
+
+.takess_top3 {
+    width: 80px; /* 80px */
+    text-align: left !important
+}
+
+.takess_top4 {
+    width: 230px;
+    text-align: left !important;
+}
+
+.takess_top5 {
+    width: 80px;
+    text-align: left !important
+}
+
+/*.takess_selectall_chk {
+    width: 30px;
+    padding: 0px 0px 1px 4px;
+}*/
+
+.Takess_ContentInner_Bottom {
+    position: relative;
+    width: 100%;
+    height: 359px; /*255px*/
+    overflow-y: scroll;
+    border-top: 1px solid #444;
+}
+
+#Takess_ListBottom {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    border: 0px !important;
+}
+
+#Takess_ListBottom tr{
+    background-color: #fff;
+    border-bottom: 1px solid #DDD;
+}
+
+#Takess_ListBottom td{
+    text-align: center;
+    border: 0px !important;
+}
+
+.takess_LastColumn {
+    border-right: 0px !important;
+}
+
+.takess_bottom0 {
+    width: 35px;
+}
+
+.takess_bottom1 {
+    width: 85px;    /* 70px */
+    text-align: left !important
+}
+
+.takess_bottom2 {
+    width: 100px;   /* 150px */
+}
+
+.takess_bottom3 {
+    width: 70px;    /* 80px */
+    text-align: left !important
+}
+
+.takess_bottom4 {
+    width: 215px;
+    text-align: left !important;
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.takess_bottom5 {
+    width: 100px;
+    text-align: left !important
+}
+
+.take_ss_bottom_chk {
+    width: 30px;
+    padding: 0px 0px 1px 4px;
+}
+
+
+/* Checkbox功能式樣*/
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+    padding-left: 29px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label {
+    background-position: 0 -24px;
+}
+
+label.css-label {
+    background-image: url(images/csscheckbox_c59519622db72e6ffbfb1417bb694e25.png);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.SnapShotDropBtn{
+    height: 18px;
+    padding: 1px 5px;
+}
+
+.Takess_header0 {
+    position: relative;
+    height: 29px;
+}
+
+.Takess_header_inner0 {
+    position: relative;
+    left: 5px;
+    top: -4px;
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+
+.SnapshotList_Username {
+    position: relative;
+    top: 14px;
+    left: 5px;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;    
+}
+
+.SnapshotList_Name {
+    position: relative;
+    top: 14px;
+    left: 5px;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.SnapshotLayerlabel {
+    position: relative;
+    top: 14px;
+    left: 5px;
+    font-family: "Times New Roman","PMingLiU","新細明體";
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#SnapshotUsedLayer_input {
+    top: 3px;
+    width: 50px;
+    height: 18px;
+    text-align: center;
+    position: relative;
+}
+
+#btn_modify_ss_layer {
+    top: 2px;
+    /*min-width: 80px;
+    height: 27px;*/
+    margin: 0 3px;
+}
+
+.Takess_header_inner0lable {
+    position: absolute;
+    top: 15px;
+    left: 90px;
+}
+

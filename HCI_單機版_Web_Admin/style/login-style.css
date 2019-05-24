@@ -1,0 +1,370 @@
+html,body
+{
+	font-family:'Microsoft JhengHei';
+	margin:0 auto;
+	text-align:center;
+}
+
+h1
+{
+	color: #990000;
+}
+
+table{
+	background-color: #dddddd;
+}
+table.odd{
+	background-color: #cccccc;
+}
+table.highlight {
+	background-color: #ffffff;
+	}
+table.nromalodd {
+	background-color: #cccccc;
+	}
+table.nromal {
+	background-color: #dddddd;
+	}	
+pre{
+	color: #990000;
+
+}
+
+
+
+/* Foxy 2013.01.16 ¤â¾÷ª© */
+.Div_Mobile_Headline
+{
+	position: absolute;
+	background-image:url('../img/headline.png');
+	border-style:outset;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: #666 2px 3px;
+	-moz-box-shadow: #666 2px 3px;
+	box-shadow: #666 2px 3px;
+    top: 0px;
+    left: 0px;
+    alignment-adjust: central;
+    text-align:center;
+    width: 99%;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.Lbl_Mobile_Title1
+{
+    color: #1c488d;
+}
+
+.Lbl_Mobile_Title2
+{
+    color: #f00;
+}
+
+.Lbl_Mobile_Title3
+{
+    color: #1c488d;
+}
+
+.Div_Mobile_ChooseLanguage 
+{
+	position: absolute;
+	top: 145px;
+	width: 350px;
+	height: 40px;
+}
+
+.Lbl_Mobile_Language 
+{
+	position:absolute;
+	top:4px;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.ComBx_Mobile_Language 
+{
+	position:absolute;
+	top:0px;
+	font-size: 24px;
+	width:140px;
+	font-weight: normal;
+}
+
+
+
+.Div_Mobile_LoginArea
+{
+	position:relative;
+	top: 205px;
+	border-style:outset;
+	width: 350px;
+	height: 250px;
+	background-color:#13477D;
+	
+	border-radius: 25px;
+	-webkit-box-shadow: #666 2px 3px;
+	-moz-box-shadow: #666 2px 3px;
+	box-shadow: #666 2px 3px;
+	margin : auto;
+}
+
+.Img_Mobile_User
+{
+	position:absolute;
+	top: 30px;
+	left: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+
+.Input_Mobile_User
+{
+	position:absolute;
+	top: 30px;
+	left: 80px;
+	width: 200px;
+    height: 24px;
+    font-size: 20px;
+}
+
+
+.Img_Mobile_Pw
+{
+	position:absolute;
+	top: 80px;
+	left: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.Input_Mobile_Pw
+{
+	position:absolute;
+	top: 80px;
+	left: 80px;
+	width: 200px;
+    height: 24px;
+    font-size: 20px;
+	font-family:'Arial';
+}
+
+
+.Img_Mobile_Chkbx
+{	
+	position:absolute;
+	top: 130px;
+	left: 105px;
+	width: 32px;
+	height: 32px;
+}
+
+.Lbl_Mobile_SavePwd
+{
+	position:absolute;
+	top: 135px;
+	left: 150px;
+	color:white;
+	width: auto;
+	height: 32px;
+    cursor: default;
+    font-size: 20px;
+}
+
+.Img_Mobile_LoginBtn
+{	
+	position:absolute;
+	top: 180px;
+	left: 80px;
+    width: 207px;
+    height: 40px;
+}
+
+
+
+
+
+/* Foxy 2013.01.16 PCª© */
+.PC_Body 
+{	
+	margin:0 auto;
+	font-weight:bold;
+	text-align: center;
+}
+
+.Div_PC_Background
+{
+	position:absolute;
+	margin-left:auto;
+	margin-right: auto;
+    width: 1024px;
+    height: 768px;
+}
+
+.Img_PC_Backgroud 
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+    width: 1024px;
+    height: 768px;
+}
+
+.Lbl_PC_Language
+{
+	position:absolute;
+	top:17px;
+	left:845px;
+	font-size: 16px;
+	font-weight: normal;
+	text-align:right;
+}
+
+.ComBx_PC_Language
+{
+	position:absolute;
+	top:15px;
+	left:895px;
+	width:100px;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.Lbl_PC_LoginTitle 
+{
+	position:absolute;
+	color:white;
+	top:35px;
+	left:700px;
+	width:200px;
+	height:20px;
+	font-size: 20px;
+	text-align: center;
+	text-shadow:1px 1px 1px black;
+}
+
+.Lbl_PC_Account
+{
+	position:absolute;
+	color:RGB(153,51,102);
+	top:65px;
+	left:595px;
+	width:120px;
+	height:22px;
+	font-size: 16px;
+	text-align:right;
+}
+
+.Txt_PC_Account
+{
+	position:absolute;
+	padding-left:10px;
+	color:black;
+	border-radius:5px;
+	border: none;
+	top:65px;
+	left:720px;
+	width:190px;
+	height:22px;
+	font-size: 16px;
+}
+
+.Lbl_PC_Pwd
+{
+	position:absolute;
+	color:RGB(153,51,102);
+	top:95px;
+	left:595px;
+	width:120px;
+	height:22px;
+	font-size: 16px;
+	text-align:right;
+}
+
+.Txt_PC_Pwd
+{
+	position:absolute;
+	padding-left:10px;
+	color:black;
+	border-radius:5px;
+	border: none;
+	top:95px;
+	left:720px;
+	width:190px;
+	height:22px;
+	font-size: 16px;
+	font-family:'Arial';
+}
+
+.Lbl_PC_VerifyCode
+{
+	position:absolute;
+	color:RGB(153,51,102);
+	top:125px;
+	left:595px;
+	width:120px;
+	height:22px;
+	font-size: 16px;
+	text-align:right;
+}
+
+.Txt_PC_VerifyCode
+{
+	position:absolute;
+	padding-left:10px;
+	color:black;
+	border-radius:5px;
+	border: none;
+	top:125px;
+	left:720px;
+	width:190px;
+	height:22px;
+	font-size: 16px;
+}
+
+.Img_PC_VerifyCode
+{
+	position:absolute;
+	color:black;
+	top:125px;
+	left:930px;
+	width:50px;
+	height:22px;
+	font-size: 16px;
+}
+
+.Img_PC_ChkBxSaveKey
+{
+	position:absolute;
+	top:162px;
+	left:720px;
+	width:24px;
+	height:24px;
+	border:none;
+}
+
+.Lbl_PC_SaveKey
+{
+	position:absolute;
+	color: black;
+	top:167px;
+	left:745px;
+	width:100px;
+	height:20px;
+	font-size: 12px;
+	text-align:left;
+}
+
+
+.PC_BtnLogin_Img
+{
+	position:absolute;
+	top:160px;
+	left:840px;
+	width:80px;
+	height:25px;
+	cursor: pointer;
+}

@@ -1,0 +1,242 @@
+﻿html,body
+{
+	margin:0;
+	padding:0;
+}
+
+
+.divmodal
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #66ccff;
+	border-radius: 5px;
+	/*
+	border-style:solid;
+	border-width:10px;
+	border-color: #fff;
+	*/
+	left: 0px;
+	top: 0px;
+}
+/* Foxy 2012/9/5 */
+
+.Lbl_Title
+{
+	position: absolute;
+	top: 2%;
+	left: 45%;
+	width: auto;
+	height: 5%;    
+	white-space:nowrap;
+	/* Foxy 2012/9/18 */
+	font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+	font-size: 22px;
+	font-weight: bold;
+	text-shadow:1px 1px 1px #666;
+	color: white;
+}
+
+
+/* Foxy 2012/9/7 */
+.TitleLine
+{
+	position:absolute;
+    border-width: 1px;
+    border-color: wheat;
+	background-color:wheat;
+    top: 11%;
+    left: 2%;
+    width: 90%;
+    height: 2px;
+}
+
+
+
+
+/* Foxy 2012/12/06 */
+.DivChangePwd
+{
+	position:absolute;
+    border-width: 1px;
+	border-style:solid;
+    border-color: white;
+    background-color: 66ccff;
+	border-radius: 5px;
+    top: 15%;
+    left: 2%;
+    width: 43%;
+    height: 80%;
+}
+
+
+.LblPwdTitle
+{
+	position:absolute;
+    top: 5%;
+    left: 45%;
+    width: auto;
+    height: 20px;
+	/*word-wrap:normal;*/
+	white-space:nowrap;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 20px;
+    font-weight:bolder;
+    color: white;
+}
+
+
+
+.LblOldPwd
+{
+	position:absolute;
+    top: 20%;
+    left: 2%;
+    width: auto;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+/*	visibility:hidden;*/
+}
+
+.InputOldPwd
+{
+	position:absolute;
+    top: 27%;
+    left: 2%;
+    width: 85%;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+/*	visibility:hidden;*/
+}
+
+
+.LblNewPwd
+{
+	position:absolute;
+    top: 40%;
+    left: 2%;
+    width: auto;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+
+.InputNewPwd
+{
+	position:absolute;
+    top: 47%;
+    left: 2%;
+    width: 85%;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+
+.LblNewPwdAgain
+{
+	position:absolute;
+    top: 60%;
+    left: 2%;
+    width: auto;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+
+.InputNewPwdAgain
+{
+	position:absolute;
+    top: 67%;
+    left: 2%;
+    width: 85%;
+    height: 20px;
+	
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+}
+
+.ImgBtnPwdOk
+{
+	position:absolute;
+    top: 88%;
+	left: 73%;
+    width: 114px;
+    height: 38px;
+}
+
+
+.DivSetReadOnly
+{
+	position:absolute;
+    border-width: 1px;
+	border-style:solid;
+    border-color: white;
+    background-color: 66ccff;
+	border-radius: 5px;
+    top: 15%;
+    left: 47%;
+    width: 51%;
+    height: 80%;
+}
+
+
+.LblReadOnlyTitle
+{
+	position:absolute;
+    top: 5%;
+    left: 30%;
+    width: auto;
+    height: 20px;
+	/*word-wrap:normal;*/
+	white-space:nowrap;
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.LblReadOnly
+{
+	position: absolute;
+	top: 20%;              /* Foxy 2012/09/19 */
+	left: 5%;
+	width: auto;
+	height: 25px;
+	/* Foxy 2012/9/18 */
+	font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+	font-size: 16px;
+	font-weight: normal;
+	color: white;
+}
+
+.ImgBtnReadOnlyOk
+{
+	position:absolute;
+    top: 88%;
+	left: 58%;
+    width: 114px;
+    height: 38px;
+}

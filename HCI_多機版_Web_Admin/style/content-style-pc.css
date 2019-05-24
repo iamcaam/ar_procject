@@ -1,0 +1,823 @@
+/*html,body{*/
+.mobile{
+	background-color: white;
+        margin:0 auto;
+	text-align:center;
+	width:100%;
+	height:100%;
+}
+.non_mobile{
+/*	background-color: white;*/
+    background-color: #003366;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	height:100%;
+	
+	overflow-x:scroll;
+	overflow-y: scroll;
+}
+	.modal-overlay
+	{
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		height:100%;
+		width:100%;
+		margin:0;
+		padding:0;
+		background:#fff;
+		background:gray;
+		opacity:.75;
+		filter: alpha(opacity=75);
+		-moz-opacity: 0.75;
+		z-index:3101;
+	}
+	* html .modal-overlay
+	{   
+		position: absolute;
+		height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+	}
+	.modal-window
+	{
+		position:fixed;
+		top:50%;
+		left:50%;
+		margin:0;
+		padding:0;
+		z-index:3102;
+	}
+
+	
+/* Foxy 2012.11.20 為了做全畫面的對話框.所以 Left 跟 Top 位置都要改為0 */
+	.modal-Maxwindow
+	{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		margin:0;
+		padding:0;
+		z-index:3102;
+	}
+/* Foxy 2012.11.20 End*/
+
+
+
+	* html .modal-window
+	{
+		position:absolute;
+	}
+
+
+	.close-window
+	{
+		position:absolute;
+		width:32px;
+		height:32px;
+		right:8px;		
+		top:8px;
+		background:transparent url('../img/close-button.png') no-repeat scroll right top;
+		text-indent:-99999px;
+		overflow:hidden;
+		cursor:pointer;
+		opacity:.5;
+		filter: alpha(opacity=50);
+		-moz-opacity: 0.5;
+	}
+	.close-window:hover
+	{
+		opacity:.99;
+		filter: alpha(opacity=99);
+		-moz-opacity: 0.99;
+	}        
+.row_selected{
+    background-color:#FCFFF0
+}
+.row_mouseover{
+    background-color: #FEFFFB
+}        
+        
+.listTable, .listTable td
+{
+    border-style: solid;
+}
+.listTable
+{
+    border-width: 0 0 0 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.listTable td
+{
+    margin: 0;
+    padding: 4px;
+    border-width: 1px 0 1px 0;
+    border-color: #003366;
+}
+
+.inner-layout-center-content
+{
+    background-color: #CCFFFF;
+}
+
+
+
+
+.ChangeRename 
+{
+	font-size:18px;	line-height:18px;
+}
+
+
+.west-center
+{   
+    height:100%;
+    width:100%;
+    -webkit-border-top-left-radius:  5px;
+    -webkit-border-top-right-radius:  5px;
+    -moz-border-top-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+	
+    background: #66ccff; /* Old browsers */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY2Y2NmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDMzNjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #66ccff 0%, #003366 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#66ccff), color-stop(100%,#003366)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #66ccff 0%,#003366 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #66ccff 0%,#003366 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #66ccff 0%,#003366 100%); /* IE10+ */
+    background: linear-gradient(top,  #66ccff 0%,#003366 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ccff', endColorstr='#003366',GradientType=0 ); /* IE6-8 */
+}
+
+.ui-layout-center
+{
+	height:auto;
+    border-left: 7px solid #003366;
+    border-right: 7px solid #003366
+}
+
+.ui-layout-south
+{
+    border-top: 7px solid #003366;
+    border-left: 7px solid #003366;
+    border-right: 7px solid #003366
+}
+
+.ui-layout-west
+{
+    border-left: 7px solid #003366;
+}
+
+.ui-layout-south-content
+{
+    -webkit-border-bottom-left-radius:  5px;
+    -webkit-border-bottom--right-radius:  5px;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #003366
+}
+
+.inner-layout-center
+{
+    background-color: #CCFFFF;
+    padding:0 0 5px 0; 
+    height:100%;
+    width:100%;
+    overflow:auto;
+}
+
+.path
+{
+    color: white;
+}
+
+#path
+{
+    position: absolute; 
+    left: 0px;
+    top: 0px;
+	font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow:1px 1px 1px #666;
+	color: white;
+}
+
+#logo
+{
+    
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.user_info
+{
+    margin-left: 15px;
+    height:130px;
+    color: white;
+    text-align: left;
+	font-size:13px;
+}
+
+.inner-layout-north 
+{
+	width: 100%;
+	height :80px;
+}
+
+
+.intter-north-content1
+{   
+    height: 100px; 
+    position: relative;
+}
+
+.intter-north-content2
+{
+	border-radius:5px 5px 0px 0px;
+    background-color:#CCFFFF;
+    height: auto;
+    width: 100%;
+    position: relative;
+    text-align: left;
+	line-height:30px;	/*為了換行能正確的換整個按鈕的高度*/
+
+}
+
+.intter-north-content3
+{
+    text-align: left;
+    background-color:#99CCFF;
+    height: 30px;
+    width: 100%;
+    position: relative
+}
+
+
+.Div_ToolBar 
+{
+    text-align: left;
+    background-color:#CCFFFF;
+    height: 30px;
+    width: 1000px;
+    position: relative;
+	
+	
+	overflow-style:scrollbar
+}
+
+
+
+#cloud
+{
+    position: absolute; 
+    top: 5px; 
+    right: 5px
+}
+
+
+.optionwork
+{
+	margin-top:-70px;
+    cursor: pointer;
+}
+
+.selectalltable
+{
+    position: absolute; 
+    color: white; 
+    top: 2px;
+    right: 0
+}
+
+
+.inner-west-center-center
+{
+    height:100%;
+    width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+
+.inner-west-center
+{
+    height:100%;
+    width:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.inner-west-north
+{
+  text-align:left;
+}
+
+.Shared 
+{
+	cursor:pointer;
+}
+
+
+
+
+/* Foxy 2012.10.23 */
+.SL_Modal_Overlay
+{
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	height:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	background:gray;
+	opacity:.75;
+	filter: alpha(opacity=75);
+	-moz-opacity: 0.75;
+	z-index:3101;
+}
+
+/* Foxy 2012.10.23 */
+/* 讓對話框最外框本身具有圓角 */
+.SL_Modal_Window
+{
+	position:fixed;
+	top:5%;
+	left:3%;
+	margin:0;
+	padding:0;
+	z-index:3102;
+	background:#66ccff;
+    
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+/* Foxy 2012.10.23 */
+.DivDialogTitle
+{
+	position:absolute;
+    width: 510px;
+    height: 36px;
+    background-color: #66ccff;
+    left:0px;
+	top:0px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	z-index:3103;
+
+	
+	border:none;	/* 要把按鈕的邊框去掉才行 */
+    cursor:move;	/* 滑鼠移動到 Title 時會換游標 */
+}
+
+
+
+/* Foxy 2012.10.23 */
+.DivDialogTitleText
+{
+	position:absolute;
+    width: 510px;
+    height: 20px;
+    background-color: #66ccff;
+	
+    left:0px;
+	top:8px;
+	
+    cursor:move;
+    
+    /* Foxy 2012/10/24 */
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 18px;
+    text-align: center;
+	color:white;
+}
+/*
+.SL_ModalFrame
+{
+	position:absolute;
+    width: 800px;
+    height: 568px;
+    background-color: #66ccff;
+    left:5px;
+	top:36px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	z-index:3103;
+}*/
+
+
+
+#silverlightControlHost 
+{
+	/*這層是用來放置Silverlight外掛套件的，為了保持最外層的圓角，所以這裡要比外層小，且距離外層 5px*/
+	position:absolute;
+	top:36px;
+	left:5px;
+
+    width: 500px;
+    height: 330px;
+    background-color: #66ccff;
+}
+
+.recyclelink
+{
+    cursor:pointer;
+    text-decoration:underline;
+    color:blue;
+}
+
+.sansharelink
+{
+    cursor:pointer;
+    text-decoration:underline;
+    color:blue;
+}
+
+.recyclepath
+{
+    cursor:pointer;
+    text-decoration:underline;
+    color:white;
+}
+
+
+
+
+.Div-Base 
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:auto;
+	padding:1px;
+
+    font-family: 微軟正黑體,Microsoft JhengHei,新細明體,PMingLiU;
+    font-size: 15px;
+	color:white;
+}
+
+
+.Div-BackRoot 
+{
+	margin-top:20px;
+	position:relative;
+	width:100%;
+	height:50px
+}
+
+
+.Div-RecycyleBin 
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+
+.Div-Search 
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+
+.Div-MediaCenter
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+.Div-MyShare
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+.Div-SortOut 
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+
+.Div-Info 
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+
+.Div-MediaCenter 
+{
+	position:relative;
+	width:100%;
+	height:50px;
+}
+
+
+
+
+
+.Img-Search 
+{
+	position:absolute;
+	top:5px;
+	left:8px;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+}
+
+.Lbl-Search 
+{
+	text-align:left;
+	position:absolute;
+	top:8px;
+	left:38px;
+	width:auto;
+	height:18px;
+	cursor:pointer;
+
+	font-size:18px;
+}
+
+.Text-Search 
+{
+	position:absolute;
+	top:5px;
+	left:60px;
+	width:80px;
+	height:18px;
+	padding-left:5px;
+	color:black;
+}
+
+.Img-SearchEnter 
+{
+	position:absolute;
+	top:6px;
+	left:150px;
+	width:22px;
+	height:22px;
+	cursor:pointer;
+}
+
+
+
+.Img_LeftItem 
+{
+	position:absolute;
+	top:5px;
+	left:8px;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+	border:hidden;
+}
+
+.Lbl_LeftItem 
+{
+	text-align:left;
+	position:absolute;
+	top:8px;
+	left:38px;
+	width:150px;
+	height:18px;
+	cursor:pointer;
+
+	font-size:18px;
+}
+
+
+
+
+
+
+
+
+.Img-SortOut-Triangle
+{
+	position:absolute;
+	top:5px;
+	left:8px;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+}
+
+.Lbl-SortOut-Title
+{
+	text-align:left;
+	position:absolute;
+	top:8px;
+	left:38px;
+	width:150px;
+	height:20px;
+	cursor:pointer;
+	color:white;
+	
+	font-size:18px;
+}
+
+	.Img-SortOut-Document
+	{
+		position:absolute;
+		top:40px;
+		left:33px;
+		width:24px;
+		height:24px;
+	}
+
+	.Lbl-SortOut-Document
+	{
+		text-align:left;
+		position:absolute;
+		top:40px;
+		left:70px;
+		width:150px;
+		height:24px;
+
+		font-size:18px;
+	}
+
+	.Img-SortOut-Audio
+	{
+		position:absolute;
+		top:80px;
+		left:33px;
+		width:24px;
+		height:24px;
+	}
+
+	.Lbl-SortOut-Audio
+	{
+		text-align:left;
+		position:absolute;
+		top:80px;
+		left:70px;
+		width:150px;
+		height:20px;
+
+		font-size:18px;
+	}
+
+	.Img-SortOut-Video
+	{
+		position:absolute;
+		top:120px;
+		left:33px;
+		width:24px;
+		height:24px;
+	}
+
+	.Lbl-SortOut-Video
+	{
+		text-align:left;
+		position:absolute;
+		top:120px;
+		left:70px;
+		width:150px;
+		height:20px;
+
+		font-size:18px;
+	}
+
+	.Img-SortOut-Photo
+	{
+		position:absolute;
+		top:160px;
+		left:33px;
+		width:24px;
+		height:24px;
+	}
+
+	.Lbl-SortOut-Photo
+	{
+		text-align:left;
+		position:absolute;
+		top:160px;
+		left:70px;
+		width:115px;
+		height:20px;
+
+		font-size:18px;
+	}
+
+	.SortOutDetail
+	{
+		display:none;
+		cursor:pointer;
+	}
+
+
+
+
+
+
+
+.Img-Info-Triangle 
+{
+	position:absolute;
+	top:5px;
+	left:8px;
+	width:24px;
+	height:24px;
+	cursor:pointer;
+}
+
+.Lbl-Info-AccountTitle 
+{
+	text-align:left;
+	position:absolute;
+	top:8px;
+	left:38px;
+	width:auto;
+	height:20px;
+	cursor:pointer;
+    font-size: 15px;
+	color:white;
+
+	font-size:18px;
+}
+
+.Lbl-Info-Account 
+{
+	text-align: left;
+	position: absolute;
+	top: 40px;
+	left: 33px;
+	width: auto;
+	height: 20px;
+
+	font-size:18px;
+}
+
+	.Lbl-Info-TotalSpace 
+	{
+		text-align:left;
+		position:absolute;
+		top:80px;
+		left:33px;
+		width:auto;
+		height:20px;
+	}
+
+	.Lbl-Info-FreeSpace 
+	{
+		text-align:left;
+		position:absolute;
+		top:120px;
+		left:33px;
+		width:auto;
+		height:20px;
+	}
+
+	.Lbl-Info-AccessStatus 
+	{
+		text-align:left;
+		position:absolute;
+		top:160px;
+		left:33px;
+		width:auto;
+		height:20px;
+	}
+
+	.Lbl-Info-AccessStatusResult
+	{
+		text-align:left;
+		position:absolute;
+		top:160px;
+		left:105px;
+		width:auto;
+		height:20px;
+	}
+
+	.InfoDetail
+	{
+		display:none;
+
+		font-size:18px;
+	}

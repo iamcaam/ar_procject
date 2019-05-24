@@ -1,0 +1,278 @@
+
+/*
+.Btn_ShowModeItem 
+{
+	background-color: #3B3;
+	text-align: center;
+	font-size:14px;
+	display: block;
+	padding: 5px;
+	height: 17px;
+	width: 160px;
+	margin: 0px;
+	color: #000;
+	border: 1px solid #111;
+	border-radius:5px;
+	cursor:pointer;
+}
+
+.Btn_ShowModeItem:hover
+{
+	background-color: #6F6;
+	border: 2px solid #000;
+}
+
+.Btn_ShowModeItem:active
+{
+	background-color: #3B3;
+	color: #F90;
+	border: 1px solid #111;
+}
+*/
+
+
+#H4_BtnCompany
+{
+	width:160px;
+	left:150px;
+	top:50px;
+}
+
+#H4_BtnDepartment
+{
+	width:160px;
+	left:450px;
+	top:50px;
+}
+
+#H4_BtnTitle
+{
+	width:160px;
+	left:750px;
+	top:50px;
+}
+
+
+#Div_CompanyMgr, #Div_DepartmentMgr, #Div_TitleMgr
+{
+	position:relative;
+	background-color: #EFF;
+	padding: 0px;
+	margin: 0px;
+	height: 320px;
+	width: 780px;
+	top: 100px;
+	/*left: 150px;*/
+	border: 2px solid #000;
+	border-radius:10px;
+}
+
+
+
+#Div_CompanyList, #Div_DepartmentList, #Div_TitleList
+{
+	position:absolute;
+	background-color: #EFF;
+	padding:10px;
+	margin: 0px;
+	height: 200px;
+	width: 730px;
+	top:35px;
+	left:10px;
+	border: 2px solid #000;
+	border-radius:10px;
+	overflow:auto;
+}
+
+.PrivilegeListTitle
+{
+	position:absolute;
+	padding:0px;
+	margin: 0px;
+	height: 20px;
+	width: 550px;
+	top:10px;
+	left:10px;
+}
+
+.ActionBtn
+{
+	position:absolute;
+	background-color: #9FEDFD;
+	display: block;
+	margin: 0px;
+	padding: 3px;
+	height: 19px;
+	width: 60px;
+	border: 1px solid #007;
+	text-align:center;
+	border-radius:15px;
+	cursor:pointer;
+}
+.ActionBtn:hover
+{
+	background-color: #3CF6F6;
+	border: 2px solid #007;
+}
+.ActionBtn:active
+{
+	background-color: #3CF6F6;
+	border: 1px solid #007;
+	color:#F90;
+}
+
+
+#PrivilegeListCompany_BtnAdd, #PrivilegeListDepartment_BtnAdd, #PrivilegeListTitle_BtnAdd
+{
+	left:10px;
+	top:270px;
+}
+
+
+#Div_CompanyAction, #Div_DepartmentAction, #Div_TitleAction
+{
+	position:absolute;
+	margin: 0px;
+	padding: 0px;
+	height: 40px;
+	width: 610px;
+	left:150px;
+	top:270px;
+	
+	border: 1px solid #9DD;
+	border-radius:10px;
+	background:#FDEBD2;
+}
+
+
+#PrivilegeListCompany_AddTitle, #PrivilegeListDepartment_AddTitle, #PrivilegeListTitle_AddTitle
+{
+	position:absolute;
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	height: 20px;
+	width: 100px;
+	text-align:center;
+	top:10px;
+	left:10px;
+}
+
+#Input_Company, #Input_Department, #Input_Title
+{
+	position:absolute;
+	margin: 0px;
+	padding: 3px;
+	top:7px;
+	left:130px;
+	
+	width: 230px;
+	text-align:left;
+	font-size:12px;
+}
+
+#PrivilegeListCompany_BtnCancel, #PrivilegeListDepartment_BtnCancel, #PrivilegeListTitle_BtnCancel
+{
+	top:7px;
+	left:440px;
+}
+
+#PrivilegeListCompany_BtnOk, #PrivilegeListDepartment_BtnOk, #PrivilegeListTitle_BtnOk
+{
+	top:7px;
+	left:520px;
+}
+
+.ListItemRow
+{
+	position:relative;
+	padding:0;
+	margin: 0px;
+	margin-top:5px;
+	height: 20px;
+	width: 100%;
+}
+
+
+
+.Lbl_PrivilegeItem
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	padding:0px;
+	margin: 0px;
+	height: 20px;
+	width: 500px;
+	text-align:left;
+}
+
+
+
+.Input_PrivilegeItem
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	padding:3px;
+	margin: 0px;
+	height: 14px;
+	width: 450px;
+	text-align:left;
+}
+
+
+.Img_EditItem
+{
+	position:absolute;
+	left:650px;
+	top:0px;
+	padding:0px;
+	margin: 0px;
+	height: 20px;
+	width: 20px;
+	cursor:pointer;
+}
+
+.Img_EditItem:hover
+{
+	height: 22px;
+	width: 22px;
+}
+
+.Img_EditItem:active
+{
+	height: 19px;
+	width: 19px;
+}
+
+
+
+.Img_DeleteItem
+{
+	position:absolute;
+	left:670px;
+	top:0px;
+	margin: 0px;
+	margin-left:10px;
+	height: 20px;
+	width: 20px;
+	cursor:pointer;
+}
+
+.Img_DeleteItem:hover
+{
+	height: 22px;
+	width: 22px;
+}
+
+.Img_DeleteItem:active
+{
+	height: 19px;
+	width: 19px;
+}
+
+
+
+
+

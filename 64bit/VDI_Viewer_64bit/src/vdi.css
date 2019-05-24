@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016/12/6, 上午 08:35:37
+    Author     : duck_chang , sabrina_yeh
+*/
+
+
+#Title {
+    -fx-font-size: 50px;
+    -fx-font-family:"Serif";
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-weight: bold;
+}
+
+#Logo {
+    -fx-font-size: 32px;
+    -fx-font-family: "Serif";
+    -fx-text-fill: red;    
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.root {
+    -fx-background-color: rgb(0,180,240);
+    
+}
+
+.text-field {
+    -fx-font-size: 14pt;
+    -fx-font-family: 'Times New Roman';
+    -fx-font-weight: 700; 
+     
+    
+}
+
+.password-field{
+    -fx-font-size: 7pt;
+    -fx-font-family: 'Microsoft JhengHei';
+}
+
+.button {    
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+    -fx-font-weight: 900; 
+    -fx-background-color: #0281ce;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );   
+    -fx-text-alignment:center;       
+}
+
+
+.button:hover{
+    -fx-background-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-text-fill: #E1F5FE;   
+    -fx-text-alignment:center; 
+}
+
+
+.button:focused {
+    -fx-background-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-text-fill: #E1F5FE;
+    -fx-text-alignment:center; 
+}
+/*
+.button:pressed{
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+*/
+#Button_focused{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-background-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-text-fill: #E1F5FE;
+}
+
+#Button_Login{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+#Button_ManageVD{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+#Button_ChangePW{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+#Button_Leave{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+#Button_SS{
+    -fx-font-size: 15px;
+    -fx-font-weight: 900;   
+    -fx-text-alignment:center; 
+    -fx-text-fill: black;
+    -fx-background-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);
+}
+
+
+
+.label{
+   
+    -fx-text-fill: white;
+    -fx-alignment:CENTER_LEFT;
+}
+
+.combo-box{    
+    -fx-font-size: 14px;
+    -fx-font-family: 'Microsoft JhengHei' ; 
+}
+
+.combo-box:focused{    
+   -fx-border-color:linear-gradient(#82b1ff, #1e67e2);
+   -fx-border-width:0;
+}
+
+.combo-box:hover{    
+    -fx-border-color:linear-gradient(#82b1ff, #1e67e2);
+    -fx-border-width:0;
+}
+
+.combo-box:pressed{    
+   -fx-border-color: linear-gradient(rgba(246,243,232,1)0%, rgba(253,218,45,1)15%,rgba(237,199,11,1)85%,rgba(250,241,209,1)100%);   
+   -fx-border-width:0;
+}
+
+
+.toggle-button:hover{
+    -fx-background-color:linear-gradient(#BBDEFB,#E3F2FD);
+}
+
+
+.toggle-button{
+    -fx-background-color: white;
+}
+
+.check-box{
+    -fx-font-size: 15px;   
+    -fx-text-fill: white;
+    -fx-font-weight: 900;  
+}
+
+#Thread_status{
+    -fx-font-size: 30px;   
+    -fx-text-fill: #1A237E;
+    -fx-font-weight: 900;
+    -fx-font-family: 'Microsoft JhengHei' ; 
+}
+
+/* 2019.01.02 Remember10 username */
+.combo-box:disabled, .combo-box:disabled > * {
+  -fx-opacity: 1 ;
+  -fx-text-fill: black;  
+  -fx-background-color: white;  
+}
