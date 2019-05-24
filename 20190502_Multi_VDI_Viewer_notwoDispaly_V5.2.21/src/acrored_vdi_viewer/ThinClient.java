@@ -375,6 +375,7 @@ public class ThinClient {
     
     public String wlanName = "";
     String wifi_security_type = "";
+    Label System_Ver_AlertMessage;
     
     //正式用
     public ThinClient(Stage primaryStage, Map<String, String> LangMap, String IP_Addr,String IP_Port, boolean wifiFlag)throws MalformedURLException, IOException { // 2017.08.10 william IP增加port欄位，預設443   
@@ -3030,7 +3031,7 @@ public class ThinClient {
         //System_Server_Ver.setId("title_Label");
         
         /**********訊息顯示***********/ // 2017.06.22 william System version check
-        Label System_Ver_AlertMessage = new Label();
+        System_Ver_AlertMessage = new Label();
         GridPane.setHalignment(System_Ver_AlertMessage, HPos.LEFT);  // 設定Grid Pane中物件水平對齊方式，並且靠中央對齊
         System_grid.add(System_Ver_AlertMessage,0,8,4,1); // add()方法是先設定"行參數"，再設定"列參數"
         System_Ver_AlertMessage.setPadding(new Insets(0, 0, 0, 0));//設定元件和邊界的距離(使用Insets物件設定GridPane元件上、右、下、左的間隔) 
@@ -5065,6 +5066,10 @@ public class ThinClient {
                 if( !CV.update_code.equals("0") ){
 
                     SA.CheckSystem_updateFailed_Alert(MainStage);
+                    
+                    System_Ver_AlertMessage.setText(""); 
+                    Update.setDisable(false);                                                                  
+                    Check.setDisable(false);                                        
 
                 }
                 if( CV.update_code.equals("0") ){                            
