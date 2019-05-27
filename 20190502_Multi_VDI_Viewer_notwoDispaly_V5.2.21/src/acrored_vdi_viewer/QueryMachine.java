@@ -39,8 +39,10 @@ import java.io.BufferedWriter;
 import java.io.UnsupportedEncodingException;
 import static java.lang.Thread.sleep;
 import java.util.Base64;
+import java.util.Optional;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 import javafx.application.Platform;
@@ -128,6 +130,8 @@ public class QueryMachine extends Thread {
     String _diskName = "";    
          
     boolean OneVD_SPICE = false;
+    public String IsRDPVdOnline;
+    boolean connectflag = false;    
     
     /*****Pattern:檢查IP是否符合正確格式*****/
     private static final Pattern PATTERN = Pattern.compile(
@@ -358,14 +362,19 @@ public class QueryMachine extends Thread {
              testError=false;
         } 
         
-        System.out.println("URL : "+url+"\n"); 
-        System.out.println("conn.getOutputStream() : "+conn.getOutputStream()+"\n");
-        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
-        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
-        System.out.println("-----------------------------------------\n");
+//        System.out.println("URL : "+url+"\n"); 
+//        System.out.println("conn.getOutputStream() : "+conn.getOutputStream()+"\n");
+//        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
+//        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
+//        System.out.println("-----------------------------------------\n");
        
        /*********跳出警告訊息:401 404**********/
-        connCode = conn.getResponseCode();
+            try {
+                connCode = conn.getResponseCode();
+            } catch(Exception e) {
+                testError = false;
+            }           
+        
         //AlertChangeLang(connCode);       
        /*******************************************/    
        
@@ -455,7 +464,42 @@ public class QueryMachine extends Thread {
                             GB.migrationPwd = CurrentPasseard; 
                             GB.migrationUkey = uniqueKey; 
                             GB.migrationApiPort = Port;
-                            SetVDOnline(Address, term.get("VdId").getAsString(), term.get("VdName").getAsString(), CurrentPasseard, uniqueKey, Port);
+                            GB.migrationProtocol = "AcroSpice";
+                            DoChcekServerAddressAvailabilityGet(Address,Port);
+                            IsVdOnline = term.get("IsVdOnline").toString(); 
+                            CountDownLatch runalert = new CountDownLatch(1);
+                            
+                            if(term.get("IsVdOnline").getAsBoolean()) {
+                            Platform.runLater(() -> { 
+                                try {
+                                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                                    alert.setTitle("VD Online");//設定對話框視窗的標題列文字  , "您真的要結束程式嗎？", ButtonType.YES, ButtonType.NO
+                                    //alert.setHeaderText(WordMap.get("Message")+" : "+" VD is Online!! ");//設定對話框視窗裡的標頭文字。若設為空字串，則表示無標頭
+                                    alert.setHeaderText(null);
+                                    alert.getDialogPane().setMinSize(500,Region.USE_PREF_SIZE);
+                                    alert.getDialogPane().setMaxSize(500,Region.USE_PREF_SIZE);
+                                    alert.setContentText(WordMap.get("Message_VD_Online"));//VD 已上線,是否還要連線,若連線,則前一個連線會自動斷線.
+                                    ButtonType buttonTypeOK = new ButtonType(WordMap.get("Alert_Confirm"),ButtonBar.ButtonData.OK_DONE);
+                                    ButtonType buttonTypeCancel = new ButtonType(WordMap.get("Alert_Cancel"),ButtonBar.ButtonData.CANCEL_CLOSE);
+                                    alert.getButtonTypes().setAll(buttonTypeOK, buttonTypeCancel); 
+
+                                    Optional<ButtonType> result01 = alert.showAndWait();
+                                    if(result01.get().getButtonData().equals(buttonTypeOK.getButtonData())) {
+                                        connectflag = true;
+                                    } else {
+                                        connectflag = false;
+                                    }
+                                } finally{
+                                    runalert.countDown();
+                                }
+                                });                                                                                      
+                                runalert.await();                            
+                            } else {
+                                connectflag = true;
+                            }                               
+                            
+                            if(connectflag)
+                                SetVDOnline(Address, term.get("VdId").getAsString(), term.get("VdName").getAsString(), CurrentPasseard, uniqueKey, Port);
                         } else if (getSize() == 1 && term.get("AvailableProtocol").getAsInt() == 2) {
                                                                                     
                             GB.AvailableProtocol = 2;
@@ -496,10 +540,42 @@ public class QueryMachine extends Thread {
                             GB.EnableUSB = term.get("USBRedirCt").getAsInt() == 0 ? false : true; 
                             GB.adAuth = adAuth; 
                             GB.adDomain = adDomain;
+                            GB.migrationProtocol = "AcroRDP";
+                            DoChcekServerAddressAvailabilityGet(Address,Port);
+                            IsRDPVdOnline = term.get("IsRDPOnline").toString(); 
+                            CountDownLatch runalert = new CountDownLatch(1);
+                            
+                            if(term.get("IsRDPOnline").getAsBoolean()) {
+                            Platform.runLater(() -> { 
+                                try {
+                                    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                                    alert.setTitle("VD Online");//設定對話框視窗的標題列文字  , "您真的要結束程式嗎？", ButtonType.YES, ButtonType.NO
+                                    //alert.setHeaderText(WordMap.get("Message")+" : "+" VD is Online!! ");//設定對話框視窗裡的標頭文字。若設為空字串，則表示無標頭
+                                    alert.setHeaderText(null);
+                                    alert.getDialogPane().setMinSize(500,Region.USE_PREF_SIZE);
+                                    alert.getDialogPane().setMaxSize(500,Region.USE_PREF_SIZE);
+                                    alert.setContentText(WordMap.get("Message_VD_Online"));//VD 已上線,是否還要連線,若連線,則前一個連線會自動斷線.
+                                    ButtonType buttonTypeOK = new ButtonType(WordMap.get("Alert_Confirm"),ButtonBar.ButtonData.OK_DONE);
+                                    ButtonType buttonTypeCancel = new ButtonType(WordMap.get("Alert_Cancel"),ButtonBar.ButtonData.CANCEL_CLOSE);
+                                    alert.getButtonTypes().setAll(buttonTypeOK, buttonTypeCancel); 
 
+                                    Optional<ButtonType> result01 = alert.showAndWait();
+                                    if(result01.get().getButtonData().equals(buttonTypeOK.getButtonData())) {
+                                        connectflag = true;
+                                    } else {
+                                        connectflag = false;
+                                    }
+                                } finally{
+                                    runalert.countDown();
+                                }
+                                });                                                                                      
+                                runalert.await();                            
+                            } else {
+                                connectflag = true;
+                            }                            
                             if(GB.RDPStatus == 3)
                                 Platform.runLater(() -> { ReLogin(2); });    
-                            else                        
+                            else if(connectflag)
                                 SetVDRDPOnline(Address, VdId, CurrentUserName, CurrentPasseard, uniqueKey, Port, term.get("IsVdOrg").getAsBoolean(),  term.get("USBRedirCt").getAsInt() == 0 ? false : true, adAuth, adDomain);
                         } else {
                             Platform.runLater(() -> { 

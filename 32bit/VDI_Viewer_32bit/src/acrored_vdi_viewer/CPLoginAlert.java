@@ -16,19 +16,15 @@ import javafx.scene.layout.Region;
  *
  * @author victor
  */
-public class CPLoginAlert {
-    
+public class CPLoginAlert {    
     /***    顯示文字對應表    ***/
-    public Map<String, String> WordMap=new HashMap<>();
-    
-    
+    public Map<String, String> WordMap=new HashMap<>();    
+    public GB GB; // 2017.10.27 william 版本判斷
+    // Input： 語系字典檔,  Output： , 功能： 建構子
     public CPLoginAlert(Map<String, String> LangMap){
         WordMap=LangMap;
-    }
-    
-    public GB GB; // 2017.10.27 william 版本判斷
-    
-    /****************跳出警告訊息:401 403 404*******************/ 
+    }            
+    // Input： 錯誤代碼：(401 403 404),  Output： , 功能： 跳出Http警告訊息
     public void CPLoginAlertChange(int conn){
         if(conn!=0&&conn!=200) { //  2017.09.18 william 錯誤修改(4) 其他未知的錯誤  
             if("English".equals(WordMap.get("SelectedLanguage"))){
@@ -259,9 +255,8 @@ public class CPLoginAlert {
                 }                 
             }
         }
-    } 
-    
-    /********* Login testError 錯誤訊息 ************/
+    }     
+    // Input：,  Output： , 功能： 跳出Login CPW錯誤訊息
     public void CPLtestErrorAlert(){        
         if("English".equals(WordMap.get("SelectedLanguage"))){
             Alert alert_error = new Alert(Alert.AlertType.CONFIRMATION);
@@ -305,7 +300,5 @@ public class CPLoginAlert {
             alert_error.showAndWait();
             //alert_error.show();
         }        
-    }
-    
-    
+    }        
 }

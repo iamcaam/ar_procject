@@ -14,6 +14,7 @@ import java.util.Hashtable;
  * @author william
  * 32bit
  */
+// Input：,  Output： , 功能： 存放全域變數(Global variable)
 public class GB {
     public static boolean winXP_ver;
     public static int JavaVersion = 0; // 0: AcroRed, 1: MegaCube        

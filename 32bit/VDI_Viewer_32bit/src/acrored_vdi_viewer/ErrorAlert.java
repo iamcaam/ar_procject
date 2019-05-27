@@ -34,7 +34,7 @@ public class ErrorAlert {
     public String Message;
     public GB GB;    
     
-    // Constructor
+    // Input：,  Output： , 功能： (目前無作用)
     public ErrorAlert(Stage primaryStage, Map<String, String> LangMap, String M){
         WordMap=LangMap;
         Message=M;

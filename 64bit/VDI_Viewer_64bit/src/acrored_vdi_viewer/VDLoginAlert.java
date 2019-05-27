@@ -16,6 +16,7 @@ import javafx.scene.layout.Region;
  *
  * @author victor
  */
+// Input：,  Output： , 功能： 雲桌面管理登入警告視窗(邏輯架構與CPLoginAlert.java相同)
 public class VDLoginAlert {    
     
     /***    顯示文字對應表    ***/

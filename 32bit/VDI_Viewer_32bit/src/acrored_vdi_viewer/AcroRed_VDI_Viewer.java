@@ -70,7 +70,7 @@ import org.json.simple.parser.JSONParser;
  */
 public class AcroRed_VDI_Viewer extends Application {
     /***   版本   ***/
-    private static String Ver="(V 5.3.2)";// 32bit ( V 1.0.0 )_build11
+    private static String Ver="(V 5.3.10)";// 32bit ( V 1.0.0 )_build11
    
     /***    顯示文字對應表    ***/
     public Map<String, String> WordMap=new HashMap<>();
@@ -202,7 +202,6 @@ public class AcroRed_VDI_Viewer extends Application {
     MessageTitle1 MessageTitle1;
     MessageTitle2 MessageTitle2;
     MessageDot messageDot;
-    
     
     // Input： ,  Output： , 功能： 檢查IP是否符合正確格式
     private static final Pattern PATTERN = Pattern.compile("^(([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\.){3}([01]?\\d\\d?|2[0-4]\\d|25[0-5])$");
@@ -2479,7 +2478,7 @@ public class AcroRed_VDI_Viewer extends Application {
             //alert_error.show();
         }            
     }    
-   // Input： ,  Output： , 功能： VD已經有人連線中，他人在登入時，會跳出視窗詢問是否還要連線
+   // Input： ,  Output： , 功能： VD已經有人連線中，他人在登入時，會跳出視窗詢問是否還要連線(j無作用)
     public void IsVdOnlineAlert() throws IOException, MalformedURLException, InterruptedException{        
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("VD Online");//設定對話框視窗的標題列文字  , "您真的要結束程式嗎？", ButtonType.YES, ButtonType.NO
@@ -2495,7 +2494,40 @@ public class AcroRed_VDI_Viewer extends Application {
         Optional<ButtonType> result01 = alert.showAndWait();
             if (result01.get() == buttonTypeOK){                    
                 //QM.DoChcekServerAddressAvailabilityGet(QM.Address,QM.Port);
-                QM.SetVDOnline(QM.Address,  QM.VdId, QM.CurrentUserName, QM.CurrentPasseard, QM.uniqueKey,QM.CurrentIP_Port);
+
+                    switch (GB.migrationProtocol) {
+                        case "AcroSpice": // 2018.12.17 VDI Viewer -> AcroViewer & AcroSpice & AcroRDP
+                            new Thread(new Runnable() {                
+                                @Override
+                                public void run() {
+                                    try {
+                                        QM.SetVDOnline(GB.migrationApiIP, GB.migrationVDID, GB.migrationUserName, GB.migrationPwd, GB.migrationUkey, GB.migrationApiPort); // VdId
+                                    } catch (IOException ex) {
+                                        Logger.getLogger(LoginMultiVD.class.getName()).log(Level.SEVERE, null, ex);
+                                    } catch (InterruptedException ex) {
+                                        Logger.getLogger(LoginMultiVD.class.getName()).log(Level.SEVERE, null, ex);
+                                    }
+                                }
+                            }).start();                            
+                            break;
+                        case "AcroRDP": // 2018.12.17 VDI Viewer -> AcroViewer & AcroSpice & AcroRDP
+                            new Thread(new Runnable() {                
+                                @Override
+                                public void run() {
+                                    try {
+                                        QM.SetVDRDPOnline(GB.migrationApiIP, GB.migrationVDID, GB.migrationUserName, GB.migrationPwd, GB.migrationUkey, GB.migrationApiPort, GB.migrationIsVdOrg, GB.adAuth, GB.adDomain); // 2018.12.12 新增 431NoVGA 和第一次開機
+                                    } catch (IOException ex) {
+                                        Logger.getLogger(LoginMultiVD.class.getName()).log(Level.SEVERE, null, ex);
+                                    } catch (InterruptedException ex) {
+                                        Logger.getLogger(LoginMultiVD.class.getName()).log(Level.SEVERE, null, ex);
+                                    }
+                                }
+                            }).start();                                                          
+                            break;       
+                        default: 
+                            break;                              
+                    }                  
+                //QM.SetVDOnline(QM.Address,  QM.VdId, QM.CurrentUserName, QM.CurrentPasseard, QM.uniqueKey,QM.CurrentIP_Port);
                 /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/
                 ClearPW_Login_flag = true;  
 //                ClearPW_first_start = false; 
@@ -4307,25 +4339,25 @@ public class AcroRed_VDI_Viewer extends Application {
                     public void handle(WorkerStateEvent event) {
                         // 2018.12.25 Remember10 username
                         WriteUserNameJson(UsernameComboBox.getValue().toString());                        
-                                                
+                                                                  
                         if(QM.s == 1 && !IsSnapshot) { // 2018.01.01 william 單一帳號多個VD登入 / SnapShot實作
                             System.out.println("** Login longRunningTask.setOnSucceeded ** \n");
                             LA.SetVDOnline_AlertChangeLang(QM.SetVDonline_connCode);
                             System.out.println("Login *** IsVdOnline Succeeded = "+QM.IsVdOnline+"\n");
-                            if(QM.connCode == 200 && QM.ChcekServerAddress_connCode == 200){
-                                if(QM.IsVdOnline.equals("true")){
-                                    try {
-                                        //System.out.println(" --- QM.IsVdOnline.equals(true)---  \n");
-                                        /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/
-                                        ClearPW_Login_flag = false;
-                                        ClearPW_flag = false; 
-                                        /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/                                        
-                                        IsVdOnlineAlert();
-                                    } catch (IOException | InterruptedException ex) {
-                                        Logger.getLogger(AcroRed_VDI_Viewer.class.getName()).log(Level.SEVERE, null, ex);
-                                    }
-                                }
-                            }
+//                            if(QM.connCode == 200 && QM.ChcekServerAddress_connCode == 200){
+//                                if(QM.IsVdOnline.equals("true") || QM.IsRDPVdOnline.equals("true")){
+////                                    try {
+//                                        //System.out.println(" --- QM.IsVdOnline.equals(true)---  \n");
+//                                        /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/
+//                                        ClearPW_Login_flag = false;
+//                                        ClearPW_flag = false; 
+//                                        /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/                                        
+//                                        //IsVdOnlineAlert();
+////                                    } catch (IOException | InterruptedException ex) {
+////                                        Logger.getLogger(AcroRed_VDI_Viewer.class.getName()).log(Level.SEVERE, null, ex);
+////                                    }
+//                                }
+//                            }
                             if(QM.Alert_spiceaddr==1){
                                 /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/
                                 ClearPW_Login_flag = false;
@@ -4334,7 +4366,8 @@ public class AcroRed_VDI_Viewer extends Application {
                                 SetVDOlineAlert();
                             }
                             //Login.setDisable(false);
-                            rootPane.setCenter(MainGP); // 2017.08.10 william 登入中thread畫面鎖住
+                            
+                                rootPane.setCenter(MainGP); // 2017.08.10 william 登入中thread畫面鎖住    
                             lock_Login= false;
                             /*===============================================錯誤修改(3)-清除密碼 for windows===============================================*/                            
 //                            ClearPW_first_start = false;
@@ -4915,6 +4948,8 @@ public class AcroRed_VDI_Viewer extends Application {
                         
                         if(leaveViewer) {
                             RealtimeCheckMigration();
+                            if(!MigrationFlag)
+                                clearMigrationParameter();
                             leaveViewer = false;
                         }                                                
                     }

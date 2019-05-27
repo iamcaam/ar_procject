@@ -150,12 +150,17 @@ public class VDMLogin extends Thread {
              testError=false;
         }  
         
-        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
-        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
-        System.out.println("-----------------------------------------\n");
+//        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
+//        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
+//        System.out.println("-----------------------------------------\n");
         
         /*********跳出警告訊息:401 403 404**********/
-        VDMLconnCode = conn.getResponseCode();
+            try {
+                VDMLconnCode = conn.getResponseCode();
+            } catch(Exception e) {
+                testError = false;
+            }           
+
         //AlertChangeLang(connCode); 
         /*******************************************/
         

@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="AcroRed_VDI_Viewer.jar" size="3319514" download="eager" />
+    <jar href="AcroRed_VDI_Viewer.jar" size="3324739" download="eager" />
     <jar href="lib\commons-io-2.4.jar" size="185140" download="eager" />
     <jar href="lib\gson-2.2.2.jar" size="189285" download="eager" />
     <jar href="lib\json-simple-1.1.1.jar" size="23737" download="eager" />

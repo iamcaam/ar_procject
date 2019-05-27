@@ -12,6 +12,7 @@ import com.google.gson.JsonArray;
  * @author william
  * 64bit
  */
+// Input：,  Output： , 功能： 存放全域變數(Global variable)
 public class GB {
     public static int JavaVersion = 0; // 0: AcroRed, 1: MegaCube    
     public static String ConnectionAddress = ""; // 2018.11.06 william 多執行緒Ping IP

@@ -144,12 +144,17 @@ public class CPLogin extends Thread {
              testError=false;
         }  
         
-        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
-        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
-        System.out.println("-----------------------------------------\n");
+//        System.out.println("Resp Code : "+conn.getResponseCode()+"\n");
+//        System.out.println("Resp Message:"+ conn.getResponseMessage()+"\n");
+//        System.out.println("-----------------------------------------\n");
         
         /*********跳出警告訊息:401 403 404**********/
-        CPLconnCode = conn.getResponseCode();
+            try {
+                CPLconnCode = conn.getResponseCode();
+            } catch(Exception e) {
+                testError = false;
+            }           
+        
         //AlertChangeLang(connCode); 
         /*******************************************/
         InputStream is = conn.getInputStream();
@@ -215,7 +220,7 @@ public class CPLogin extends Thread {
             CPLT.notifyAll();      
         }   
     }
-    
+    // Input： ,  Output T/F： , 功能： 判斷Ping IP變數是否為空
     public boolean doPing() throws UnknownHostException, IOException{      
 
         if((IPAddress==null)||("".equals(IPAddress))){
@@ -246,7 +251,7 @@ public class CPLogin extends Thread {
         }
          //return true;
      }
-    // 2017.08.10 william IP增加port欄位，預設443        
+    // Input：1. IP, 2. port , 3. Timeout時間 ,  Output T/F： , 功能： 利用Socket Ping IP是否有通
     public static boolean isReachableByTcp(String host, int port, int timeout) {
         try {
             Socket socket = new Socket();

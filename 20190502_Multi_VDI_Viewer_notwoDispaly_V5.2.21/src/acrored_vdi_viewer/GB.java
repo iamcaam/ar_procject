@@ -11,6 +11,7 @@ import com.google.gson.JsonArray;
  *
  * @author root
  */
+// Input：,  Output： , 功能： 存放全域變數(Global variable)
 public class GB {
     public static boolean lock_ThinClient;
     public static boolean lock_ChangePW;

@@ -263,7 +263,7 @@ public class LoginMultiVD {
     
     boolean killthread = false;    
 
-    
+    // Input：主畫面Stage Data, 語系變數, 使用者的VD資料Array, IP, 用戶名, 密碼, uuid, port,  Output： , 功能： 建構式    
     public LoginMultiVD(Stage primaryStage, Map<String, String> LangMap,JsonArray jsonArr, String IPAddr,String Uname,String Password,String UniqueKey,String IPPort){
         public_stage    = primaryStage;        
         WordMap         = LangMap;
